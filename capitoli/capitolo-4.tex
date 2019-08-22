@@ -4,17 +4,17 @@
 
 %**************************************************************
 \chapter{Tecnologie e progettazione}
-\label{cap:progettazione-codifica}
+\label{cap:tecnologie-progettazione}
 %**************************************************************
-Il seguente capitolo ha lo scopo di illustrare nel dettaglio le tecnologie e gli strumenti utilizzati nel corso del progetto di stage, insieme alla progettazione delle maschere richieste per il raggiungimento degli obiettivi. 
+\textit{feature} seguente capitolo ha lo scopo di illustrare nel dettaglio le tecnologie e gli strumenti utilizzati nel corso del progetto di stage, insieme alla progettazione delle maschere richieste per \textit{feature} raggiungimento degli obiettivi. 
 
 \section{Tecnologie e strumenti}
-La seguente sezione illustra le tecnologie adottate(intese come framework e linguaggi di programmazione), insieme agli strumenti utilizzati durante tutto il corso del progetto.
+La seguente sezione approfondisce le tecnologie adottate(intese come \textit{framework} e linguaggi di programmazione), insieme agli strumenti utilizzati durante tutto \textit{feature} corso del progetto.
 
 \subsection{Ambiente di Sviluppo}
 
 \subsubsection{Sistema operativo}
-I sistemi operativi adottati per il completamento del progetto sono due:
+I sistemi operativi adottati per \textit{feature} completamento del progetto sono due:
 \begin{itemize}
 	\item Ubuntu KDE 2019
 	\item Ubuntu 18.04.2 LTS
@@ -24,61 +24,70 @@ I sistemi operativi adottati per il completamento del progetto sono due:
 Come \gls{IDE}, viene adottato unicamente \textit{Visual Studio Code}, sviluppato da Microsoft. Si tratta di un software molto leggero e adattabile alle proprie esigenze tramite l'aggiunta di estensioni.
 \paragraph{Estensioni}
 \begin{itemize}
-	\item \textbf{Angular Snippets 8:} Permette l'aggiunta di \gls{snippets} per Angular e HTML;
-	\item \textbf{angular2-inline:} Per l'autocompletamento e l'evidenziatura dei \textit{template inline} che possono essere utilizzati nei \textit{component};
+	\item \textbf{Angular Snippets 8:} Permette l'aggiunta di \gls{snippets} per \textit{Angular} e \textit{HTML};
+	\item \textbf{angular2-inline:} Per l'autocompletamento e l'evidenziazione dei \textit{template inline} che possono essere utilizzati nei \textit{component};
 	\item \textbf{Debugger for Chrome:} Questa estensione, sviluppata anch'essa da Microsoft, permette di utilizzare un \gls{Debugger} per JavaScript/TypeScript;
-	\item \textbf{Material Icon Theme:} Permette di visualizzare immediatamente l'estensione di un file tramite l'utilizzo di un'icona a fianco del nome;
+	\item \textbf{Material Icon Theme:} Permette di visualizzare immediatamente l'estensione di un \textit{file} tramite l'utilizzo di un'icona a fianco del nome;
 	\item \textbf{npm:} Permette l'esecuzione rapida di script tramite \gls{npm};
-	\item \textbf{TSLint:} Fornisce supporto per l'utilizzo di TSLint all'interno di Visual Studio Code (v. sezione \ref{tslint}) ;
+	\item \textbf{TSLint:} Fornisce supporto per l'utilizzo di \textit{TSLint} all'interno di \textit{Visual Studio Code} (v. sezione \ref{tslint}) ;
 \end{itemize}
 
 \subsubsection{Versionamento}
-Il codice viene memorizzato in una \gls{repository} remota presso \textit{GitLab}, ne consegue che lo strumento di versionamento utilizzato è \gls{Git}. La repository è privata, e l'accesso è stato consentito dal tutor aziendale dr Fabio Pallaro.\\
-La necessità di lavorare in gruppo, inoltre, richiede un processo di \gls{continuos integration} rapido ed efficiente: a tal scopo, viene integrata l'estensione \textit{git-flow}  al normale strumento di versionamento. Essa permette la creazione immediata di \gls{branch} di feature separate, il successivo \gls{merge} è altresì possibile mediante l'utilizzo di un singolo comando.\\
-Viene inoltre adottato \textit{GitKraken} come IDE, durante la gestione della \textit{repository}, infatti, a volte possono si presentano casistiche dove risulta molto più rapido utilizzare un'interfaccia grafica piuttosto che lavorare unicamente da terminale.
+Lo strumento di versionamento utilizzato è \gls{Git} e \textit{feature} codice viene memorizzato in una \gls{repository} remota presso \textit{GitLab}. La repository è privata, e l'accesso è stato consentito dal tutor aziendale dr Fabio Pallaro.\\
+La necessità di lavorare in gruppo, inoltre, richiede un processo di \gls{continuos integration} rapido ed efficiente: a tal scopo, viene integrata l'estensione \textit{git-flow}  al normale strumento di versionamento. Essa permette la creazione immediata di \gls{branch} di feature separate, \textit{feature} successivo \gls{merge} è altresì possibile mediante l'utilizzo di un singolo comando.\\
+La necessità di venire incontro a casistiche particolari che possono incorrere nella gestione della \textit{repository} ha richiesto la scelta di una \textins{IDE} che possa svolgere tale compito. Il \textit{software} adottato per questo progetto è \textit{GitKraken}, un applicativo \textit{open-source} che fornisce  supporto alla gestione di repository \gls{Git}, insieme all'integrazione dell'estensione \textit{git-flow}.
 
 \subsubsection{Testing}
-La documentazione di Angular suggerisce di utilizzare \textit{Karma} per l'esecuzione dei test, e questo è l'approccio che viene adottato.
-I test vengono codificati in file con estensione \texttt{.spec.ts} (creati automaticamente da Angular CLI al momento dell'inserimento di un component) ed eseguiti tramite il comando \texttt{npm test}; la configurazione di \textit{Karma}, invece, avviene tramite un file \texttt{karma.conf.js}.
+Viene adottato \textit{Karma} come \textit{Test runner} all'interno del progetto, come suggerito dalla documentazione di \textit{Angular}
+I test vengono codificati in \textit{file} con estensione \texttt{.spec.ts} (creati automaticamente da Angular CLI al momento dell'inserimento di un component) ed eseguiti tramite \textit{feature} comando \texttt{npm test}; la configurazione di \textit{Karma}, invece, avviene tramite un \textit{file} \texttt{karma.conf.js}.
 
 \subsubsection{Back-end}
 I microservizi sono installati in una macchina di proprietà di SyncLab, e sono accedibili tramite un URL dalle persone autorizzate.\\
-L'integrazione, quindi, è avvenuta presso l'azienda, in quanto non è possibile accedere al Back-end da dispositivi esterni.
+L'integrazione, quindi, è avvenuta presso l'azienda, in quanto non è possibile accedere al \gls{Back-end} da dispositivi esterni.
 
 \subsubsection{Analisi statica del codice} \label{tslint}
-Viene utilizzato TSLint come strumento di analisi statica del codice, allo scopo di aumentare la leggibilità, manutenibilità e prevenzione di errori funzionali all'interno del codice, la sua configurazione avviene tramite un file \texttt{tslint.json} e gli errori sono immediatamente visibili al momento della scrittura.
+Viene utilizzato TSLint come strumento di analisi statica del codice, allo scopo di aumentare la leggibilità, manutenibilità e prevenzione di errori funzionali all'interno del codice, la sua configurazione avviene tramite un \textit{file} \texttt{tslint.json} e gli errori sono immediatamente visibili al momento della scrittura.
 
 \subsubsection{Strumenti per l'analisi dei requisiti}
 TODO
 
 \subsubsection{Altri strumenti utilizzati}
-Per effettuare richieste al \gls{Back-end}, ho utilizzato \textit{Postman}, che permette di testare il corretto funzionamento di un microservizio tramite le classiche chiamate \textit{GET, PUT, POST, DELETE}; in questo modo, si può verficare, prima della scritttura del codice, che il comportamento del \textit{Back-end} sia conforme rispetto ai risultati attesi.
+Per effettuare richieste al \gls{Back-end}, viene utilizzato \textit{Postman}, che permette di testare \textit{feature} corretto funzionamento di un microservizio tramite le classiche chiamate \textit{GET, PUT, POST, DELETE}; in questo modo si può verficare prima della scritttura del codice che \textit{feature} comportamento del \gls{Back-end} sia conforme rispetto ai risultati attesi.
 
 \section{Tecnologie}
-La sezione seguente ha lo scopo di dettagliare  i framework e i linguaggi di programmazione utilizzati nel corso del progetto.
+La sezione seguente ha lo scopo di illustrare  i \textit{framework} e i linguaggi di programmazione utilizzati nel corso del progetto.
 
 \subsection{TypeScript}\label{typescript}
 \gls{TypeScript} è un linguaggio di programmazione open-source sviluppato e mantenuto da Microsoft, esso si configura come un livello di astrazione aggiuntivo a \gls{JavaScript}, introducendo i classici paradigmi della programmazione ad oggetti, insieme alle funzionalità introdotte da ECMAScript 3 in poi .\\
-Una volta compilato il codice TypeScript, esso produce in \textit{output} codice JavaScript nativo, in questo modo è garantita la compatibilità con tutti browser, \gls{Node.js}, o \textit{engine} JavaScript che supportino ECMAScript 3; in un progetto Angular, tale processo avviene in automatico tramtite l'invocazione dei comandi di \gls{Angular CLI}.\\
-L'utilizzo di tale linguaggio si è reso necessario una volta scelto e adottato Angular come framework di riferimento per lo sviluppo delle maschere di Front-End.\\
+Una volta compilato \textit{feature} codice TypeScript, esso produce in \textit{output} codice JavaScript nativo, in questo modo è garantita la compatibilità con tutti browser, \gls{Node.js}, o \textit{engine} JavaScript che supportino ECMAScript 3; in un progetto Angular, tale processo avviene in automatico tramtite esecuzione dei comandi di \gls{Angular CLI}.\\
+L'utilizzo di tale linguaggio si è reso necessario una volta scelto e adottato \textit{Angular} come \textit{framework} di riferimento per lo sviluppo delle maschere di Front-End.\\
 
 \subsection{Angular}
-Angular è un framework sviluppato da Google utilizzato per lo sviluppo di applicazioni web responsive e compatibili con la gran parte dei dispositivi odierni, esso nasce come evoluzione AngularJS, abbandonando l'utilizzo di JavaScript in favore di TypeScript (v. sezione \ref{typescript}), ciò rende le due versioni non compatibili.
+Angular è un framework sviluppato da Google utilizzato per lo sviluppo di applicazioni web responsive e compatibili con la gran parte dei dispositivi odierni, esso nasce come evoluzione \textit{AngularJS}, abbandonando l'utilizzo di JavaScript in favore di TypeScript (v. sezione \ref{typescript}), ciò rende le due versioni non compatibili.
 I principali vantaggi offerti da Angular sono:
 \begin{itemize}
 	\item \textbf{Cross-platform:} Angular permette lo sviluppo di \textit{web application}, \textit{mobile web application}, applicazioni \textit{desktop} e applicazioni \textit{mobile};
-	\item \textbf{Velocità e performance:} la struttura del \textit{framework} permette di sviluppare applicazioni veloci e dinamiche, l'elaborazione, infatti, viene eseguita quasi interamente su lato client, una volta scaricata l'applicazione dal \gls{web server}; il peso delle applicazioni, inoltre, è stato sensibilmente ridotto;
+	\item \textbf{Velocità e performance:} la struttura del \textit{framework} permette di sviluppare applicazioni veloci e dinamiche, l'elaborazione, infatti, viene eseguita quasi interamente su lato client, una volta scaricata l'applicazione dal \gls{web server}; \textit{feature} peso delle applicazioni, inoltre, è stato sensibilmente ridotto;
 	\item \textbf{Compatibilità:} rispetto al suo predecessore, Angular semplifica l'interazione e la compatibilità con librerie esterne JavaScript, come \gls{RxJs} o \gls{immutable.js}.
 \end{itemize}
 
-In un progetto Angular, l'elemento cardine risulta essere il \textit{component}, introdotto dalla seconda versione, esso rappresenta l'elemento base della struttura gerarchica, organizzata in moduli, che permette un'efficiente suddivisione del carico di lavoro tra più programmatori, i quali non hanno necessità di conoscere interamente la logica dell'applicazione per apportare un contributo allo sviluppo.
+In un progetto Angular, l'elemento cardine risulta essere \textit{feature} \textit{component}, introdotto dalla seconda versione, esso rappresenta l'elemento base della struttura gerarchica, organizzata in moduli, che permette un'efficiente suddivisione del carico di lavoro tra più programmatori, i quali non hanno necessità di conoscere interamente la logica dell'applicazione per apportare un contributo allo sviluppo.
 Le seguenti sezioni hanno lo scopo di dettagliare accuratamente i principali elementi che fanno parte di un'applicazione sviluppata in Angular.
 
 \subsubsection{Component}
+I \textit{component} costituiscono elementi di una web application, i quali assumono \textit{feature} controllo della visualizzazione dei dati e la gestione degli eventi in determinate circostanze definite dal programmatore.\\
+Ogni \textit{component} è costituito da 3 parti:
+\begin{itemize}
+	\item un \textit{file} \texttt{.ts} che definisce la logica sottostante per l'elaborazione dei dati;
+	\item un \textit{file} \texttt{.html} che costituisce \textit{feature} template per la visualizzazione su schermo del \textit{component};
+	\item un \textit{file} \texttt{.css} che definisce la posizione, dimensione e colore degli elementi definiti nel \textit{template}.
+\end{itemize} 
+Questo tipo di struttura permette una grande possibilità di riutilizzo del codice: ogni component, una volta definito, può essere visualizzato secondo quanto definito nel suo modulo di appartenenza. In questo modo, nel caso in cui fosse necessario riutilizzare un component precedentemente definito, sarà sufficiente importare \textit{feature} suo modulo di riferimento ove desiderato.
+
 
 \subsubsection{Module}
 
-\subsection{Service}
+\subsubsection{Service}
 
 \subsubsection{Routing Modules}
 
