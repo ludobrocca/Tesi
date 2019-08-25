@@ -14,9 +14,10 @@
 \glossaryentry{MongoDb?\glossentry{MongoDb}|setentrycounter[]{page}\glsnumberformat}{5}
 \glossaryentry{CRUD?\glossentry{CRUD}|setentrycounter[]{page}\glsnumberformat}{6}
 \glossaryentry{framework?\glossentry{framework}|setentrycounter[]{page}\glsnumberformat}{7}
-\glossaryentry{IDE?\glossentry{IDE}|setentrycounter[]{page}\glsnumberformat}{11}
-\glossaryentry{snippets?\glossentry{snippets}|setentrycounter[]{page}\glsnumberformat}{11}
-\glossaryentry{debugger?\glossentry{Debugger}|setentrycounter[]{page}\glsnumberformat}{11}
+\glossaryentry{open-source?\glossentry{open-source}|setentrycounter[]{page}\glsnumberformat}{11}
+\glossaryentry{Git?\glossentry{Git}|setentrycounter[]{page}\glsnumberformat}{11}
+\glossaryentry{snippets?\glossentry{snippets}|setentrycounter[]{page}\glsnumberformat}{12}
+\glossaryentry{debugger?\glossentry{Debugger}|setentrycounter[]{page}\glsnumberformat}{12}
 \glossaryentry{npm?\glossentry{npm}|setentrycounter[]{page}\glsnumberformat}{12}
 \glossaryentry{Git?\glossentry{Git}|setentrycounter[]{page}\glsnumberformat}{12}
 \glossaryentry{repository?\glossentry{repository}|setentrycounter[]{page}\glsnumberformat}{12}
@@ -25,8 +26,8 @@
 \glossaryentry{merge?\glossentry{merge}|setentrycounter[]{page}\glsnumberformat}{12}
 \glossaryentry{Git?\glossentry{Git}|setentrycounter[]{page}\glsnumberformat}{12}
 \glossaryentry{Back-end?\glossentry{Back-end}|setentrycounter[]{page}\glsnumberformat}{12}
-\glossaryentry{Back-end?\glossentry{Back-end}|setentrycounter[]{page}\glsnumberformat}{12}
-\glossaryentry{Back-end?\glossentry{Back-end}|setentrycounter[]{page}\glsnumberformat}{12}
+\glossaryentry{Back-end?\glossentry{Back-end}|setentrycounter[]{page}\glsnumberformat}{13}
+\glossaryentry{Back-end?\glossentry{Back-end}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{TypeScript?\glossentry{TypeScript}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{JavaScript?\glossentry{JavaScript}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{Node.js?\glossentry{Node.js}|setentrycounter[]{page}\glsnumberformat}{13}
@@ -34,9 +35,15 @@
 \glossaryentry{web server?\glossentry{web server}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{RxJs?\glossentry{RxJs}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{immutbale.js?\glossentry{immutable.js}|setentrycounter[]{page}\glsnumberformat}{13}
-\glossaryentry{dependency injection?\glossentry{dependency injection}|setentrycounter[]{page}\glsnumberformat}{14}
+\glossaryentry{dependency injection?\glossentry{dependency injection}|setentrycounter[]{page}\glsnumberformat}{15}
 \glossaryentry{web application?\glossentry{web application}|setentrycounter[]{page}\glsnumberformat}{15}
 \glossaryentry{URL?\glossentry{URL}|setentrycounter[]{page}\glsnumberformat}{15}
 \glossaryentry{NodeJs?\glossentry{NodeJs}|setentrycounter[]{page}\glsnumberformat}{15}
 \glossaryentry{angular CLI?\glossentry{angular CLI}|setentrycounter[]{page}\glsnumberformat}{15}
-\glossaryentry{open-source?\glossentry{open-source}|setentrycounter[]{page}\glsnumberformat}{15}
+\glossaryentry{open-source?\glossentry{open-source}|setentrycounter[]{page}\glsnumberformat}{16}
+\glossaryentry{Python?\glossentry{Python}|setentrycounter[]{page}\glsnumberformat}{16}
+\glossaryentry{ADA?\glossentry{ADA}|setentrycounter[]{page}\glsnumberformat}{16}
+\glossaryentry{ERP?\glossentry{ERP}|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{ICT?\glossentry{ICT}|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{Spring?\glossentry{Spring}|setentrycounter[]{page}\glsnumberformat}{18}
+\glossaryentry{System Integrator?\glossentry{System Integrator}|setentrycounter[]{page}\glsnumberformat}{18}

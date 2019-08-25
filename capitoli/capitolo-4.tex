@@ -19,7 +19,19 @@ I sistemi operativi adottati per ilcompletamento del progetto sono due:
 \end{itemize}
 
 \subsection{IDE}
-Come \gls{IDE}, viene adottato unicamente \textit{Visual Studio Code}, sviluppato da Microsoft. Si tratta di un software molto leggero e adattabile alle proprie esigenze tramite l'aggiunta di estensioni.
+L'adozione di un corretto ambiente di sviluppo integrato (\textit{Integrated development environment}, spesso abbreviato con \textbf{IDE}), è di primaria importanza per il corretto sviluppo di un \textit{software}, la scelta è spesso soggettiva e determinata dai giusti personali del programmatore.
+In questo progetto, viene adottato \textit{Visual Studio Code}, una \textit{IDE} \gls{open-source} sviluppata da Microsoft.\\
+Si tratta di un \textit{software} molto leggero e adattabile alle proprie esigenze tramite l'aggiunta di estensioni; queste due qualità rendono \textit{VsCode} il software ideale per lo sviluppo di un applicativo in \textit{Angular}.
+Alcuni dei principali vantaggi di \textit{VsCode sono}
+\begin{itemize}
+	\item Piena integrazione con \gls{Git};
+	\item Ampia gamma di estensioni;
+	\item Introduzione di \textbf{\textit{IntelliSense}}, software per l'autocompletamento del codice
+	\item Personalizzabile.
+\end{itemize}
+Secondo un sodaggio effettuato da \textit{StckOverflow} nel 2019, \textit{VsCode} risulta l'ambiente di sviluppo integrato più utilizzato dai programmatori, con il 50.7\% di scelta su 87.317 partecipanti.
+
+
 \paragraph{Estensioni}
 \begin{itemize}
 	\item \textbf{Angular Snippets 8:} Permette l'aggiunta di \gls{snippets} per \textit{Angular} e \textit{HTML};
@@ -125,6 +137,24 @@ Si tratta di un \textit{toolkit} compatibile con tutti i browser moderni e facen
 La seguente sezione ha lo scopo di fornire una visione generale ad alto livello delle tecnologie apprese ma non applicate all'interno del progetto.
 
 \subsection{Oracle PL/SQL}
+\textit{Oracle PL/SQL} è un linguaggio sviluppato da Oracle negli anni '80, si tratta di un linguaggio procedurale in grado di eseguire \textit{query SQL} insieme ad alcune strutture molto simili a quanto si può trovare in altri linguaggi procedurali (come \gls{Python} o \gls{ADA}).
+PL/SQL fornisce le seguenti strutture:
+\begin{itemize}
+	\item Gestione degli errori;
+	\item Tipizzazione dei dati;
+	\item Le classiche strutture della programmazione (cicli, blocchi condizionali, funzioni etc.);
+	\item Procedure;
+	\item PSP (PL/SQL Server Pages);
+	\item Piena integrazione con SQL(direttive DDL e DML sono disponibili in modo statico e dinamico)
+\end{itemize}
+
+\paragraph{Struttura di uno script Oracle PL/SQL}
+Uno \textit{script Oracle PL/SQL} è sempre suddiviso in al più tre parti:
+\begin{itemize}
+	\item \textbf{DECLARE:} si tratta di una sezione opzionale che contiene la dichiarazione di variabili, cursori, funzioni e quant'altro;
+	\item \textbf{BEGIN/END:} sezione obbligatoria che esegue le operazioni PL/SQL richieste;
+	\item \textbf{EXCEPTION:} sezione facoltativa che si occupa della gestione degli errori all'interno dello \textit{script}.
+\end{itemize}
 
 \subsection{MongoDb}
 

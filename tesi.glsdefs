@@ -1,0 +1,1200 @@
+\ifglsentryexists{uml}{}%
+{%
+\gls@defglossaryentry{uml}%
+{%
+name={UML},%
+sort={UML},%
+type={acronym},%
+first={Unified Modeling Language\glsspace (UML)},%
+firstplural={Unified Modeling Language\acrpluralsuffix \glsspace (UML\acrpluralsuffix )},%
+text={UML},%
+plural={UML\acrpluralsuffix },%
+description={\glslink {umlg}{Unified Modeling Language}},%
+descriptionplural={Unified Modeling Language\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Unified Modeling Language},%
+longplural={Unified Modeling Languages},%
+short={UML},%
+shortplural={UMLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{incremento}{}%
+{%
+\gls@defglossaryentry{incremento}%
+{%
+name={\glslink {incremento}{Incremento}},%
+sort={incremento},%
+type={main},%
+first={incremento},%
+firstplural={incrementi},%
+text={incremento},%
+plural={incrementi},%
+description={Procedere per aggiunta ad una base},%
+descriptionplural={Procedere per aggiunta ad una base},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Spring}{}%
+{%
+\gls@defglossaryentry{Spring}%
+{%
+name={\glslink {spring}{Spring}},%
+sort={Spring},%
+type={main},%
+first={Spring},%
+firstplural={incrementi},%
+text={Spring},%
+plural={incrementi},%
+description={Framework Java fortemente basato sul principio di Inversion of Control, fornisce uno stack di librerie molto versatile per lo sviluppo di applicazioni Java},%
+descriptionplural={Framework Java fortemente basato sul principio di Inversion of Control, fornisce uno stack di librerie molto versatile per lo sviluppo di applicazioni Java},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ERP}{}%
+{%
+\gls@defglossaryentry{ERP}%
+{%
+name={\glslink {erp}{ERP}},%
+sort={ERP},%
+type={main},%
+first={ERP},%
+firstplural={ERP},%
+text={ERP},%
+plural={ERP},%
+description={TODO},%
+descriptionplural={TODO},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ICT}{}%
+{%
+\gls@defglossaryentry{ICT}%
+{%
+name={\glslink {ict}{ICT}},%
+sort={ICT},%
+type={main},%
+first={ICT},%
+firstplural={ICT},%
+text={ICT},%
+plural={ICT},%
+description={TODO},%
+descriptionplural={TODO},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{System Integrator}{}%
+{%
+\gls@defglossaryentry{System Integrator}%
+{%
+name={\glslink {system integrator}{System Integrator}},%
+sort={System Integrator},%
+type={main},%
+first={System Integrator},%
+firstplural={System Integrators},%
+text={System Integrator},%
+plural={System Integrators},%
+description={TODO},%
+descriptionplural={TODO},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{iterazione}{}%
+{%
+\gls@defglossaryentry{iterazione}%
+{%
+name={\glslink {iterazione}{Iterazione}},%
+sort={iterazione},%
+type={main},%
+first={iterazione},%
+firstplural={iterazioni},%
+text={iterazione},%
+plural={iterazioni},%
+description={Procedere per rivisitazioni (può includere un incremento o addirittura un decremento).\\L'iterazione è un processo di durata non determinabile (anche potenzialmente infinita)},%
+descriptionplural={Procedere per rivisitazioni (può includere un incremento o addirittura un decremento).\\L'iterazione è un processo di durata non determinabile (anche potenzialmente infinita)},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{api}{}%
+{%
+\gls@defglossaryentry{api}%
+{%
+name={\glslink {api}{api}},%
+sort={\glslink {api}{api}},%
+type={main},%
+first={\glslink {api}{api}},%
+firstplural={\glslink {api}{api}s},%
+text={\glslink {api}{api}},%
+plural={\glslink {api}{api}s},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{TypeScript}{}%
+{%
+\gls@defglossaryentry{TypeScript}%
+{%
+name={TypeScript},%
+sort={TypeScript},%
+type={main},%
+first={TypeScript},%
+firstplural={TypeScripts},%
+text={TypeScript},%
+plural={TypeScripts},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{JavaScript}{}%
+{%
+\gls@defglossaryentry{JavaScript}%
+{%
+name={JavaScript},%
+sort={JavaScript},%
+type={main},%
+first={JavaScript},%
+firstplural={JavaScripts},%
+text={JavaScript},%
+plural={JavaScripts},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Node.js}{}%
+{%
+\gls@defglossaryentry{Node.js}%
+{%
+name={Node.js},%
+sort={Node.js},%
+type={main},%
+first={Node.js},%
+firstplural={Node.jss},%
+text={Node.js},%
+plural={Node.jss},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Angular CLI}{}%
+{%
+\gls@defglossaryentry{Angular CLI}%
+{%
+name={Angular CLI},%
+sort={Angular CLI},%
+type={main},%
+first={Angular CLI},%
+firstplural={Angular CLIs},%
+text={Angular CLI},%
+plural={Angular CLIs},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{IDE}{}%
+{%
+\gls@defglossaryentry{IDE}%
+{%
+name={IDE},%
+sort={IDE},%
+type={main},%
+first={IDE},%
+firstplural={IDEs},%
+text={IDE},%
+plural={IDEs},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Debugger}{}%
+{%
+\gls@defglossaryentry{Debugger}%
+{%
+name={debugger},%
+sort={debugger},%
+type={main},%
+first={debugger},%
+firstplural={debuggers},%
+text={debugger},%
+plural={debuggers},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Back-end}{}%
+{%
+\gls@defglossaryentry{Back-end}%
+{%
+name={Back-end},%
+sort={Back-end},%
+type={main},%
+first={Back-end},%
+firstplural={Back-ends},%
+text={Back-end},%
+plural={Back-ends},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{snippets}{}%
+{%
+\gls@defglossaryentry{snippets}%
+{%
+name={snippets},%
+sort={snippets},%
+type={main},%
+first={snippets},%
+firstplural={snippetss},%
+text={snippets},%
+plural={snippetss},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Git}{}%
+{%
+\gls@defglossaryentry{Git}%
+{%
+name={Git},%
+sort={Git},%
+type={main},%
+first={Git},%
+firstplural={Gits},%
+text={Git},%
+plural={Gits},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{repository}{}%
+{%
+\gls@defglossaryentry{repository}%
+{%
+name={repository},%
+sort={repository},%
+type={main},%
+first={repository},%
+firstplural={repositorys},%
+text={repository},%
+plural={repositorys},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{continuos integration}{}%
+{%
+\gls@defglossaryentry{continuos integration}%
+{%
+name={continuos integration},%
+sort={continuos integration},%
+type={main},%
+first={continuos integration},%
+firstplural={continuos integrations},%
+text={continuos integration},%
+plural={continuos integrations},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{branch}{}%
+{%
+\gls@defglossaryentry{branch}%
+{%
+name={branch},%
+sort={branch},%
+type={main},%
+first={branch},%
+firstplural={branchs},%
+text={branch},%
+plural={branchs},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{merge}{}%
+{%
+\gls@defglossaryentry{merge}%
+{%
+name={merge},%
+sort={merge},%
+type={main},%
+first={merge},%
+firstplural={merges},%
+text={merge},%
+plural={merges},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{npm}{}%
+{%
+\gls@defglossaryentry{npm}%
+{%
+name={npm},%
+sort={npm},%
+type={main},%
+first={npm},%
+firstplural={npms},%
+text={npm},%
+plural={npms},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{web application}{}%
+{%
+\gls@defglossaryentry{web application}%
+{%
+name={web application},%
+sort={web application},%
+type={main},%
+first={web application},%
+firstplural={web applications},%
+text={web application},%
+plural={web applications},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{microservizi}{}%
+{%
+\gls@defglossaryentry{microservizi}%
+{%
+name={microservizi},%
+sort={microservizi},%
+type={main},%
+first={microservizi},%
+firstplural={microservizis},%
+text={microservizi},%
+plural={microservizis},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{framework}{}%
+{%
+\gls@defglossaryentry{framework}%
+{%
+name={framework},%
+sort={framework},%
+type={main},%
+first={framework},%
+firstplural={frameworks},%
+text={framework},%
+plural={frameworks},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Java}{}%
+{%
+\gls@defglossaryentry{Java}%
+{%
+name={Java},%
+sort={Java},%
+type={main},%
+first={Java},%
+firstplural={Javas},%
+text={Java},%
+plural={Javas},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{MongoDb}{}%
+{%
+\gls@defglossaryentry{MongoDb}%
+{%
+name={MongoDb},%
+sort={MongoDb},%
+type={main},%
+first={MongoDb},%
+firstplural={MongoDbs},%
+text={MongoDb},%
+plural={MongoDbs},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Python}{}%
+{%
+\gls@defglossaryentry{Python}%
+{%
+name={Python},%
+sort={Python},%
+type={main},%
+first={Python},%
+firstplural={Pythons},%
+text={Python},%
+plural={Pythons},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ADA}{}%
+{%
+\gls@defglossaryentry{ADA}%
+{%
+name={ADA},%
+sort={ADA},%
+type={main},%
+first={ADA},%
+firstplural={ADAs},%
+text={ADA},%
+plural={ADAs},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{URL}{}%
+{%
+\gls@defglossaryentry{URL}%
+{%
+name={URL},%
+sort={URL},%
+type={main},%
+first={URL},%
+firstplural={URLs},%
+text={URL},%
+plural={URLs},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{angular CLI}{}%
+{%
+\gls@defglossaryentry{angular CLI}%
+{%
+name={angular CLI},%
+sort={angular CLI},%
+type={main},%
+first={angular CLI},%
+firstplural={angular CLIs},%
+text={angular CLI},%
+plural={angular CLIs},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Angular}{}%
+{%
+\gls@defglossaryentry{Angular}%
+{%
+name={Angular},%
+sort={Angular},%
+type={main},%
+first={Angular},%
+firstplural={Angulars},%
+text={Angular},%
+plural={Angulars},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{DBMS}{}%
+{%
+\gls@defglossaryentry{DBMS}%
+{%
+name={DBMS},%
+sort={DBMS},%
+type={main},%
+first={DBMS},%
+firstplural={DBMSs},%
+text={DBMS},%
+plural={DBMSs},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{CRUD}{}%
+{%
+\gls@defglossaryentry{CRUD}%
+{%
+name={CRUD},%
+sort={CRUD},%
+type={main},%
+first={CRUD},%
+firstplural={CRUDs},%
+text={CRUD},%
+plural={CRUDs},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{RxJs}{}%
+{%
+\gls@defglossaryentry{RxJs}%
+{%
+name={RxJs},%
+sort={RxJs},%
+type={main},%
+first={RxJs},%
+firstplural={RxJss},%
+text={RxJs},%
+plural={RxJss},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{web server}{}%
+{%
+\gls@defglossaryentry{web server}%
+{%
+name={web server},%
+sort={web server},%
+type={main},%
+first={web server},%
+firstplural={web servers},%
+text={web server},%
+plural={web servers},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dependency injection}{}%
+{%
+\gls@defglossaryentry{dependency injection}%
+{%
+name={dependency injection},%
+sort={dependency injection},%
+type={main},%
+first={dependency injection},%
+firstplural={dependency injections},%
+text={dependency injection},%
+plural={dependency injections},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{NodeJs}{}%
+{%
+\gls@defglossaryentry{NodeJs}%
+{%
+name={NodeJs},%
+sort={NodeJs},%
+type={main},%
+first={NodeJs},%
+firstplural={NodeJss},%
+text={NodeJs},%
+plural={NodeJss},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{open-source}{}%
+{%
+\gls@defglossaryentry{open-source}%
+{%
+name={open-source},%
+sort={open-source},%
+type={main},%
+first={open-source},%
+firstplural={open-sources},%
+text={open-source},%
+plural={open-sources},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{immutable.js}{}%
+{%
+\gls@defglossaryentry{immutable.js}%
+{%
+name={immutbale.js},%
+sort={immutbale.js},%
+type={main},%
+first={immutbale.js},%
+firstplural={immutbale.jss},%
+text={immutbale.js},%
+plural={immutbale.jss},%
+description={description},%
+descriptionplural={description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
