@@ -8,19 +8,17 @@
 %**************************************************************
 IL seguente capitolo ha lo scopo di illustrare nel dettaglio le tecnologie e gli strumenti utilizzati nel corso del progetto di stage, insieme alla progettazione delle maschere richieste per il raggiungimento degli obiettivi. 
 
-\section{Tecnologie e strumenti}
-La seguente sezione approfondisce le tecnologie adottate(intese come \textit{framework} e linguaggi di programmazione), insieme agli strumenti utilizzati durante tutto il corso del progetto.
+\section{Ambiente di Sviluppo}
+La sezione seguente illustra gli strumenti facenti parte dell'ambiente di sviluppo e utilizzati nel corso del progetto.
 
-\subsection{Ambiente di Sviluppo}
-
-\subsubsection{Sistema operativo}
+\subsection{Sistema operativo}
 I sistemi operativi adottati per ilcompletamento del progetto sono due:
 \begin{itemize}
 	\item Ubuntu KDE 2019
 	\item Ubuntu 18.04.2 LTS
 \end{itemize}
 
-\subsubsection{IDE}
+\subsection{IDE}
 Come \gls{IDE}, viene adottato unicamente \textit{Visual Studio Code}, sviluppato da Microsoft. Si tratta di un software molto leggero e adattabile alle proprie esigenze tramite l'aggiunta di estensioni.
 \paragraph{Estensioni}
 \begin{itemize}
@@ -32,30 +30,30 @@ Come \gls{IDE}, viene adottato unicamente \textit{Visual Studio Code}, sviluppat
 	\item \textbf{TSLint:} Fornisce supporto per l'utilizzo di \textit{TSLint} all'interno di \textit{Visual Studio Code} (v. sezione \ref{tslint}) ;
 \end{itemize}
 
-\subsubsection{Versionamento}
+\subsection{Versionamento}
 Lo strumento di versionamento utilizzato è \gls{Git} e il codice viene memorizzato in una \gls{repository} remota presso \textit{GitLab}. La repository è privata, e l'accesso è stato consentito dal tutor aziendale dr Fabio Pallaro.\\
 La necessità di lavorare in gruppo, inoltre, richiede un processo di \gls{continuos integration} rapido ed efficiente: a tal scopo, viene integrata l'estensione \textit{git-flow}  al normale strumento di versionamento. Essa permette la creazione immediata di \gls{branch} di \textit{feature} separate, il successivo \gls{merge} è altresì possibile mediante l'utilizzo di un singolo comando.\\
 La necessità di venire incontro a casistiche particolari che possono incorrere nella gestione della \textit{repository} ha richiesto la scelta di una \textins{IDE} che possa svolgere tale compito. Il \textit{software} adottato per questo progetto è \textit{GitKraken}, un applicativo \textit{open-source} che fornisce  supporto alla gestione di repository \gls{Git}, insieme all'integrazione dell'estensione \textit{git-flow}.
 
-\subsubsection{Testing}
+\subsection{Testing}
 Viene adottato \textit{Karma} come \textit{Test runner} all'interno del progetto, come suggerito dalla documentazione di \textit{Angular}
 I test vengono codificati in \textit{file} con estensione \texttt{.spec.ts} (creati automaticamente da Angular CLI al momento dell'inserimento di un component) ed eseguiti tramite il comando \texttt{npm test}; la configurazione di \textit{Karma}, invece, avviene tramite un \textit{file} \texttt{karma.conf.js}.
 
-\subsubsection{Back-end}
+\subsection{Back-end}
 I microservizi sono installati in una macchina di proprietà di SyncLab, e sono accedibili tramite un URL dalle persone autorizzate.\\
 L'integrazione, quindi, è avvenuta presso l'azienda, in quanto non è possibile accedere al \gls{Back-end} da dispositivi esterni.
 
-\subsubsection{Analisi statica del codice} \label{tslint}
+\subsection{Analisi statica del codice} \label{tslint}
 Viene utilizzato TSLint come strumento di analisi statica del codice, allo scopo di aumentare la leggibilità, manutenibilità e prevenzione di errori funzionali all'interno del codice, la sua configurazione avviene tramite un \textit{file} \texttt{tslint.json} e gli errori sono immediatamente visibili al momento della scrittura.
 
-\subsubsection{Strumenti per l'analisi dei requisiti}
+\subsection{Strumenti per l'analisi dei requisiti}
 TODO
 
-\subsubsection{Altri strumenti utilizzati}
+\subsection{Altri strumenti utilizzati}
 Per effettuare richieste al \gls{Back-end}, viene utilizzato \textit{Postman}, che permette di testare il corretto funzionamento di un microservizio tramite le classiche chiamate \textit{GET, PUT, POST, DELETE}; in questo modo si può verficare prima della scritttura del codice che il comportamento del \gls{Back-end} sia conforme rispetto ai risultati attesi.
 
 \section{Tecnologie}
-La sezione seguente ha lo scopo di illustrare  i \textit{framework} e i linguaggi di programmazione utilizzati nel corso del progetto.
+La seguente sezione approfondisce le tecnologie adottate(intese come \textit{framework} e linguaggi di programmazione) durante il corso del progetto.
 
 \subsection{TypeScript}\label{typescript}
 \gls{TypeScript} è un linguaggio di programmazione open-source sviluppato e mantenuto da Microsoft, esso si configura come un livello di astrazione aggiuntivo a \gls{JavaScript}, introducendo i classici paradigmi della programmazione ad oggetti, insieme alle funzionalità introdotte da ECMAScript 3 in poi .\\
@@ -95,12 +93,43 @@ Ogni \textit{component} è costituito da 3 parti:
 	\item un \textit{file} \texttt{.html} che costituisce il \textit{template} per la visualizzazione su schermo del \textit{component};
 	\item un \textit{file} \texttt{.css} che definisce posizione, dimensione e colore degli elementi definiti nel \textit{template}.
 \end{itemize} 
-Questo tipo di struttura permette una grande possibilità di riutilizzo del codice: ogni component, una volta definito, può essere visualizzato secondo quanto dichiarato nel suo modulo di appartenenza. In questo modo, nel caso in cui fosse necessario riutilizzare un component precedentemente definito, sarà sufficiente importare il suo modulo di riferimento ove desiderato.
+Questo tipo di struttura permette una grande possibilità di riutilizzo del codice: ogni component, una volta definito, può essere visualizzato secondo quanto dichiarato nel suo modulo di appartenenza. In questo modo, nel caso in cui fosse necessario riutilizzare un \textit{component} precedentemente definito, sarà sufficiente importare il suo modulo di riferimento ove desiderato.
 
 \subsubsection{Service}\label{service}
+\textit{Angular} ha predisposto una struttura facente uso della \gls{dependency injection}, la quale permette di iniettare dipendenze nei \textit{component} senza pregiudicare la manutenibilità del codice; applicando questo approccio è possibile dividere chiaramente la visualizzazione dei dati sullo schermo dal suo relativo recupero.\\
+L'elemento che si occupa del \textit{fetch} dei dati in una applicazione \textit{Angular} è il \textit{service}: la documentazione suggerisce di rendere un \textit{service \textbf{Injectable}}, in questo modo è sufficiente che il \textit{component} dichiari la dipendenza nel suo costruttore per poterlo utilizzare.
+Un'approccio di questo tipo ha l'ulteriore vantaggio di rendere molto più pulita la gestione degli errori nelle transazioni, che è interamente adibita ai service facenti le chiamate.
 
-\subsubsection{Routing Modules}\label{routing}
+\subsubsection{Routing}\label{routing}
+Il \textit{Routing} costituisce il meccanismo implementato da \textit{Angular} per la navigazione all'interno di una \gls{web application}.\\
+Normalmente un utente per navigare all'interno di un sito tramite \textit{browser} effettua una tra queste tre azioni:
+\begin{itemize}
+	\item Digita un URL nella barra degli indirizzi e naviga direttamente alla pagina desiderata;
+	\item Clicca un \textit{link} all'interno della pagina e il browser effettua la navigazione;
+	\item Usa i pulsanti di \textit{back} e \textit{forward} per visualizzare pagine precedentemente visitate.
+\end{itemize}
+Il \textit{Router} di \textit{Angular}, utlizzando questo modello, è in grado di mappare le richieste \textit{URL} a delle \textit{view} generate dal client, con l'ulteriore possibilità di inserimento di parametri opzionali per la visualizzazione di determinati dati.\\
+Nel caso del progetto SyncRec, il \textit{Routing} tramite parametri opzionali si è rivelato indispensabile per la visualizzazione del dettaglio di una persona.
+\paragraph*{Funzionamento e implementazione}
+Il meccanismo di implementazione del \textit{Routing} è molto simile a quello dei moduli: ogni \textit{component} deve essere corredato da un \textit{Routing Module} che definisca il \textit{path} e il corrispettivo \textit{component} collegato, successivamente, ogni \textit{Routing Module} deve essere importato e dichiarato nel corrispettivo modulo di appartenenza, in modo che il \textit{root module} possa essere a conoscenza della mappatura completa degli \gls{URL} con i component associati.
 
-\subsection{npm}
+\subsection{Npm}
+\textit{Npm} (Node Package Manager) si configura come il gestore di pacchetti predefinito per l'ambiente \textit{runtime} di \textit{JavaScript} \gls{NodeJs}; il suo utlizzo si è rivelato necessario per l'inclusione di alcune dipendenze necessarie per il completamento del progetto (\gls{angular CLI} primo fra tutti).\\
+I pacchetti sono memorizzati in un database remoto chiamato \textit{npm registry} e l'aggiunta, rimozione e aggiornamento degli stessi avviene tramite il \textit{client} a riga di comando messo a disposizione, chiamato anch'esso \textit{npm}.
 
 \subsection{Bootstrap}
+\textit{Bootstrap} è una raccolta di strumenti \gls{open-source} per lo sviluppo di siti e applicazioni web. Essa contiene moduli basati su \textit{HTML} e \textit{CSS} per la creazione dei componenti facenti parte di un'interfaccia (moduli, pulsanti e navigazione), insieme all'integrazione con alcune componenti opzionali di \textit{JavaScript}.\\
+Si tratta di un \textit{toolkit} compatibile con tutti i browser moderni e facente ampio uso del \textit{responsive web design}, è stato integrato nel progetto allo scopo di applicare rapidamente uno stile comune agli elementi facenti parte dell'applicazione.
+
+\section{Altre tecnologie}
+La seguente sezione ha lo scopo di fornire una visione generale ad alto livello delle tecnologie apprese ma non applicate all'interno del progetto.
+
+\subsection{Oracle PL/SQL}
+
+\subsection{MongoDb}
+
+\subsection{Spring}
+
+\subsubsection{Spring Data}
+
+\subsubsection{Spring Data REST}
