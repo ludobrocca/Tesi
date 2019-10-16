@@ -6,3 +6,416 @@
 \chapter{Analisi dei requisiti}
 \label{cap:descrizione-stage}
 %**************************************************************
+In questa sezione vengono illustrati i requisiti individuati per il progetto SyncRec.
+
+\section{Tipologie di utenti}
+Questa sezione ha lo scopo di dettagliare gli attori individuati; ciascun attore si differenzia dagli altri per i permessi di accesso a determinate parti del sistema:
+\begin{itemize}	
+	\item \textbf{\nonlogged:} utente che non ha eseguito il \textit{login} presso l'applicazione;
+	\item \textbf{\loggedusr:} utente che ha effettuato l'accesso alla piattaforma SyncRec;
+	\item \textbf{\applicant:} utente a cui è stato inviato un link specifico per la compilazione dello skillmatrix prima dello svolgimento di un colloquio lavorativo. 
+\end{itemize}
+
+\section{Casi d'uso}
+La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
+
+%\subsection{UC-}
+%\begin{itemize}
+%\item \textbf{Attori:}
+%\item \textbf{Precondizione:}
+%\item \textbf{Scenario Principale:}
+%\begin{enumerate}
+%	\item 
+%\end{enumerate}
+%\item \textbf{PostCondizione:}
+%\item \textbf{Estensioni:}
+%\end{itemize}
+
+
+\subsection{UC-1 Visualizzazione vista degli\applicant}
+\begin{itemize}
+	\item \textbf{Attori:}\loggedusr
+	\item \textbf{Precondizione:} L'utente si trova nella homepage dell'applicazione.
+	\item \textbf{Scenario Principale:}
+		\begin{enumerate}
+			\item L'utente clicca sul pulsante "Visualizza lista delle persone" 
+		\end{enumerate}
+	\item \textbf{PostCondizione:} l'utente accede alla vista di visualizzazione lista degli applicant.
+\end{itemize}
+
+\subsection{UC-2: Visualizzazione lista degli\applicant}
+\begin{itemize}
+	\item \textbf{Attori:}\loggedusr
+	\item \textbf{Precondizione:} l'utente si trova nella vista di visualizzazione lista degli applicant.
+	\item \textbf{Scenario Principale:} 
+		\begin{enumerate}
+			\item l'utente visualizza il cognome dell'applicant; 
+			\item l'utente visualizza il nome dell'applicant;
+			\item l'utente visualizza l'email dell'applicant;
+		\end{enumerate}
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di visualizzazione lista degli applicant.
+\end{itemize}
+
+\subsection{UC-3 Aggiunta filtro su nome/cognome su lista degli\applicant}
+\begin{itemize}
+	\item \textbf{Attori:}\loggedusr
+	\item \textbf{Precondizione:} l'utente si trova nella vista di visualizzazione lista degli applicant.
+	\item \textbf{Scenario Principale:}
+		\begin{enumerate}
+			\item l'utente inserisce nel campo di testo un carattere o un insieme di caratteri.
+		\end{enumerate}
+	\item \textbf{PostCondizione:} viene visualizzata la lista degli applicant dove nome e cognome contengono i caratteri inseriti
+\end{itemize}
+
+\subsection{UC-4 Eliminazione di un\applicant}
+\begin{itemize}
+\item \textbf{Attori:}\loggedusr
+\item \textbf{Precondizione:} l'utente si trova nella vista di visualizzazione lista degli applicant.
+\item \textbf{Scenario Principale:}
+\begin{enumerate}
+	\item l'utente clicca il pulsante "Elimina" riferito a un certo applicant
+\end{enumerate}
+\item \textbf{PostCondizione:} Viene visualizzato un messaggio di richiesta di conferma.
+\end{itemize}
+
+
+\subsection{UC-4.1 Conferma eliminazione di un\applicant}
+\begin{itemize}
+\item \textbf{Attori:}\loggedusr
+\item \textbf{Precondizione:}l'utente si trova nella vista di visualizzazione lista degli applicant e ha richiesto l'eliminazione di un applicant.
+\item \textbf{Scenario Principale:}
+\begin{enumerate}
+	\item L'utente visualizza il messaggio di richiesta di conferma;
+	\item L'utente preme il tasto "Ok";
+\end{enumerate}
+\item \textbf{PostCondizione:} si chiude il messaggio di conferma, avviene l'eliminazione dell'applicant e il \textit{refresh} della pagina;
+\item \textbf{Estensioni:} 
+\begin{enumerate}
+	\item l'utente preme il tasto "Annulla"
+	\item il messaggio di conferma viene chiuso.
+\end{enumerate}
+\end{itemize}
+
+\subsection{UC-5 visualizzazione vista dei filtri}
+\begin{itemize}
+\item \textbf{Attori:}\loggedusr
+\item \textbf{Precondizione:} l'utente si trova nella vista di visualizzazione lista degli applicant.
+\item \textbf{Scenario Principale:}
+\begin{enumerate}
+	\item l'utente clicca sul tasto "Applica filtri aggiuntivi"
+\end{enumerate}
+\item \textbf{PostCondizione:} l'utente visualizza la vista relativa ai filtri
+\end{itemize}
+
+\subsection{UC-7 Aggiunta dei filtri}
+\begin{itemize}
+\item \textbf{Attori:}\loggedusr
+\item \textbf{Precondizione:} l'utente si trova nella vista relativa ai filtri.
+\item \textbf{Scenario Principale:}
+\begin{enumerate}
+	\item l'utente aggiunge un filtro mediante l'inserimento di un input
+\end{enumerate}
+\item \textbf{PostCondizione:} l'utentesi trova nella vista relativa ai filtri e visualizza l'input immesso sullo schermo.
+\end{itemize}
+
+\subsection{UC7.1- Aggiunta di un filtro per il nome}
+\begin{itemize}
+\item \textbf{Attori:}\loggedusr
+\item \textbf{Precondizione:} l'utente si trova nella vista relativa ai filtri.
+\item \textbf{Scenario Principale:}
+\begin{enumerate}
+	\item l'utente inserisce una parola chiave in un campo di testo dedicato al nome
+\end{enumerate}
+\item \textbf{PostCondizione:}  l'utente si trova nella vista relativa ai filtri e visualizza l'input immesso sullo schermo.
+\end{itemize}
+
+\subsection{UC7.2- Aggiunta di un filtro per il cognome}
+\begin{itemize}
+	\item \textbf{Attori:}\loggedusr
+	\item \textbf{Precondizione:} l'utente si trova nella vista relativa ai filtri.
+	\item \textbf{Scenario Principale:}
+	\begin{enumerate}
+		\item l'utente inserisce una parola chiave in un campo di testo dedicato al cognome
+	\end{enumerate}
+	\item \textbf{PostCondizione:}  l'utente si trova nella vista relativa ai filtri e visualizza l'input immesso sullo schermo.
+\end{itemize}
+
+\subsection{UC7.3- Aggiunta di un filtro per il genere}
+\begin{itemize}
+	\item \textbf{Attori:}\loggedusr
+	\item \textbf{Precondizione:} l'utente si trova nella vista relativa ai filtri.
+	\item \textbf{Scenario Principale:}
+	\begin{enumerate}
+		\item l'utente seleziona da un menù a tendina il genere desiderato
+	\end{enumerate}
+	\item \textbf{PostCondizione:}  l'utente si trova nella vista relativa ai filtri e visualizza l'opzione selezionata sullo schermo.
+\end{itemize}
+
+\subsection{UC7.4- Aggiunta di un filtro per il titolo di studio}
+\begin{itemize}
+	\item \textbf{Attori:}\loggedusr
+	\item \textbf{Precondizione:} l'utente si trova nella vista relativa ai filtri.
+	\item \textbf{Scenario Principale:}
+	\begin{enumerate}
+		\item l'utente seleziona da un menù a tendina il titolo di studio desiderato
+	\end{enumerate}
+	\item \textbf{PostCondizione:}  l'utente si trova nella vista relativa ai filtri e visualizza l'opzione selezionata sullo schermo.
+\end{itemize}
+\subsection{UC7.5- Aggiunta di un filtro per l'ambito lavorativo}
+\begin{itemize}
+	\item \textbf{Attori:}\loggedusr
+	\item \textbf{Precondizione:} l'utente si trova nella vista relativa ai filtri.
+	\item \textbf{Scenario Principale:}
+	\begin{enumerate}
+		\item l'utente seleziona da un menù a tendina l'ambito lavorativo desiderato
+	\end{enumerate}
+	\item \textbf{PostCondizione:}  l'utente si trova nella vista relativa ai filtri e visualizza l'opzione selezionata sullo schermo.
+\end{itemize}
+
+\subsection{UC7.6- Aggiunta di un filtro relativo ad una skill }
+\begin{itemize}
+	\item \textbf{Attori:}\loggedusr
+	\item \textbf{Precondizione:} l'utente si trova nella vista relativa ai filtri.
+	\item \textbf{Scenario Principale:}
+	\begin{enumerate}
+		\item l'utente seleziona da un menù a tendina il nome della skill desiderato
+	\end{enumerate}
+	\item \textbf{PostCondizione:}  l'utente si trova nella vista relativa ai filtri e visualizza l'opzione selezionata sullo schermo.
+\end{itemize}
+
+\subsection{UC7.7- Aggiunta di un filtro relativo al livello di una skill}
+\begin{itemize}
+	\item \textbf{Attori:}\loggedusr
+	\item \textbf{Precondizione:} l'utente si trova nella vista relativa ai filtri.
+	\item \textbf{Scenario Principale:}
+	\begin{enumerate}
+		\item l'utente seleziona da un menù a tendina un valore da 1 a 4 rappresentante il livello della skill desiderato.
+	\end{enumerate}
+	\item \textbf{PostCondizione:}  l'utente si trova nella vista relativa ai filtri e visualizza l'opzione selezionata sullo schermo.
+\end{itemize}
+
+\subsection{UC7.8- Aggiunta di un filtro per il genere}
+\begin{itemize}
+	\item \textbf{Attori:}\loggedusr
+	\item \textbf{Precondizione:} l'utente si trova nella vista relativa ai filtri.
+	\item \textbf{Scenario Principale:}
+	\begin{enumerate}
+		\item l'utente seleziona da un menù a tendina il genere desiderato
+	\end{enumerate}
+	\item \textbf{PostCondizione:}  l'utente si trova nella vista relativa ai filtri e visualizza l'opzione selezionata sullo schermo.
+\end{itemize}
+
+\subsection{UC7.9- Aggiunta di un filtro per la disponibilità geografica}
+\begin{itemize}
+	\item \textbf{Attori:}\loggedusr
+	\item \textbf{Precondizione:} l'utente si trova nella vista relativa ai filtri.
+	\item \textbf{Scenario Principale:}
+	\begin{enumerate}
+		\item l'utente seleziona una o più città desiderate.
+	\end{enumerate}
+	\item \textbf{PostCondizione:}  l'utente si trova nella vista relativa ai filtri e visualizza le opzioni selezionate sullo schermo.
+\end{itemize}
+
+\subsection{UC7.10- Aggiunta di un filtro per l'anzianità}
+\begin{itemize}
+	\item \textbf{Attori:}\loggedusr
+	\item \textbf{Precondizione:} l'utente si trova nella vista relativa ai filtri.
+	\item \textbf{Scenario Principale:}
+	\begin{enumerate}
+		\item l'utente seleziona da un menù a tendina il livello di anzianità desiderato
+	\end{enumerate}
+	\item \textbf{PostCondizione:}  l'utente si trova nella vista relativa ai filtri e visualizza l'opzione selezionata sullo schermo.
+\end{itemize}
+
+\subsection{UC-8 Conferma dei filtri selezionati}
+\begin{itemize}
+\item \textbf{Attori:}\loggedusr
+\item \textbf{Precondizione:} l'utente si trova nella vista relativa ai filtri.
+\item \textbf{Scenario Principale:}
+\begin{enumerate}
+	\item l'utente clicca sul tasto "Applica filtri selezionati";
+	\item l'utente viene reindirizzato alla vista di visualizzazione lista degli applicant.
+\end{enumerate}
+\item \textbf{PostCondizione:} l'utente si trova nella vista relativa alla visualizzazione degli applicant e visualizza li visualizza secondo i filtri selezionati;
+\item \textbf{Estensioni:} l'utente visualizza un messaggio di errore relativo all'inserimento dei filtri (UC-8.1);
+\end{itemize}
+
+\subsection{UC-8.1 Visualizzazione errore sulla selezione dei filtri}
+\begin{itemize}
+\item \textbf{Attori:}\loggedusr
+\item \textbf{Precondizione:} l'utente si trova nella vista relativa ai filtri e non ha selezionato congiuntamente una skill e un livello, ma solo uno dei due.
+\item \textbf{Scenario Principale:}
+\begin{enumerate}
+	\item viene visualizzato un errore a schermo che invita l'utente a completare la selezione dei filtri.
+\end{enumerate}
+\item \textbf{PostCondizione:}l'utente si trova nella vista relativa ai filtri.
+\end{itemize}
+
+
+\subsection{UC-9 Rimozione dei filtri selezionati}
+\begin{itemize}
+\item \textbf{Attori:}\loggedusr
+\item \textbf{Precondizione:} l'utente si trova nella vista relativa ai filtri
+\item \textbf{Scenario Principale:}
+\begin{enumerate}
+	\item l'utente clicca sul tasto "Annulla";
+	\item vengono rimossi tutti i flitri precedentemente selezionati
+\end{enumerate}
+\item \textbf{PostCondizione:} l'utente si trova nella vista relativa ai filtri.
+\end{itemize}
+
+
+\subsubsection{UC-10 Ordinamento degli\applicant secondo il nome}
+\begin{itemize}
+\item \textbf{Attori:}\loggedusr
+\item \textbf{Precondizione:} l'utente si trova nella vista di visualizzazione lista degli applicant.
+\item \textbf{Scenario Principale:}
+\begin{enumerate}
+	\item l'utente clicca sul \textit{header} della tabella riportante il campo "Nome"
+	\item gli applicant vengono posti in ordine crescente secondo il nome.
+\end{enumerate}
+\item \textbf{PostCondizione:}  l'utente si trova nella vista di visualizzazione lista degli applicant.
+\end{itemize}
+
+\subsubsection{UC-11 Ordinamento degli\applicant secondo il cognome}
+\begin{itemize}
+	\item \textbf{Attori:}\loggedusr
+	\item \textbf{Precondizione:} l'utente si trova nella vista di visualizzazione lista degli applicant.
+	\item \textbf{Scenario Principale:}
+	\begin{enumerate}
+		\item l'utente clicca sul \textit{header} della tabella riportante il campo "Cognome"
+		\item gli applicant vengono posti in ordine crescente secondo il cognome.
+	\end{enumerate}
+	\item \textbf{PostCondizione:}  l'utente si trova nella vista di visualizzazione lista degli applicant.
+\end{itemize}
+
+\subsection{UC-12 Visualizzazione vista di dettaglio di un\applicant}
+\begin{itemize}
+\item \textbf{Attori:}\loggedusr
+\item \textbf{Precondizione:} l'utente si trova nella vista di visualizzazione lista degli applicant. 
+\item \textbf{Scenario Principale:}
+\begin{enumerate}
+	\item l'utente clicca sul pulsante riportante una lente di ingrandimento relativa a un applicant
+	\item l'utente viene reindirizzato alla vista di dettaglio di un applicant
+	\item l'utente visualizza tramite la vista il dettaglio degli applicant
+\end{enumerate}
+\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant;
+\end{itemize}
+
+\subsection{UC-13 Visualizzazione dettaglio di un applicant }
+\begin{itemize}
+\item \textbf{Attori:} \loggedusr
+\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+\item \textbf{Scenario Principale:}
+\begin{enumerate}
+	\item l'utente visualizza il nome dell'applicant;
+	\item l'utente visualizza il cognome dell'applicant;
+	\item l'utente visualizza il genere dell'applicant;
+	\item l'utente visualizza la data di nascita dell'applicant;
+	\item l'utente visualizza l'email dell'applicant;
+	\item l'utente visualizza il numero di telefono dell'applicant;	
+	\item l'utente visualizza l'indirizzo dell'applicant;
+	\item l'utente visualizza la città residenza dell'applicant;
+	\item l'utente visualizza il preavviso richiesto dall'applicant per una chiamata;
+	\item l'utente visualizza il titolo di studio dell'applicant;
+	\item l'utente visualizza il livello di anzianità dell'applicant;
+	\item l'utente visualizza l'ambito di lavoro dell'applicant;
+	\item l'utente visualizza se lo status dell'applicant è scartato o meno;
+	
+	\item l'utente visualizza le citta per cui l'applicant ha fornito disponibilità per il trasferimento;
+	\item l'utente visualizza delle note generiche relative all'applicant;
+	\item l'utente visualizza delle note relative al colloquio dell'applicant;
+	\item l'utente visualizza delle note riguardanti lo status lavorativo dell'applicant;
+	\item l'utente visualizza altre considerazioni aggiuntive relative all'applicant;
+\end{enumerate}
+\item \textbf{PostCondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+\end{itemize}
+
+
+\subsection{UC-14 Modifica di un dato di un applicant}
+\begin{itemize}
+\item \textbf{Attori:} Utente riconosciuto
+\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+\item \textbf{Scenario Principale:}
+\begin{enumerate}
+	\item l'utente clicca su un pulsante posto a fianco di un campo dati di un applicant;
+	\item l'utente visualizza il  widget di modifica per il campo dati
+	relativo;
+	\item l'utente inserisce le modifiche desiderate;
+	\item l'utente clicca sul relativo pulsante precedentemente premuto;
+\end{enumerate}
+\item \textbf{PostCondizione:} 
+\begin{enumerate}
+	\item l'utente visualizza il campo dati modificato;
+	\item l'utente si trova nella vista di dettaglio di un applicant.
+\end{enumerate}
+
+\end{itemize}
+
+%%% MORE UC ON MODIFY FIELD
+
+\subsection{UC-15 Salvataggio delle modifiche per un applicant}
+\begin{itemize}
+\item \textbf{Attori:} Utente riconosciuto
+\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un applicant e visualizza il pulsante di salvataggio dopo aver modificato un campo.
+\item \textbf{Scenario Principale:}
+\begin{enumerate}
+	\item l'utente clicca sul pulsante di salvataggio delle modifiche 
+\end{enumerate}
+\item \textbf{PostCondizione:} le modifiche vengono salvate e viene visualizzato un messaggio di successo.
+\item \textbf{Estensioni:} viene visualizzato un messaggio di errore causato da un inserimento errato nei campi modificati (UC 15.1);
+\end{itemize}
+
+
+
+\subsection{UC-15.1 Visualizzazione messaggio di errore inserimento campo di un applicant}
+\begin{itemize}
+\item \textbf{Attori:} Utente riconosciuto
+\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant e ha inserito un campo di un  applicant non rispettando i parametri imposti
+\item \textbf{Scenario Principale:}
+\begin{enumerate}
+	\item viene visualizzato un messaggio di errore in corrispondenza del campo dati inserito erroneamente
+\end{enumerate}
+\item \textbf{PostCondizione:}  l'utente si trova nella vista di dettaglio di un applicant
+\end{itemize}
+
+
+%% MORE UC ERROR VISUALIZATION
+
+
+\subsection{UC-16 Annullamento delle modifiche precendentemente inserite}
+\begin{itemize}
+\item \textbf{Attori:} Utente riconosciuto
+\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un applicant e ha precedentemente confermato delle modifiche di alcuni dati relativi all'applicant
+\item \textbf{Scenario Principale:}
+\begin{enumerate}
+	\item l'utente clicca sul pulsante di annullamento delle modifiche
+\end{enumerate}
+\item \textbf{PostCondizione:} l'utente visualizza la vista di dettaglio dell'applicant nello stato antecedente alla modifica.
+\end{itemize}
+
+\subsection{UC- 17 Ritorno alla lista degli applicant }
+\begin{itemize}
+\item \textbf{Attori:} Utente riconosciuto
+\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un applicant
+\item \textbf{Scenario Principale:}
+\begin{enumerate}
+	\item l'utente clicca sul pulsante \textit{back}
+\end{enumerate}
+\item \textbf{PostCondizione:} l'utente si trova nella vista di visualizzazione lista degli applicant.
+\end{itemize}
+
+\subsection{UC-18 Visualizzazione skillmatrix di un applicant}
+\begin{itemize}
+\item \textbf{Attori:} Utente riconosciuto
+\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant
+\item \textbf{Scenario Principale:}
+\begin{enumerate}
+	\item l'utente clicca sul pulsante relativo alla visualizzazione skillmatrix di un applicant
+\end{enumerate}
+\item \textbf{PostCondizione:} l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un applicant.
+\item \textbf{Estensioni:} l'utente si trova nella vista relativa all'inserimento skillmatrix di un applicant.
+\end{itemize}
+
+
+
