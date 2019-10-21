@@ -2,8 +2,50 @@
 % !TEX TS-program = pdflatex
 % !TEX root = ../tesi.tex
 
+%\epigraph{Citazione}{Autore della citazione}
+
 %**************************************************************
-\chapter{Appendice A}
+\chapter{Altre tecnologie} \label{Appendice-1}
 %**************************************************************
 
-\epigraph{Citazione}{Autore della citazione}
+Lo scopo di questa sezione è fornire una panoramica delle tecnologie studiate durante il periodo di stage e previste nel piano di lavoro e che non hanno trovato un'applicazione concreta nel contesto del progetto SyncRec.\\
+Tali tecnologie sono state incluse con il duplice scopo di ampliare il bagaglio di conoscenze del laureando e comprendere meglio l'architettura del progetto sul quale andavano fatti gli interventi concordati.
+
+\section{Oracle PL/SQL}
+\textit{Oracle PL/SQL} è un linguaggio sviluppato da Oracle negli anni '80, si tratta di un linguaggio procedurale in grado di eseguire \textit{query SQL} insieme ad alcune strutture molto simili a quanto si può trovare in altri linguaggi procedurali (come \gls{Python} o \gls{ADA}).
+PL/SQL fornisce le seguenti strutture:
+\begin{itemize}
+	\item Gestione degli errori;
+	\item Tipizzazione dei dati;
+	\item Le classiche strutture della programmazione (cicli, blocchi condizionali, funzioni etc.);
+	\item Procedure;
+	\item PSP (PL/SQL Server Pages);
+	\item Piena integrazione con SQL(direttive DDL e DML sono disponibili in modo statico e dinamico)
+\end{itemize}
+
+\subsection{Struttura di uno script Oracle PL/SQL}
+Uno \textit{script Oracle PL/SQL} è sempre suddiviso in al più tre parti:
+\begin{itemize}
+	\item \textbf{DECLARE:} si tratta di una sezione opzionale che contiene la dichiarazione di variabili, cursori e quant'altro;
+	\item \textbf{BEGIN/END:} sezione obbligatoria che esegue le operazioni PL/SQL richieste;
+	\item \textbf{EXCEPTION:} sezione facoltativa che si occupa della gestione degli errori all'interno dello \textit{script}.
+\end{itemize}
+
+All'interno del blocco \textit{DECLARE} è possibile definire inoltre due tipi di strutture: \textit{procedure} e \textit{funzioni}, dove l'unica differenza è che le seconde possono fornire valori in output tramite la keyword \textit{RETURN}.
+
+Ogni script viene poi eseguito tramite la keyword \textit{Execute}.
+
+\subsubsection{Cursori}
+Per processare dichiarazioni SQL Oracle fornisce un area di memoria conosciuta come \textit{context area}, i \textit{cursori} costituiscono dei puntatori a tale area di memoria.\\
+Il set di tuple risultanti da un'operazione SQL e puntato da un cursore è definito come l' \textit{Active Set}.\\
+Per ogni operazione eseguita, Oracle instanzia un un cursore implicito, ed è inoltre possibile definire dei cursori \textit{custom} che processano le tuple una alla volta, applicando determinate trasformazioni definite dal programmatore.
+I cursori vengono definiti nei blocchi PL/SQL e restringono la \textit{context area} tramite delle classiche \textit{SELECT} in SQL.\\
+I cursori, in ultima analisi, sono uno strumento molto potente per manipolare i risultati delle operazioni SQL, tuttavia oggi risultano piuttosto datati se si considerano le potenzialità dei moderni \gls{framework} e la loro capacità di processare i dati contenuti nei database.
+
+\section{MongoDb}
+
+\section{Spring}
+
+\section{Spring Data}
+
+\section{Spring Data REST}
