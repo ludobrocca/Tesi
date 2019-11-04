@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.26)  4 NOV 2019 22:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.26)  4 NOV 2019 22:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1310,7 +1310,12 @@ File: immagini/spring.png Graphic file (type png)
 <use immagini/spring.png>
 Package pdftex.def Info: immagini/spring.png  used on input line 99.
 (pdftex.def)             Requested size: 148.79773pt x 38.24062pt.
- [23 <./immagini/spring.png>] [24]) (./capitoli/capitolo-A.tex [25] [26
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+[23 <./immagini/spring.png>] [24]) (./capitoli/capitolo-A.tex [25] [26
 
 ]
 Appendice A.
@@ -1326,11 +1331,11 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 146.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 146.
  ) 
 Here is how much of TeX's memory you used:
- 21363 strings out of 492982
- 348531 string characters out of 6134895
+ 21365 strings out of 492982
+ 348551 string characters out of 6134895
  581823 words of memory out of 5000000
  24106 multiletter control sequences out of 15000+600000
- 27352 words of font info for 117 fonts, out of 8000000 for 9000
+ 27471 words of font info for 118 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  61i,6n,122p,1969b,611s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{glo:Inversion\040of\040Control} has been referenc
@@ -1364,7 +1369,7 @@ m1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti
 1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on tesi.pdf (32 pages, 998811 bytes).
+Output written on tesi.pdf (32 pages, 999324 bytes).
 PDF statistics:
  787 PDF objects out of 1000 (max. 8388607)
  712 compressed objects within 8 object streams
