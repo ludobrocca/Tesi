@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.26)  21 OCT 2019 22:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.26)  4 NOV 2019 22:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1247,17 +1247,7 @@ File: immagini/logo_azienda.png Graphic file (type png)
 <use immagini/logo_azienda.png>
 Package pdftex.def Info: immagini/logo_azienda.png  used on input line 27.
 (pdftex.def)             Requested size: 93.0pt x 29.43115pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--39
-
- []
-
-[3 <./immagini/logo_azienda.png>]) (./capitoli/capitolo-2.tex [4]
+) (./capitoli/capitolo-2.tex [3 <./immagini/logo_azienda.png>] [4]
 Capitolo 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 26--27
@@ -1279,7 +1269,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
-<immagini/stage/gantt.jpg, id=114, 256.3176pt x 101.6598pt>
+<immagini/stage/gantt.jpg, id=116, 256.3176pt x 101.6598pt>
 File: immagini/stage/gantt.jpg Graphic file (type jpg)
 <use immagini/stage/gantt.jpg>
 Package pdftex.def Info: immagini/stage/gantt.jpg  used on input line 160.
@@ -1293,29 +1283,42 @@ Capitolo 3.
 
 ]
 Capitolo 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--18
+
+ []
+
 [19]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 52.
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+<immagini/angular.png, id=277, 250.9375pt x 250.9375pt>
+File: immagini/angular.png Graphic file (type png)
+<use immagini/angular.png>
+Package pdftex.def Info: immagini/angular.png  used on input line 22.
+(pdftex.def)             Requested size: 111.60114pt x 111.60365pt.
+ [20 <./immagini/angular.png>]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 47.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [20]
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
+ [21] [22]
+<immagini/spring.png, id=330, 1284.8pt x 330.23375pt>
+File: immagini/spring.png Graphic file (type png)
+<use immagini/spring.png>
+Package pdftex.def Info: immagini/spring.png  used on input line 99.
+(pdftex.def)             Requested size: 148.79773pt x 38.24062pt.
+ [23 <./immagini/spring.png>] [24]) (./capitoli/capitolo-A.tex [25] [26
 
- []
-
-[21] [22] [23]) (./capitoli/capitolo-A.tex [24]
+]
 Appendice A.
-[25
-
-]) [26] (./tesi.gls [27
+[27]) [28] (./tesi.gls [29
 
 
 
-]) (./tesi.acr) [28]
+]) (./tesi.acr) [30]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 146.
  (./tesi.aux)
@@ -1323,33 +1326,48 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 146.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 146.
  ) 
 Here is how much of TeX's memory you used:
- 21200 strings out of 492982
- 344286 string characters out of 6134895
- 581299 words of memory out of 5000000
- 23948 multiletter control sequences out of 15000+600000
- 27648 words of font info for 120 fonts, out of 8000000 for 9000
+ 21363 strings out of 492982
+ 348531 string characters out of 6134895
+ 581823 words of memory out of 5000000
+ 24106 multiletter control sequences out of 15000+600000
+ 27352 words of font info for 117 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  61i,6n,122p,1969b,611s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/
-type1/public/cm-super/sfbi1000.pfb></usr/share/texmf/fonts/type1/public/cm-supe
-r/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr
-/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/t
-ype1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super
-/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/
-share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/ty
-pe1/public/cm-super/sfcc1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-frm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-ti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on tesi.pdf (30 pages, 949173 bytes).
+pdfTeX warning (dest): name{glo:Inversion\040of\040Control} has been referenc
+ed but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:Internet\040delle\040Cose} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:Cloud\040Computing} has been referenced but doe
+s not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:Big\040Data\040Analysis} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:ISO} has been referenced but does not exist, re
+placed by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfbi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+fbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfcc1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+cc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfr
+m1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti
+1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on tesi.pdf (32 pages, 998811 bytes).
 PDF statistics:
- 765 PDF objects out of 1000 (max. 8388607)
- 697 compressed objects within 7 object streams
- 216 named destinations out of 1000 (max. 500000)
- 29240 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 787 PDF objects out of 1000 (max. 8388607)
+ 712 compressed objects within 8 object streams
+ 225 named destinations out of 1000 (max. 500000)
+ 29218 words of extra memory for PDF output out of 29859 (max. 10000000)
 

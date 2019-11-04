@@ -8,71 +8,21 @@
 %**************************************************************
 IL seguente capitolo ha lo scopo di illustrare nel dettaglio le tecnologie e gli strumenti utilizzati nel corso del progetto di stage, insieme alla progettazione delle maschere richieste per il raggiungimento degli obiettivi. 
 
-\section{Ambiente di Sviluppo}
-La sezione seguente illustra gli strumenti facenti parte dell'ambiente di sviluppo e utilizzati nel corso del progetto.
-
-\subsection{Sistema operativo}
-I sistemi operativi adottati per ilcompletamento del progetto sono due:
-\begin{itemize}
-	\item Ubuntu KDE 2019
-	\item Ubuntu 18.04.2 LTS
-\end{itemize}
-
-\subsection{IDE}
-L'adozione di un corretto ambiente di sviluppo integrato (\textit{Integrated development environment}, spesso abbreviato con \textbf{IDE}), è di primaria importanza per il corretto sviluppo di un \textit{software}, la scelta è spesso soggettiva e determinata dai giusti personali del programmatore.
-In questo progetto, viene adottato \textit{Visual Studio Code}, una \textit{IDE} \gls{open-source} sviluppata da Microsoft.\\
-Si tratta di un \textit{software} molto leggero e adattabile alle proprie esigenze tramite l'aggiunta di estensioni; queste due qualità rendono \textit{VsCode} il software ideale per lo sviluppo di un applicativo in \textit{Angular}.
-Alcuni dei principali vantaggi di \textit{VsCode sono}
-\begin{itemize}
-	\item Piena integrazione con \gls{Git};
-	\item Ampia gamma di estensioni;
-	\item Introduzione di \textbf{\textit{IntelliSense}}, software per l'autocompletamento del codice
-	\item Personalizzabile.
-\end{itemize}
-Secondo un sodaggio effettuato da \textit{StckOverflow} nel 2019, \textit{VsCode} risulta l'ambiente di sviluppo integrato più utilizzato dai programmatori, con il 50.7\% di scelta su 87.317 partecipanti.
-
-
-\paragraph{Estensioni}
-\begin{itemize}
-	\item \textbf{Angular Snippets 8:} Permette l'aggiunta di \gls{snippets} per \textit{Angular} e \textit{HTML};
-	\item \textbf{angular2-inline:} Per l'autocompletamento e l'evidenziazione dei \textit{template inline} che possono essere utilizzati nei \textit{component};
-	\item \textbf{Debugger for Chrome:} Questa estensione, sviluppata anch'essa da Microsoft, permette di utilizzare un \gls{Debugger} per JavaScript/TypeScript;
-	\item \textbf{Material Icon Theme:} Permette di visualizzare immediatamente l'estensione di un \textit{file} tramite l'utilizzo di un'icona a fianco del nome;
-	\item \textbf{npm:} Permette l'esecuzione rapida di script tramite \gls{npm};
-	\item \textbf{TSLint:} Fornisce supporto per l'utilizzo di \textit{TSLint} all'interno di \textit{Visual Studio Code} (v. sezione \ref{tslint}) ;
-\end{itemize}
-
-\subsection{Versionamento}
-Lo strumento di versionamento utilizzato è \gls{Git} e il codice viene memorizzato in una \gls{repository} remota presso \textit{GitLab}. La repository è privata, e l'accesso è stato consentito dal tutor aziendale dr Fabio Pallaro.\\
-La necessità di lavorare in gruppo, inoltre, richiede un processo di \gls{continuos integration} rapido ed efficiente: a tal scopo, viene integrata l'estensione \textit{git-flow}  al normale strumento di versionamento. Essa permette la creazione immediata di \gls{branch} di \textit{feature} separate, il successivo \gls{merge} è altresì possibile mediante l'utilizzo di un singolo comando.\\
-La necessità di venire incontro a casistiche particolari che possono incorrere nella gestione della \textit{repository} ha richiesto la scelta di una \textins{IDE} che possa svolgere tale compito. Il \textit{software} adottato per questo progetto è \textit{GitKraken}, un applicativo \textit{open-source} che fornisce  supporto alla gestione di repository \gls{Git}, insieme all'integrazione dell'estensione \textit{git-flow}.
-
-\subsection{Testing}
-Viene adottato \textit{Karma} come \textit{Test runner} all'interno del progetto, come suggerito dalla documentazione di \textit{Angular}
-I test vengono codificati in \textit{file} con estensione \texttt{.spec.ts} (creati automaticamente da Angular CLI al momento dell'inserimento di un component) ed eseguiti tramite il comando \texttt{npm test}; la configurazione di \textit{Karma}, invece, avviene tramite un \textit{file} \texttt{karma.conf.js}.
-
-\subsection{Back-end}
-I microservizi sono installati in una macchina di proprietà di SyncLab, e sono accedibili tramite un URL dalle persone autorizzate.\\
-L'integrazione, quindi, è avvenuta presso l'azienda, in quanto non è possibile accedere al \gls{Back-end} da dispositivi esterni.
-
-\subsection{Analisi statica del codice} \label{tslint}
-Viene utilizzato TSLint come strumento di analisi statica del codice, allo scopo di aumentare la leggibilità, manutenibilità e prevenzione di errori funzionali all'interno del codice, la sua configurazione avviene tramite un \textit{file} \texttt{tslint.json} e gli errori sono immediatamente visibili al momento della scrittura.
-
-\subsection{Strumenti per l'analisi dei requisiti}
-TODO
-
-\subsection{Altri strumenti utilizzati}
-Per effettuare richieste al \gls{Back-end}, viene utilizzato \textit{Postman}, che permette di testare il corretto funzionamento di un microservizio tramite le classiche chiamate \textit{GET, PUT, POST, DELETE}; in questo modo si può verficare prima della scritttura del codice che il comportamento del \gls{Back-end} sia conforme rispetto ai risultati attesi.
-
-\section{Tecnologie}
+\section{Linguaggi e framework}
 La seguente sezione approfondisce le tecnologie adottate(intese come \textit{framework} e linguaggi di programmazione) durante il corso del progetto.
 
 \subsection{TypeScript}\label{typescript}
 \gls{TypeScript} è un linguaggio di programmazione open-source sviluppato e mantenuto da Microsoft, esso si configura come un livello di astrazione aggiuntivo a \gls{JavaScript}, introducendo i classici paradigmi della programmazione ad oggetti, insieme alle funzionalità introdotte da ECMAScript 3 in poi .\\
 Una volta compilato il codice TypeScript, esso produce in \textit{output} codice JavaScript nativo, in questo modo è garantita la compatibilità con tutti browser, \gls{Node.js}, o \textit{engine} JavaScript che supportino ECMAScript 3; in un progetto Angular, tale processo avviene in automatico tramtite esecuzione dei comandi di \gls{Angular CLI}.\\
 L'utilizzo di tale linguaggio si è reso necessario una volta scelto e adottato \textit{Angular} come \textit{framework} di riferimento per lo sviluppo delle maschere di Front-End.\\
-
+\newpage
 \subsection{Angular}
+\begin{figure}[!h] 
+	\centering 
+	\includegraphics[width=0.3\columnwidth]{immagini/angular.png} 
+	\caption{Logo di Agular}
+	\label{figura:angular-1}
+\end{figure}
 Angular è un framework sviluppato da Google utilizzato per lo sviluppo di applicazioni web responsive e compatibili con la gran parte dei dispositivi odierni, esso nasce come evoluzione \textit{AngularJS}, abbandonando l'utilizzo di JavaScript in favore di TypeScript (v. sezione \ref{typescript}), ciò rende le due versioni non compatibili.
 I principali vantaggi offerti da Angular sono:
 \begin{itemize}
@@ -135,3 +85,90 @@ Si tratta di un \textit{toolkit} compatibile con tutti i browser moderni e facen
 \bigbreak
 \noindent
 Per ulteriori informazioni sulle tecnologie apprese nel corso del periodo di stage v. sezione \ref{Appendice-1}
+
+
+\subsection{HTML e CSS}
+L'utilizzo di HTML e CSS si è reso necessario una volta scelto \textit{Agular} come \gls{framework} di riferimento; essi sono linguaggi consolidati che permettono la definizione della struttura delle pagine web (nel caso di Angular essi permettono di definire la struttura dei singoli component).
+
+\subsection{Java}
+Java è il linguaggio di programmazione utilizzato da \gls{Spring}, il \gls{framework} di riferimento per lo sviluppo del \textit{back-end} dell'applicativo \textit{SyncRec}.
+
+\subsection{Spring}
+\begin{figure}[!h] 
+	\centering 
+	\includegraphics[width=0.4\columnwidth]{immagini/spring.png} 
+	\caption{Logo di Spring}
+	\label{figura:spring-1}
+\end{figure}
+\gls{Spring} è un framework scritto in Java utilizzato per lo sviluppo di applicazioni \textit{enterprise}; esso è sudddiviso in moduli che rispondono a vari tipi di esigenze, in modo da poter includere nella propria applicazione solo le funzionalità desiderate.\\
+\gls{Spring} è fortemente basato sul principio \gls{Inversion of Control}, che delega la maggior parte del controllo sul flusso di esecuzione al \textit{framework} stesso, in modo da ridurre il più possibile l'introduzione di errori.
+
+
+\subsubsection{Spring Core}
+Detto anche \textit{core container}, esso rappresenta la parte principale di Spring,e tutto il framework è costruito sopra di esso.
+Insieme al modulo Beans è responsabile della funzionalità di IoC (precedentemente descritta) e  di Dependency Injection, introdotta tramite \textit{getters, setters, factory methods} e costruttori.
+Ciò permette di concretizzare i due principi, delegando al \textit{framework} il compito di iniettare le dipendenze del \textit{container}.
+
+
+
+\subsubsection{Spring Boot}
+Costituisce il modulo necessario per l'esecuzione di applicazioni \textit{Spring}, spesso esso non necessita di particolari configurazioni, e risulta molto facile includere altre librerie di terze parti e moduli \textit{Spring} aggiuntivi.\\
+
+\subsubsection{Spring Data}
+Costituisce il modulo di riferimento per la lettura e scrittura dei dati in applicazioni \textit{Spring}, vi sono varie diramazioni 	a seconda della tecnologia utilizzata (ad esempio JDBC, MongoDB, Apache); uno dei moduli più importanti risulta essere \textit{Spring Data Rest}, che viene approfondito nella sezione seguente
+
+\subsubsection{Spring Data Rest}
+
+\section{Ambiente di Sviluppo}
+La sezione seguente illustra gli strumenti facenti parte dell'ambiente di sviluppo e utilizzati nel corso del progetto.
+
+\subsection{Sistema operativo}
+I sistemi operativi adottati per ilcompletamento del progetto sono due:
+\begin{itemize}
+	\item Ubuntu KDE 2019
+	\item Ubuntu 18.04.2 LTS
+\end{itemize}
+
+\subsection{IDE}
+L'adozione di un corretto ambiente di sviluppo integrato (\textit{Integrated development environment}, spesso abbreviato con \textbf{IDE}), è di primaria importanza per il corretto sviluppo di un \textit{software}, la scelta è spesso soggettiva e determinata dai giusti personali del programmatore.
+In questo progetto, viene adottato \textit{Visual Studio Code}, una \textit{IDE} \gls{open-source} sviluppata da Microsoft.\\
+Si tratta di un \textit{software} molto leggero e adattabile alle proprie esigenze tramite l'aggiunta di estensioni; queste due qualità rendono \textit{VsCode} il software ideale per lo sviluppo di un applicativo in \textit{Angular}.
+Alcuni dei principali vantaggi di \textit{VsCode sono}
+\begin{itemize}
+	\item Piena integrazione con \gls{Git};
+	\item Ampia gamma di estensioni;
+	\item Introduzione di \textbf{\textit{IntelliSense}}, software per l'autocompletamento del codice
+	\item Personalizzabile.
+\end{itemize}
+Secondo un sodaggio effettuato da \textit{StckOverflow} nel 2019, \textit{VsCode} risulta l'ambiente di sviluppo integrato più utilizzato dai programmatori, con il 50.7\% di scelta su 87.317 partecipanti.
+
+
+\paragraph{Estensioni}
+\begin{itemize}
+	\item \textbf{Angular Snippets 8:} Permette l'aggiunta di \gls{snippets} per \textit{Angular} e \textit{HTML};
+	\item \textbf{angular2-inline:} Per l'autocompletamento e l'evidenziazione dei \textit{template inline} che possono essere utilizzati nei \textit{component};
+	\item \textbf{Debugger for Chrome:} Questa estensione, sviluppata anch'essa da Microsoft, permette di utilizzare un \gls{Debugger} per JavaScript/TypeScript;
+	\item \textbf{Material Icon Theme:} Permette di visualizzare immediatamente l'estensione di un \textit{file} tramite l'utilizzo di un'icona a fianco del nome;
+	\item \textbf{npm:} Permette l'esecuzione rapida di script tramite \gls{npm};
+	\item \textbf{TSLint:} Fornisce supporto per l'utilizzo di \textit{TSLint} all'interno di \textit{Visual Studio Code} (v. sezione \ref{tslint}) ;
+\end{itemize}
+
+\subsection{Versionamento}
+Lo strumento di versionamento utilizzato è \gls{Git} e il codice viene memorizzato in una \gls{repository} remota presso \textit{GitLab}. La repository è privata, e l'accesso è stato consentito dal tutor aziendale dr Fabio Pallaro.\\
+La necessità di lavorare in gruppo, inoltre, richiede un processo di \gls{continuos integration} rapido ed efficiente: a tal scopo, viene integrata l'estensione \textit{git-flow}  al normale strumento di versionamento. Essa permette la creazione immediata di \gls{branch} di \textit{feature} separate, il successivo \gls{merge} è altresì possibile mediante l'utilizzo di un singolo comando.\\
+La necessità di venire incontro a casistiche particolari che possono incorrere nella gestione della \textit{repository} ha richiesto la scelta di una \textins{IDE} che possa svolgere tale compito. Il \textit{software} adottato per questo progetto è \textit{GitKraken}, un applicativo \textit{open-source} che fornisce  supporto alla gestione di repository \gls{Git}, insieme all'integrazione dell'estensione \textit{git-flow}.
+
+\subsection{Testing}
+Viene adottato \textit{Karma} come \textit{Test runner} all'interno del progetto, come suggerito dalla documentazione di \textit{Angular}
+I test vengono codificati in \textit{file} con estensione \texttt{.spec.ts} (creati automaticamente da Angular CLI al momento dell'inserimento di un component) ed eseguiti tramite il comando \texttt{npm test}; la configurazione di \textit{Karma}, invece, avviene tramite un \textit{file} \texttt{karma.conf.js}.
+
+\subsection{Back-end}
+I microservizi sono installati in una macchina di proprietà di SyncLab, e sono accedibili tramite un URL dalle persone autorizzate.\\
+L'integrazione, quindi, è avvenuta presso l'azienda, in quanto non è possibile accedere al \gls{Back-end} da dispositivi esterni.
+
+\subsection{Analisi statica del codice} \label{tslint}
+Viene utilizzato TSLint come strumento di analisi statica del codice, allo scopo di aumentare la leggibilità, manutenibilità e prevenzione di errori funzionali all'interno del codice, la sua configurazione avviene tramite un \textit{file} \texttt{tslint.json} e gli errori sono immediatamente visibili al momento della scrittura.
+
+\subsection{Altri strumenti utilizzati}
+Per effettuare richieste al \gls{Back-end}, viene utilizzato \textit{Postman}, che permette di testare il corretto funzionamento di un microservizio tramite le classiche chiamate \textit{GET, PUT, POST, DELETE}; in questo modo si può verficare prima della scritttura del codice che il comportamento del \gls{Back-end} sia conforme rispetto ai risultati attesi.
+
