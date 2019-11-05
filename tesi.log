@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.26)  5 NOV 2019 16:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.26)  5 NOV 2019 16:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1316,22 +1316,40 @@ Package pdftex.def Info: immagini/usecase/UC2.jpg  used on input line 800.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [24] [25 <./immagini/usecase/UC2.jpg>] [26] [27] [28] [29] [30]
-Underfull \hbox (badness 1824) in paragraph at lines 1229--1229
+Underfull \hbox (badness 1824) in paragraph at lines 1238--1238
 []|\T1/cmr/m/n/10 (+20) L'utente de-ve po-ter con-fer-ma-re l'e-li-mi-na-zio-ne
  di un
  []
 
 
-Underfull \hbox (badness 2698) in paragraph at lines 1229--1229
+Underfull \hbox (badness 2698) in paragraph at lines 1238--1238
 []|\T1/cmr/m/n/10 (+20) L'utente de-ve po-ter vi-sua-liz-za-re al-tre con-si-de
 -ra-zio-ni
  []
 
-[31] [32]
-Underfull \vbox (badness 10000) detected at line 1239
+
+Underfull \hbox (badness 2846) in paragraph at lines 1238--1238
+[]|\T1/cmr/m/n/10 (+20) L'utente de-ve po-ter con-fer-ma-re l'ag-giun-ta dei fi
+l-tri
  []
 
-[33]) (./capitoli/capitolo-4.tex [34]
+
+Underfull \hbox (badness 1629) in paragraph at lines 1238--1238
+[]|\T1/cmr/m/n/10 (+20) L'utente de-ve po-ter vi-sua-liz-za-re un even-tua-le e
+r-ro-re
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 1238--1238
+[]|\T1/cmr/m/n/10 (+20) L'utente de-ve po-ter vi-sua-liz-za-re lo skill-ma-trix
+ di un
+ []
+
+[31] [32] [33]
+Underfull \vbox (badness 10000) detected at line 1257
+ []
+
+) (./capitoli/capitolo-4.tex [34]
 Capitolo 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 15--18
@@ -1341,7 +1359,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--18
 [35
 
 ]
-<immagini/angular.png, id=606, 250.9375pt x 250.9375pt>
+<immagini/angular.png, id=609, 250.9375pt x 250.9375pt>
 File: immagini/angular.png Graphic file (type png)
 <use immagini/angular.png>
 Package pdftex.def Info: immagini/angular.png  used on input line 22.
@@ -1357,7 +1375,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [37] [38]
-<immagini/spring.png, id=655, 1284.8pt x 330.23375pt>
+<immagini/spring.png, id=658, 1284.8pt x 330.23375pt>
 File: immagini/spring.png Graphic file (type png)
 <use immagini/spring.png>
 Package pdftex.def Info: immagini/spring.png  used on input line 99.
@@ -1385,7 +1403,7 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 148.
 Here is how much of TeX's memory you used:
  21604 strings out of 492982
  351041 string characters out of 6134895
- 654963 words of memory out of 5000000
+ 663963 words of memory out of 5000000
  24138 multiletter control sequences out of 15000+600000
  27291 words of font info for 117 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
@@ -1421,10 +1439,10 @@ m1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti
 1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on tesi.pdf (50 pages, 1118865 bytes).
+Output written on tesi.pdf (50 pages, 1120416 bytes).
 PDF statistics:
- 1100 PDF objects out of 1200 (max. 8388607)
- 1002 compressed objects within 11 object streams
+ 1102 PDF objects out of 1200 (max. 8388607)
+ 1003 compressed objects within 11 object streams
  423 named destinations out of 1000 (max. 500000)
  29124 words of extra memory for PDF output out of 29859 (max. 10000000)
 

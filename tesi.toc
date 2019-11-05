@@ -90,7 +90,7 @@
 \contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-10.2: Annullamento della modifica skill di un Applicant }}\mathsurround \z@ $\relax }{30}{section*.73}
 \contentsline {section}{\numberline {3.3}Tracciamento dei requisiti}{30}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Requisiti funzionali}{31}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Requisiti di vincolo}{33}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Requisiti di vincolo}{34}{subsection.3.3.2}
 \contentsline {chapter}{\numberline {4}Tecnologie e progettazione}{35}{chapter.4}
 \contentsline {section}{\numberline {4.1}Linguaggi e framework}{35}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}TypeScript}{35}{subsection.4.1.1}
