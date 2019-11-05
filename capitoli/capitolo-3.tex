@@ -338,6 +338,83 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 		\item l'utente si trova nella vista di dettaglio di un applicant.
 	\end{enumerate}
 	
+	\item \textbf{Estensioni:} 
+	\begin{enumerate}
+		\item l'utente visualizza il messaggio di errore per un campo obbligatorio relativo al nome (UC-2.15.1);		
+		\item l'utente visualizza il messaggio di errore relativo all'errato inserimento del nome (UC-2.15.2);
+		\item l'utente visualizza il messaggio di errore per un campo obbligatorio relativo al cognome (UC-2.15.3);
+		\item l'utente visualizza il messaggio di errore relativo all'errato inserimento del cognome (UC-2.15.4);
+		\item l'utente visualizza il messaggio di errore per un campo obbligatorio relativo alla data di nascita (UC-2.15.5);		
+		\item l'utente visualizza il messaggio di errore relativo all'errato inserimento della data di nascita (UC-2.15.6);	
+		\item l'utente visualizza il messaggio di errore per un campo obbligatorio relativo all'email (UC-2.15.1);		
+		\item l'utente visualizza il messaggio di errore relativo all'errato inserimento dell'email (UC-2.15.2);
+	\end{enumerate}
+\end{itemize}
+
+\paragraph{UC-2.15.1: Visualizzazione errore nome obbligatorio}
+\begin{itemize}	
+	\item \textbf{Attori:} Utente riconosciuto
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant e ha tentato di cancellare del tutto il campo del nome di un applicant.
+	\item \textbf{Scenario Principale:}
+	\begin{enumerate}
+		\item Viene visualizzato un errore che previene il salvataggio dei dati inconsistenti
+	\end{enumerate}
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant
+\end{itemize}
+
+\paragraph{UC-2.15.2: Visualizzazione errore nome errato}
+\begin{itemize}	
+	\item \textbf{Attori:} Utente riconosciuto
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant e ha tentato di inserire un nome con caratteri speciali.
+	\item \textbf{Scenario Principale:}
+	\begin{enumerate}
+		\item Viene visualizzato un errore che previene il salvataggio dei dati inconsistenti
+	\end{enumerate}
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant
+\end{itemize}
+
+\paragraph{UC-2.15.3: Visualizzazione errore cognome obbligatorio}
+\begin{itemize}	
+	\item \textbf{Attori:} Utente riconosciuto
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant e ha tentato di cancellare del tutto il campo del cognome di un applicant.
+	\item \textbf{Scenario Principale:}
+	\begin{enumerate}
+		\item Viene visualizzato un errore che previene il salvataggio dei dati inconsistenti
+	\end{enumerate}
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant
+\end{itemize}
+
+\paragraph{UC-2.15.4: Visualizzazione errore cognome errato}
+\begin{itemize}	
+	\item \textbf{Attori:} Utente riconosciuto
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant e ha tentato di inserire un cognome con caratteri speciali.
+	\item \textbf{Scenario Principale:}
+	\begin{enumerate}
+		\item Viene visualizzato un errore che previene il salvataggio dei dati inconsistenti
+	\end{enumerate}
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant
+\end{itemize}
+
+\paragraph{UC-2.15.5: Visualizzazione errore email obbligatoria}
+\begin{itemize}	
+	\item \textbf{Attori:} Utente riconosciuto
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant e ha tentato di cancellare del tutto il campo della email di un applicant.
+	\item \textbf{Scenario Principale:}
+	\begin{enumerate}
+		\item Viene visualizzato un errore che previene il salvataggio dei dati inconsistenti
+	\end{enumerate}
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant
+\end{itemize}
+
+\paragraph{UC-2.15.6: Visualizzazione errore email errata}
+\begin{itemize}	
+	\item \textbf{Attori:} Utente riconosciuto
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant e ha tentato di inserire una email che non rispetta il formato comunemente accettato.
+	\item \textbf{Scenario Principale:}
+	\begin{enumerate}
+		\item Viene visualizzato un errore che previene il salvataggio dei dati inconsistenti
+	\end{enumerate}
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant
 \end{itemize}
 
 
@@ -357,7 +434,6 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 	\end{enumerate}
 	
 \end{itemize}
-
 
 
 \subsection{UC-3 Eliminazione di un\applicant}
