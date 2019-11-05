@@ -40,65 +40,86 @@
 \contentsline {paragraph}{\relax $\@@underline {\hbox {UC-2.15.5: Visualizzazione errore email obbligatoria}}\mathsurround \z@ $\relax }{17}{section*.30}
 \contentsline {paragraph}{\relax $\@@underline {\hbox {UC-2.15.6: Visualizzazione errore email errata}}\mathsurround \z@ $\relax }{17}{section*.31}
 \contentsline {subsubsection}{UC-2.16: Annullamento delle modifiche di un Applicant }{17}{section*.32}
-\contentsline {subsection}{\numberline {3.2.3}UC-3: Eliminazione di un Applicant }{18}{subsection.3.2.3}
-\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-3.1: Conferma eliminazione di un Applicant }}\mathsurround \z@ $\relax }{18}{section*.33}
-\contentsline {subsection}{\numberline {3.2.4}UC-4: Visualizzazione dettaglio di un applicant }{18}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}UC-5: Aggiunta filtro sulla lista degli Applicant }{19}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}UC-6: Ordinamento degli Applicant }{19}{subsection.3.2.6}
-\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-6.1: Ordinamento degli Applicant secondo il nome}}\mathsurround \z@ $\relax }{19}{section*.35}
-\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-6.2: Ordinamento degli Applicant secondo il cognome}}\mathsurround \z@ $\relax }{20}{section*.36}
-\contentsline {subsection}{\numberline {3.2.7}UC-7: Aggiunta dei filtri}{20}{subsection.3.2.7}
-\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC7.1: Aggiunta di un filtro per il nome}}\mathsurround \z@ $\relax }{21}{section*.37}
-\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC7.2: Aggiunta di un filtro per il cognome}}\mathsurround \z@ $\relax }{21}{section*.38}
-\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-7.3: Aggiunta di un filtro per il genere}}\mathsurround \z@ $\relax }{21}{section*.39}
-\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-7.4: Aggiunta di un filtro per il titolo di studio}}\mathsurround \z@ $\relax }{21}{section*.40}
-\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-7.5: Aggiunta di un filtro per l'ambito lavorativo}}\mathsurround \z@ $\relax }{22}{section*.41}
-\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-7.6: Aggiunta di un filtro relativo ad una skill }}\mathsurround \z@ $\relax }{22}{section*.42}
-\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-7.7: Aggiunta di un filtro relativo al livello di una skill}}\mathsurround \z@ $\relax }{22}{section*.43}
-\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-7.8: Aggiunta di un filtro per il genere}}\mathsurround \z@ $\relax }{22}{section*.44}
-\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-7.9: Aggiunta di un filtro per la disponibilit\IeC {\`a} geografica}}\mathsurround \z@ $\relax }{23}{section*.45}
-\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-7.10: Aggiunta di un filtro per l'anzianit\IeC {\`a}}}\mathsurround \z@ $\relax }{23}{section*.46}
-\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-7.11: Conferma dei filtri selezionati}}\mathsurround \z@ $\relax }{23}{section*.47}
-\contentsline {paragraph}{\relax $\@@underline {\hbox {UC-7.11.1: Visualizzazione errore sulla selezione dei filtri}}\mathsurround \z@ $\relax }{23}{section*.48}
-\contentsline {subsection}{\numberline {3.2.8}UC-8: Rimozione dei filtri selezionati}{24}{subsection.3.2.8}
-\contentsline {subsection}{\numberline {3.2.9}UC-9: Visualizzazione skillmatrix di un Applicant }{24}{subsection.3.2.9}
-\contentsline {subsubsection}{UC-9.1: Visualizzazione nome della skill}{24}{section*.49}
-\contentsline {subsubsection}{UC-9.2: Visualizzazione livello della skill}{24}{section*.50}
-\contentsline {subsection}{\numberline {3.2.10}UC-10: Modifica skill di un Applicant }{25}{subsection.3.2.10}
-\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-10.1: Conferma della modifica skill di un Applicant }}\mathsurround \z@ $\relax }{25}{section*.51}
-\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-10.2: Annullamento della modifica skill di un Applicant }}\mathsurround \z@ $\relax }{25}{section*.52}
-\contentsline {section}{\numberline {3.3}Tracciamento dei requisiti}{25}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Requisiti funzionali}{27}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Requisiti di vincolo}{27}{subsection.3.3.2}
-\contentsline {chapter}{\numberline {4}Tecnologie e progettazione}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Linguaggi e framework}{29}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}TypeScript}{29}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Angular}{30}{subsection.4.1.2}
-\contentsline {subsubsection}{Module}{30}{section*.54}
-\contentsline {subsubsection}{Component}{31}{section*.55}
-\contentsline {subsubsection}{Service}{31}{section*.56}
-\contentsline {subsubsection}{Routing}{31}{section*.57}
-\contentsline {subsection}{\numberline {4.1.3}Spring}{32}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Npm}{32}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Bootstrap}{32}{subsection.4.1.5}
-\contentsline {subsection}{\numberline {4.1.6}HTML e CSS}{32}{subsection.4.1.6}
-\contentsline {subsection}{\numberline {4.1.7}Java}{33}{subsection.4.1.7}
-\contentsline {subsection}{\numberline {4.1.8}Spring}{33}{subsection.4.1.8}
-\contentsline {subsection}{\numberline {4.1.9}MongoDb}{33}{subsection.4.1.9}
-\contentsline {subsubsection}{Spring Core}{33}{section*.60}
-\contentsline {subsubsection}{Spring Boot}{33}{section*.61}
-\contentsline {subsubsection}{Spring Data}{33}{section*.62}
-\contentsline {section}{\numberline {4.2}Ambiente di Sviluppo}{34}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Sistema operativo}{34}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}IDE}{34}{subsection.4.2.2}
-\contentsline {paragraph}{Estensioni}{34}{section*.63}
-\contentsline {subsection}{\numberline {4.2.3}Versionamento}{35}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Testing}{35}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Back-end}{35}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Analisi statica del codice}{35}{subsection.4.2.6}
-\contentsline {subsection}{\numberline {4.2.7}Altri strumenti utilizzati}{35}{subsection.4.2.7}
-\contentsline {chapter}{\numberline {A}Altre tecnologie}{37}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Oracle PL/SQL}{37}{section.Alph1.1}
-\contentsline {subsection}{\numberline {A.1.1}Struttura di uno script Oracle PL/SQL}{37}{subsection.Alph1.1.1}
-\contentsline {subsubsection}{Cursori}{38}{section*.64}
-\contentsline {chapter}{Glossary}{39}{section*.65}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-2.17: Modifica delle note generiche di un Applicant }}\mathsurround \z@ $\relax }{18}{section*.33}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-2.18: Modifica delle note relative a un colloquio di un Applicant }}\mathsurround \z@ $\relax }{18}{section*.34}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-2.19: Modifica delle note riguardanti lo status lavorativo di un Applicant }}\mathsurround \z@ $\relax }{18}{section*.35}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-2.20: Modifica delle note riguardanti le considerazioni aggiuntive relative a un Applicant }}\mathsurround \z@ $\relax }{19}{section*.36}
+\contentsline {subsection}{\numberline {3.2.3}UC-3: Eliminazione di un Applicant }{19}{subsection.3.2.3}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-3.1: Conferma eliminazione di un Applicant }}\mathsurround \z@ $\relax }{19}{section*.37}
+\contentsline {subsection}{\numberline {3.2.4}UC-4: Visualizzazione dettaglio di un Applicant }{20}{subsection.3.2.4}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-4.1: Visualizzazione nome di un Applicant }}\mathsurround \z@ $\relax }{20}{section*.38}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-4.2: Visualizzazione cognome di un Applicant }}\mathsurround \z@ $\relax }{21}{section*.39}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-4.3: Visualizzazione genere di un Applicant }}\mathsurround \z@ $\relax }{21}{section*.40}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-4.4: Visualizzazione data di nascita di un Applicant }}\mathsurround \z@ $\relax }{21}{section*.41}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-4.5: Visualizzazione email di un Applicant }}\mathsurround \z@ $\relax }{21}{section*.42}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-4.6: Visualizzazione numero di telefono di un Applicant }}\mathsurround \z@ $\relax }{21}{section*.43}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-4.7: Visualizzazione l'indirizzo di un Applicant }}\mathsurround \z@ $\relax }{22}{section*.44}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-4.8: Visualizzazione citt\IeC {\`a} di residenza di un Applicant }}\mathsurround \z@ $\relax }{22}{section*.45}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-4.9: Visualizzazione preavviso richiesto da un Applicant }}\mathsurround \z@ $\relax }{22}{section*.46}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-4.10: Visualizzazione titolo di studio di un Applicant }}\mathsurround \z@ $\relax }{22}{section*.47}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-4.11: Visualizzazione livello di anzianit\IeC {\`a} di un Applicant }}\mathsurround \z@ $\relax }{22}{section*.48}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-4.12: Visualizzazione ambito lavorativo di un Applicant }}\mathsurround \z@ $\relax }{23}{section*.49}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-4.13: Visualizzazione status (scartato o meno) di un Applicant }}\mathsurround \z@ $\relax }{23}{section*.50}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-4.14: Visualizzazione disponibilit\IeC {\`a} geografica di un Applicant }}\mathsurround \z@ $\relax }{23}{section*.51}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-4.15: Visualizzazione note generiche di un Applicant }}\mathsurround \z@ $\relax }{23}{section*.52}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-4.16: Visualizzazione note relative al colloquio di un Applicant }}\mathsurround \z@ $\relax }{23}{section*.53}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-4.17: Visualizzazione note sullo status lavorativo di un Applicant }}\mathsurround \z@ $\relax }{24}{section*.54}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-4.18: Visualizzazione note aggiuntive relative a un Applicant }}\mathsurround \z@ $\relax }{24}{section*.55}
+\contentsline {subsection}{\numberline {3.2.5}UC-5: Aggiunta filtro sulla lista degli Applicant }{24}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}UC-6: Ordinamento degli Applicant }{24}{subsection.3.2.6}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-6.1: Ordinamento degli Applicant secondo il nome}}\mathsurround \z@ $\relax }{25}{section*.57}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-6.2: Ordinamento degli Applicant secondo il cognome}}\mathsurround \z@ $\relax }{25}{section*.58}
+\contentsline {subsection}{\numberline {3.2.7}UC-7: Aggiunta dei filtri}{26}{subsection.3.2.7}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC7.1: Aggiunta di un filtro per il nome}}\mathsurround \z@ $\relax }{26}{section*.59}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC7.2: Aggiunta di un filtro per il cognome}}\mathsurround \z@ $\relax }{26}{section*.60}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-7.3: Aggiunta di un filtro per il genere}}\mathsurround \z@ $\relax }{26}{section*.61}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-7.4: Aggiunta di un filtro per il titolo di studio}}\mathsurround \z@ $\relax }{27}{section*.62}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-7.5: Aggiunta di un filtro per l'ambito lavorativo}}\mathsurround \z@ $\relax }{27}{section*.63}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-7.6: Aggiunta di un filtro relativo ad una skill }}\mathsurround \z@ $\relax }{27}{section*.64}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-7.7: Aggiunta di un filtro relativo al livello di una skill}}\mathsurround \z@ $\relax }{27}{section*.65}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-7.8: Aggiunta di un filtro per la disponibilit\IeC {\`a} geografica}}\mathsurround \z@ $\relax }{28}{section*.66}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-7.9: Aggiunta di un filtro per l'anzianit\IeC {\`a}}}\mathsurround \z@ $\relax }{28}{section*.67}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-7.10: Conferma dei filtri selezionati}}\mathsurround \z@ $\relax }{28}{section*.68}
+\contentsline {paragraph}{\relax $\@@underline {\hbox {UC-7.10.1: Visualizzazione errore sulla selezione dei filtri}}\mathsurround \z@ $\relax }{28}{section*.69}
+\contentsline {subsection}{\numberline {3.2.8}UC-8: Rimozione dei filtri selezionati}{29}{subsection.3.2.8}
+\contentsline {subsection}{\numberline {3.2.9}UC-9: Visualizzazione skillmatrix di un Applicant }{29}{subsection.3.2.9}
+\contentsline {subsubsection}{UC-9.1: Visualizzazione nome della skill}{29}{section*.70}
+\contentsline {subsubsection}{UC-9.2: Visualizzazione livello della skill}{29}{section*.71}
+\contentsline {subsection}{\numberline {3.2.10}UC-10: Modifica skill di un Applicant }{30}{subsection.3.2.10}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-10.1: Conferma della modifica skill di un Applicant }}\mathsurround \z@ $\relax }{30}{section*.72}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-10.2: Annullamento della modifica skill di un Applicant }}\mathsurround \z@ $\relax }{30}{section*.73}
+\contentsline {section}{\numberline {3.3}Tracciamento dei requisiti}{30}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Requisiti funzionali}{31}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Requisiti di vincolo}{33}{subsection.3.3.2}
+\contentsline {chapter}{\numberline {4}Tecnologie e progettazione}{35}{chapter.4}
+\contentsline {section}{\numberline {4.1}Linguaggi e framework}{35}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}TypeScript}{35}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Angular}{36}{subsection.4.1.2}
+\contentsline {subsubsection}{Module}{36}{section*.75}
+\contentsline {subsubsection}{Component}{37}{section*.76}
+\contentsline {subsubsection}{Service}{37}{section*.77}
+\contentsline {subsubsection}{Routing}{37}{section*.78}
+\contentsline {subsection}{\numberline {4.1.3}Spring}{38}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Npm}{38}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Bootstrap}{38}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}HTML e CSS}{38}{subsection.4.1.6}
+\contentsline {subsection}{\numberline {4.1.7}Java}{39}{subsection.4.1.7}
+\contentsline {subsection}{\numberline {4.1.8}Spring}{39}{subsection.4.1.8}
+\contentsline {subsection}{\numberline {4.1.9}MongoDb}{39}{subsection.4.1.9}
+\contentsline {subsubsection}{Spring Core}{39}{section*.81}
+\contentsline {subsubsection}{Spring Boot}{39}{section*.82}
+\contentsline {subsubsection}{Spring Data}{39}{section*.83}
+\contentsline {section}{\numberline {4.2}Ambiente di Sviluppo}{40}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Sistema operativo}{40}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}IDE}{40}{subsection.4.2.2}
+\contentsline {paragraph}{Estensioni}{40}{section*.84}
+\contentsline {subsection}{\numberline {4.2.3}Versionamento}{41}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Testing}{41}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Back-end}{41}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Analisi statica del codice}{41}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}Altri strumenti utilizzati}{41}{subsection.4.2.7}
+\contentsline {chapter}{\numberline {A}Altre tecnologie}{43}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Oracle PL/SQL}{43}{section.Alph1.1}
+\contentsline {subsection}{\numberline {A.1.1}Struttura di uno script Oracle PL/SQL}{43}{subsection.Alph1.1.1}
+\contentsline {subsubsection}{Cursori}{44}{section*.85}
+\contentsline {chapter}{Glossary}{45}{section*.86}
