@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.26)  5 NOV 2019 14:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.26)  5 NOV 2019 14:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1248,7 +1248,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 
 ]
 Capitolo 1.
-<immagini/logo_azienda.png, id=152, 158.5925pt x 50.1875pt>
+<immagini/logo_azienda.png, id=156, 158.5925pt x 50.1875pt>
 File: immagini/logo_azienda.png Graphic file (type png)
 <use immagini/logo_azienda.png>
 Package pdftex.def Info: immagini/logo_azienda.png  used on input line 27.
@@ -1275,14 +1275,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
-<immagini/stage/gantt.jpg, id=212, 256.3176pt x 101.6598pt>
+<immagini/stage/gantt.jpg, id=216, 256.3176pt x 101.6598pt>
 File: immagini/stage/gantt.jpg Graphic file (type jpg)
 <use immagini/stage/gantt.jpg>
 Package pdftex.def Info: immagini/stage/gantt.jpg  used on input line 160.
 (pdftex.def)             Requested size: 372.0pt x 147.54253pt.
 ) (./capitoli/capitolo-3.tex [8 <./immagini/stage/gantt.jpg>]
 Capitolo 3.
-<immagini/usecase/UC1.jpg, id=218, 646.415pt x 423.5825pt>
+<immagini/usecase/UC1.jpg, id=222, 646.415pt x 423.5825pt>
 File: immagini/usecase/UC1.jpg Graphic file (type jpg)
 <use immagini/usecase/UC1.jpg>
 Package pdftex.def Info: immagini/usecase/UC1.jpg  used on input line 36.
@@ -1294,7 +1294,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ] [10 <./immagini/usecase/UC1.jpg>] [11] [12] [13] [14] [15] [16] [17]
 [18]
-<immagini/usecase/UC2.jpg, id=405, 656.4525pt x 453.695pt>
+<immagini/usecase/UC2.jpg, id=409, 656.4525pt x 453.695pt>
 File: immagini/usecase/UC2.jpg Graphic file (type jpg)
 <use immagini/usecase/UC2.jpg>
 Package pdftex.def Info: immagini/usecase/UC2.jpg  used on input line 527.
@@ -1314,7 +1314,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--18
 [27
 
 ]
-<immagini/angular.png, id=509, 250.9375pt x 250.9375pt>
+<immagini/angular.png, id=513, 250.9375pt x 250.9375pt>
 File: immagini/angular.png Graphic file (type png)
 <use immagini/angular.png>
 Package pdftex.def Info: immagini/angular.png  used on input line 22.
@@ -1330,7 +1330,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [29] [30]
-<immagini/spring.png, id=557, 1284.8pt x 330.23375pt>
+<immagini/spring.png, id=561, 1284.8pt x 330.23375pt>
 File: immagini/spring.png Graphic file (type png)
 <use immagini/spring.png>
 Package pdftex.def Info: immagini/spring.png  used on input line 99.
@@ -1356,13 +1356,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 146.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 146.
  ) 
 Here is how much of TeX's memory you used:
- 21499 strings out of 492982
- 349847 string characters out of 6134895
+ 21503 strings out of 492982
+ 349891 string characters out of 6134895
  582823 words of memory out of 5000000
- 24111 multiletter control sequences out of 15000+600000
+ 24113 multiletter control sequences out of 15000+600000
  27175 words of font info for 115 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 61i,6n,122p,1969b,611s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,8n,122p,1969b,611s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{glo:Inversion\040of\040Control} has been referenc
 ed but does not exist, replaced by a fixed one
 
@@ -1394,10 +1394,10 @@ m1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti
 1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on tesi.pdf (42 pages, 1103283 bytes).
+Output written on tesi.pdf (42 pages, 1104048 bytes).
 PDF statistics:
- 980 PDF objects out of 1000 (max. 8388607)
- 892 compressed objects within 9 object streams
- 353 named destinations out of 1000 (max. 500000)
- 29108 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 992 PDF objects out of 1000 (max. 8388607)
+ 903 compressed objects within 10 object streams
+ 355 named destinations out of 1000 (max. 500000)
+ 29124 words of extra memory for PDF output out of 29859 (max. 10000000)
 

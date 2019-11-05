@@ -68,6 +68,8 @@
 \contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-10.1: Conferma della modifica skill di un Applicant }}\mathsurround \z@ $\relax }{25}{section*.51}
 \contentsline {subsubsection}{\relax $\@@underline {\hbox {UC-10.2: Annullamento della modifica skill di un Applicant }}\mathsurround \z@ $\relax }{25}{section*.52}
 \contentsline {section}{\numberline {3.3}Tracciamento dei requisiti}{25}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Requisiti funzionali}{26}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Requisiti di vincolo}{26}{subsection.3.3.2}
 \contentsline {chapter}{\numberline {4}Tecnologie e progettazione}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}Linguaggi e framework}{27}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}TypeScript}{27}{subsection.4.1.1}
