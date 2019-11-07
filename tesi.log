@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.26)  7 NOV 2019 23:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.26)  7 NOV 2019 23:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1429,39 +1429,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
 ]
 Capitolo 5.
-<immagini/svil/homepage.png, id=764, 1927.2pt x 987.69pt>
+<immagini/svil/homepage.png, id=765, 1927.2pt x 987.69pt>
 File: immagini/svil/homepage.png Graphic file (type png)
 <use immagini/svil/homepage.png>
-Package pdftex.def Info: immagini/svil/homepage.png  used on input line 13.
+Package pdftex.def Info: immagini/svil/homepage.png  used on input line 15.
 (pdftex.def)             Requested size: 372.0pt x 190.6471pt.
-<immagini/svil/lista.png, id=765, 1371.1225pt x 564.1075pt>
+<immagini/svil/lista.png, id=766, 1371.1225pt x 564.1075pt>
 File: immagini/svil/lista.png Graphic file (type png)
 <use immagini/svil/lista.png>
-Package pdftex.def Info: immagini/svil/lista.png  used on input line 21.
+Package pdftex.def Info: immagini/svil/lista.png  used on input line 23.
 (pdftex.def)             Requested size: 372.0pt x 153.0427pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/svil/filtri.png, id=766, 1927.2pt x 921.4425pt>
+<immagini/svil/filtri.png, id=767, 1927.2pt x 921.4425pt>
 File: immagini/svil/filtri.png Graphic file (type png)
 <use immagini/svil/filtri.png>
-Package pdftex.def Info: immagini/svil/filtri.png  used on input line 29.
+Package pdftex.def Info: immagini/svil/filtri.png  used on input line 31.
 (pdftex.def)             Requested size: 372.0pt x 177.85979pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/svil/applicant.png, id=767, 1927.2pt x 994.71625pt>
+<immagini/svil/applicant.png, id=768, 1927.2pt x 994.71625pt>
 File: immagini/svil/applicant.png Graphic file (type png)
 <use immagini/svil/applicant.png>
-Package pdftex.def Info: immagini/svil/applicant.png  used on input line 37.
+Package pdftex.def Info: immagini/svil/applicant.png  used on input line 39.
 (pdftex.def)             Requested size: 372.0pt x 192.00331pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/svil/skillmatrix.png, id=768, 1927.2pt x 987.69pt>
+<immagini/svil/skillmatrix.png, id=769, 1927.2pt x 987.69pt>
 File: immagini/svil/skillmatrix.png Graphic file (type png)
 <use immagini/svil/skillmatrix.png>
-Package pdftex.def Info: immagini/svil/skillmatrix.png  used on input line 46.
+Package pdftex.def Info: immagini/svil/skillmatrix.png  used on input line 48.
 (pdftex.def)             Requested size: 372.0pt x 190.6471pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1522,10 +1522,10 @@ m1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti
 1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on tesi.pdf (58 pages, 1619813 bytes).
+Output written on tesi.pdf (58 pages, 1620071 bytes).
 PDF statistics:
- 1188 PDF objects out of 1200 (max. 8388607)
- 1063 compressed objects within 11 object streams
+ 1189 PDF objects out of 1200 (max. 8388607)
+ 1064 compressed objects within 11 object streams
  442 named destinations out of 1000 (max. 500000)
  29177 words of extra memory for PDF output out of 29859 (max. 10000000)
 
