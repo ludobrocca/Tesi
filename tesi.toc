@@ -119,8 +119,14 @@
 \contentsline {subsection}{\numberline {4.2.6}Analisi statica del codice}{43}{subsection.4.2.6}
 \contentsline {subsection}{\numberline {4.2.7}Altri strumenti utilizzati}{43}{subsection.4.2.7}
 \contentsline {chapter}{\numberline {5}Progettazione e codifica}{45}{chapter.5}
+\contentsline {section}{\numberline {5.1}L'applicativo SyncRec}{45}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Struttura del progetto}{45}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Homepage}{45}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Maschera della visualizzazione degli Applicant }{45}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Maschera delle operazioni CRUD su un Applicant }{45}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Sviluppo}{45}{subsection.5.1.5}
 \contentsline {chapter}{\numberline {A}Altre tecnologie}{49}{appendix.Alph1}
 \contentsline {section}{\numberline {A.1}Oracle PL/SQL}{49}{section.Alph1.1}
 \contentsline {subsection}{\numberline {A.1.1}Struttura di uno script Oracle PL/SQL}{49}{subsection.Alph1.1.1}
-\contentsline {subsubsection}{Cursori}{50}{section*.95}
-\contentsline {chapter}{Glossary}{51}{section*.96}
+\contentsline {subsubsection}{Cursori}{50}{section*.97}
+\contentsline {chapter}{Glossary}{51}{section*.98}
