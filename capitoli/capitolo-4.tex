@@ -3,10 +3,10 @@
 % !TEX root = ../tesi.tex
 
 %**************************************************************
-\chapter{Tecnologie e progettazione}
+\chapter{Tecnologie e framework adottati}
 \label{cap:tecnologie-progettazione}
 %**************************************************************
-IL seguente capitolo ha lo scopo di illustrare nel dettaglio le tecnologie e gli strumenti utilizzati nel corso del progetto di stage, insieme alla progettazione delle maschere richieste per il raggiungimento degli obiettivi. 
+IL seguente capitolo ha lo scopo di illustrare nel dettaglio le tecnologie e gli strumenti utilizzati nel corso del progetto di stage.
 
 \section{Linguaggi e framework}
 La seguente sezione approfondisce le tecnologie adottate(intese come \textit{framework} e linguaggi di programmazione) durante il corso del progetto.
@@ -23,7 +23,7 @@ L'utilizzo di tale linguaggio si è reso necessario una volta scelto e adottato 
 	\caption{Logo di Agular}
 	\label{figura:angular-1}
 \end{figure}
-Angular è un framework sviluppato da Google utilizzato per lo sviluppo di applicazioni web responsive e compatibili con la gran parte dei dispositivi odierni, esso nasce come evoluzione \textit{AngularJS}, abbandonando l'utilizzo di JavaScript in favore di TypeScript (v. sezione \ref{typescript}), ciò rende le due versioni non compatibili.
+Angular è un framework sviluppato da Google utilizzato per lo sviluppo di applicazioni web responsive e compatibili con la gran parte dei dispositivi odierni, esso nasce come evoluzione di \textit{AngularJS}, abbandonando l'utilizzo di JavaScript in favore di TypeScript (v. sezione \ref{typescript}), ciò rende le due versioni non compatibili.
 I principali vantaggi offerti da Angular sono:
 \begin{itemize}
 	\item \textbf{Cross-platform:} Angular permette lo sviluppo di \textit{web application}, \textit{mobile web application}, applicazioni \textit{desktop} e applicazioni \textit{mobile};
@@ -31,8 +31,8 @@ I principali vantaggi offerti da Angular sono:
 	\item \textbf{Compatibilità:} rispetto al suo predecessore, Angular semplifica l'interazione e la compatibilità con librerie esterne JavaScript, come \gls{RxJs} o \gls{immutable.js}.
 \end{itemize}
 
-In un progetto Angular, l'elemento cardine risulta essere il \textit{component}, introdotto dalla seconda versione, esso rappresenta l'elemento base della struttura gerarchica, organizzata in moduli, che permette un'efficiente suddivisione del carico di lavoro tra più programmatori, i quali non hanno necessità di conoscere interamente la logica dell'applicazione per apportare un contributo allo sviluppo.
-Le seguenti sezioni hanno lo scopo di dettagliare accuratamente i principali elementi che fanno parte di un'applicazione sviluppata in Angular.
+In un progetto Angular, l'elemento cardine risulta essere il \textit{component}, introdotto dalla seconda versione, esso rappresenta l'elemento base della struttura gerarchica, organizzata in moduli, che permette un'efficiente suddivisione del carico di lavoro tra più programmatori, i quali non hanno necessità di conoscere interamente la logica dell'applicazione per apportare un contributo allo sviluppo.\\
+Le sucecssives sezioni hanno lo scopo di dettagliare accuratamente i principali elementi che fanno parte di un'applicazione sviluppata in Angular.
 
 
 \subsubsection{Module}
@@ -73,7 +73,7 @@ Normalmente un utente per navigare all'interno di un sito tramite \textit{browse
 Il \textit{Router} di \textit{Angular}, utlizzando questo modello, è in grado di mappare le richieste \textit{URL} a delle \textit{view} generate dal client, con l'ulteriore possibilità di inserimento di parametri opzionali per la visualizzazione di determinati dati.\\
 Nel caso del progetto SyncRec, il \textit{Routing} tramite parametri opzionali si è rivelato indispensabile per la visualizzazione del dettaglio di una persona.
 \paragraph*{Funzionamento e implementazione}
-Il meccanismo di implementazione del \textit{Routing} è molto simile a quello dei moduli: ogni \textit{component} deve essere corredato da un \textit{Routing Module} che definisca il \textit{path} e il corrispettivo \textit{com\subsection{Spring}ponent} collegato, successivamente, ogni \textit{Routing Module} deve essere importato e dichiarato nel corrispettivo modulo di appartenenza, in modo che il \textit{root module} possa essere a conoscenza della mappatura completa degli \gls{URL} con i component associati.
+Il meccanismo di implementazione del \textit{Routing} è molto simile a quello dei moduli: ogni \textit{component} deve essere corredato da un \textit{Routing Module} che definisca il \textit{path} e il corrispettivo \textit{component} collegato, successivamente, ogni \textit{Routing Module} deve essere importato e dichiarato nel corrispettivo modulo di appartenenza, in modo che il \textit{root module} possa essere a conoscenza della mappatura completa degli \gls{URL} con i component associati.
 
 \subsection{Npm}
 \textit{Npm} (Node Package Manager) si configura come il gestore di pacchetti predefinito per l'ambiente \textit{runtime} di \textit{JavaScript} \gls{NodeJs}; il suo utlizzo si è rivelato necessario per l'inclusione di alcune dipendenze necessarie per il completamento del progetto (\gls{angular CLI} primo fra tutti).\\
@@ -81,11 +81,7 @@ I pacchetti sono memorizzati in un database remoto chiamato \textit{npm registry
 
 \subsection{Bootstrap}
 \textit{Bootstrap} è una raccolta di strumenti \gls{open-source} per lo sviluppo di siti e applicazioni web. Essa contiene moduli basati su \textit{HTML} e \textit{CSS} per la creazione dei componenti facenti parte di un'interfaccia (moduli, pulsanti e navigazione), insieme all'integrazione con alcune componenti opzionali di \textit{JavaScript}.\\
-Si tratta di un \textit{toolkit} compatibile con tutti i browser moderni e facente ampio uso del \textit{responsive web design}, è stato integrato nel progetto allo scopo di applicare rapidamente uno stile comune agli elementi facenti parte dell'applicazione.
-\bigbreak
-\noindent
-Per ulteriori informazioni sulle tecnologie apprese nel corso del periodo di stage v. sezione \ref{Appendice-1}
-
+Si tratta di un \textit{toolkit} compatibile con tutti i browser moderni e facente ampio uso del \textit{responsive web design}, è stato integrato nel progetto allo scopo di applicare rapidamente uno stile comune agli elementi facenti parte dell'applicazione.S
 
 \subsection{HTML e CSS}
 L'utilizzo di HTML e CSS si è reso necessario una volta scelto \textit{Agular} come \gls{framework} di riferimento; essi sono linguaggi consolidati che permettono la definizione della struttura delle pagine web (nel caso di Angular essi permettono di definire la struttura dei singoli component).
@@ -103,6 +99,17 @@ Java è il linguaggio di programmazione utilizzato da \gls{Spring}, il \gls{fram
 \gls{Spring} è un framework scritto in Java utilizzato per lo sviluppo di applicazioni \textit{enterprise}; esso è sudddiviso in moduli che rispondono a vari tipi di esigenze, in modo da poter includere nella propria applicazione solo le funzionalità desiderate.\\
 \gls{Spring} è fortemente basato sul principio \gls{Inversion of Control}, che delega la maggior parte del controllo sul flusso di esecuzione al \textit{framework} stesso, in modo da ridurre il più possibile l'introduzione di errori.
 
+\subsubsection{Spring Core}
+Detto anche \textit{core container}, esso rappresenta la parte principale di Spring, e tutto il framework è costruito sopra di esso.
+Insieme al modulo Beans è responsabile della funzionalità di IoC (precedentemente descritta) e  di Dependency Injection, introdotta tramite \textit{getters, setters, factory methods} e costruttori.
+Ciò permette di concretizzare i due principi, delegando al \textit{framework} il compito di iniettare le dipendenze del \textit{container}.
+
+\subsubsection{Spring Boot}
+Costituisce il modulo necessario per l'esecuzione di applicazioni \textit{Spring}, spesso esso non necessita di particolari configurazioni, e risulta molto facile includere altre librerie di terze parti e moduli \textit{Spring} aggiuntivi.\\
+
+\subsubsection{Spring Data}
+Costituisce il modulo di riferimento per la lettura e scrittura dei dati in applicazioni \textit{Spring}, vi sono varie diramazioni 	a seconda della tecnologia utilizzata (ad esempio JDBC, MongoDB, Apache); uno dei moduli più importanti approfonditi durante il periodo di stage risulta essere \textit{Spring Data Rest}, che permette la creazione di un'applicazione a microservizi molto facilmente, tramite le tipiche \textit{annotations} di \textit{Spring} (definite tramite l'operatore \@).
+
 
 \subsection{MongoDb}
 \textit{MongoDB} è un \gls{DBMS} non relazionale orientato ai documenti scritti in \textit{JSON}.\\
@@ -110,18 +117,9 @@ Si tratta di un software estremamente diffuso e fortemente scalabile, cosa che h
 Come affermato in precedenza, esso è stato utilizzato come DBMS di riferimento all'interno del progetto di stage \textit{SyncRec}, con risultati estremamente positivi.
 
 
-\subsubsection{Spring Core}
-Detto anche \textit{core container}, esso rappresenta la parte principale di Spring,e tutto il framework è costruito sopra di esso.
-Insieme al modulo Beans è responsabile della funzionalità di IoC (precedentemente descritta) e  di Dependency Injection, introdotta tramite \textit{getters, setters, factory methods} e costruttori.
-Ciò permette di concretizzare i due principi, delegando al \textit{framework} il compito di iniettare le dipendenze del \textit{container}.
-
-
-
-\subsubsection{Spring Boot}
-Costituisce il modulo necessario per l'esecuzione di applicazioni \textit{Spring}, spesso esso non necessita di particolari configurazioni, e risulta molto facile includere altre librerie di terze parti e moduli \textit{Spring} aggiuntivi.\\
-
-\subsubsection{Spring Data}
-Costituisce il modulo di riferimento per la lettura e scrittura dei dati in applicazioni \textit{Spring}, vi sono varie diramazioni 	a seconda della tecnologia utilizzata (ad esempio JDBC, MongoDB, Apache); uno dei moduli più importanti approfonditi durante il periodo di stage risulta essere \textit{Spring Data Rest}, che permette la creazione di un'applicazione a microservizi molto facilmente, tramite le tipiche \textit{annotations} di \textit{Spring} (definite tramite l'operatore \@).
+\bigbreak
+\noindent
+Per ulteriori informazioni sulle tecnologie apprese nel corso del periodo di stage v. sezione \ref{Appendice-1}
 
 \section{Ambiente di Sviluppo}
 La sezione seguente illustra gli strumenti facenti parte dell'ambiente di sviluppo e utilizzati nel corso del progetto.
@@ -160,11 +158,11 @@ Secondo un sodaggio effettuato da \textit{StckOverflow} nel 2019, \textit{VsCode
 \subsection{Versionamento}
 Lo strumento di versionamento utilizzato è \gls{Git} e il codice viene memorizzato in una \gls{repository} remota presso \textit{GitLab}. La repository è privata, e l'accesso è stato consentito dal tutor aziendale dr Fabio Pallaro.\\
 La necessità di lavorare in gruppo, inoltre, richiede un processo di \gls{continuos integration} rapido ed efficiente: a tal scopo, viene integrata l'estensione \textit{git-flow}  al normale strumento di versionamento. Essa permette la creazione immediata di \gls{branch} di \textit{feature} separate, il successivo \gls{merge} è altresì possibile mediante l'utilizzo di un singolo comando.\\
-La necessità di venire incontro a casistiche particolari che possono incorrere nella gestione della \textit{repository} ha richiesto la scelta di una \textins{IDE} che possa svolgere tale compito. Il \textit{software} adottato per questo progetto è \textit{GitKraken}, un applicativo \textit{open-source} che fornisce  supporto alla gestione di repository \gls{Git}, insieme all'integrazione dell'estensione \textit{git-flow}.
+La necessità di venire incontro a casistiche particolari che possono incorrere nella gestione della \textit{repository} ha richiesto la scelta di una \textit{IDE} che possa svolgere tale compito. Il \textit{software} adottato per questo progetto è \textit{GitKraken}, un applicativo \textit{open-source} che fornisce  supporto alla gestione di repository \gls{Git}, insieme all'integrazione dell'estensione \textit{git-flow}.
 
-\subsection{Testing}
-Viene adottato \textit{Karma} come \textit{Test runner} all'interno del progetto, come suggerito dalla documentazione di \textit{Angular}
-I test vengono codificati in \textit{file} con estensione \texttt{.spec.ts} (creati automaticamente da Angular CLI al momento dell'inserimento di un component) ed eseguiti tramite il comando \texttt{npm test}; la configurazione di \textit{Karma}, invece, avviene tramite un \textit{file} \texttt{karma.conf.js}.
+%\subsection{Testing}
+%Viene adottato \textit{Karma} come \textit{Test runner} all'interno del %progetto, come suggerito dalla documentazione di \textit{Angular}
+%I test vengono codificati in \textit{file} con estensione %\texttt{.spec.ts} (creati automaticamente da Angular CLI al momento %dell'inserimento di un component) ed eseguiti tramite il comando %\texttt{npm test}; la configurazione di \textit{Karma}, invece, avviene %tramite un \textit{file} \texttt{karma.conf.js}.
 
 \subsection{Back-end}
 I microservizi sono installati in una macchina di proprietà di SyncLab, e sono accedibili tramite un URL dalle persone autorizzate.\\

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.26)  11 NOV 2019 23:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.26)  18 NOV 2019 23:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1276,16 +1276,16 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 ] (./inizio-fine/sommario.tex)
 (./capitoli/capitolo-1.tex [1
 
-] [2
-
-]
+] [2]
 Capitolo 1.
-<immagini/logo_azienda.png, id=215, 158.5925pt x 50.1875pt>
+<immagini/logo_azienda.png, id=211, 158.5925pt x 50.1875pt>
 File: immagini/logo_azienda.png Graphic file (type png)
 <use immagini/logo_azienda.png>
 Package pdftex.def Info: immagini/logo_azienda.png  used on input line 27.
 (pdftex.def)             Requested size: 93.0pt x 29.43115pt.
-) (./capitoli/capitolo-2.tex [3 <./immagini/logo_azienda.png>] [4]
+) (./capitoli/capitolo-2.tex [3
+
+ <./immagini/logo_azienda.png>] [4]
 Capitolo 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 26--27
@@ -1307,14 +1307,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
-<immagini/stage/gantt.jpg, id=273, 256.3176pt x 101.6598pt>
+<immagini/stage/gantt.jpg, id=269, 256.3176pt x 101.6598pt>
 File: immagini/stage/gantt.jpg Graphic file (type jpg)
 <use immagini/stage/gantt.jpg>
 Package pdftex.def Info: immagini/stage/gantt.jpg  used on input line 160.
 (pdftex.def)             Requested size: 372.0pt x 147.54253pt.
 ) (./capitoli/capitolo-3.tex [8 <./immagini/stage/gantt.jpg>]
 Capitolo 3.
-<immagini/usecase/UC1.jpg, id=278, 646.415pt x 423.5825pt>
+<immagini/usecase/UC1.jpg, id=274, 646.415pt x 423.5825pt>
 File: immagini/usecase/UC1.jpg Graphic file (type jpg)
 <use immagini/usecase/UC1.jpg>
 Package pdftex.def Info: immagini/usecase/UC1.jpg  used on input line 36.
@@ -1325,14 +1325,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [9
 
 ] [10 <./immagini/usecase/UC1.jpg>]
-<immagini/usecase/UC3.png, id=297, 546.04pt x 343.2825pt>
+<immagini/usecase/UC3.png, id=293, 546.04pt x 343.2825pt>
 File: immagini/usecase/UC3.png Graphic file (type png)
 <use immagini/usecase/UC3.png>
 Package pdftex.def Info: immagini/usecase/UC3.png  used on input line 90.
 (pdftex.def)             Requested size: 372.0pt x 233.86899pt.
  [11 <./immagini/usecase/UC3.png>]
 [12] [13] [14] [15]
-<immagini/usecase/UC5.png, id=404, 556.0775pt x 353.32pt>
+<immagini/usecase/UC5.png, id=400, 556.0775pt x 353.32pt>
 File: immagini/usecase/UC5.png Graphic file (type png)
 <use immagini/usecase/UC5.png>
 Package pdftex.def Info: immagini/usecase/UC5.png  used on input line 380.
@@ -1347,12 +1347,12 @@ Overfull \hbox (24.64203pt too wide) in paragraph at lines 507--507
  []
 
 
-Overfull \hbox (104.04486pt too wide) in paragraph at lines 525--525
-[][]$[]$ 
+Overfull \hbox (17.42712pt too wide) in paragraph at lines 525--525
+[][]$[]$
  []
 
 [19] [20]
-<immagini/usecase/UC4.png, id=489, 546.04pt x 343.2825pt>
+<immagini/usecase/UC4.png, id=485, 546.04pt x 343.2825pt>
 File: immagini/usecase/UC4.png Graphic file (type png)
 <use immagini/usecase/UC4.png>
 Package pdftex.def Info: immagini/usecase/UC4.png  used on input line 603.
@@ -1362,7 +1362,7 @@ Package pdftex.def Info: immagini/usecase/UC4.png  used on input line 603.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [21] [22 <./immagini/usecase/UC4.png>] [23] [24]
-<immagini/usecase/UC6.png, id=552, 455.7025pt x 443.6575pt>
+<immagini/usecase/UC6.png, id=548, 455.7025pt x 443.6575pt>
 File: immagini/usecase/UC6.png Graphic file (type png)
 <use immagini/usecase/UC6.png>
 Package pdftex.def Info: immagini/usecase/UC6.png  used on input line 811.
@@ -1372,7 +1372,7 @@ Package pdftex.def Info: immagini/usecase/UC6.png  used on input line 811.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [25]
-<immagini/usecase/UC2.jpg, id=568, 656.4525pt x 453.695pt>
+<immagini/usecase/UC2.jpg, id=564, 656.4525pt x 453.695pt>
 File: immagini/usecase/UC2.jpg Graphic file (type jpg)
 <use immagini/usecase/UC2.jpg>
 Package pdftex.def Info: immagini/usecase/UC2.jpg  used on input line 831.
@@ -1420,7 +1420,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--18
 [37
 
 ]
-<immagini/angular.png, id=680, 250.9375pt x 250.9375pt>
+<immagini/angular.png, id=676, 250.9375pt x 250.9375pt>
 File: immagini/angular.png Graphic file (type png)
 <use immagini/angular.png>
 Package pdftex.def Info: immagini/angular.png  used on input line 22.
@@ -1435,14 +1435,14 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [39] [40]
-<immagini/spring.png, id=727, 1284.8pt x 330.23375pt>
+ [39]
+<immagini/spring.png, id=712, 1284.8pt x 330.23375pt>
 File: immagini/spring.png Graphic file (type png)
 <use immagini/spring.png>
-Package pdftex.def Info: immagini/spring.png  used on input line 99.
+Package pdftex.def Info: immagini/spring.png  used on input line 95.
 (pdftex.def)             Requested size: 148.79773pt x 38.24062pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+ [40]
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
@@ -1450,7 +1450,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
 ]
 Capitolo 5.
-<immagini/usecase/UML1.png, id=781, 894.34125pt x 749.80125pt>
+<immagini/usecase/UML1.png, id=777, 894.34125pt x 749.80125pt>
 File: immagini/usecase/UML1.png Graphic file (type png)
 <use immagini/usecase/UML1.png>
 Package pdftex.def Info: immagini/usecase/UML1.png  used on input line 19.
@@ -1458,82 +1458,106 @@ Package pdftex.def Info: immagini/usecase/UML1.png  used on input line 19.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/usecase/UML2.png, id=784, 1054.94125pt x 549.05125pt>
+[45]
+<immagini/usecase/UML2.png, id=786, 1054.94125pt x 549.05125pt>
 File: immagini/usecase/UML2.png Graphic file (type png)
 <use immagini/usecase/UML2.png>
-Package pdftex.def Info: immagini/usecase/UML2.png  used on input line 30.
+Package pdftex.def Info: immagini/usecase/UML2.png  used on input line 37.
 (pdftex.def)             Requested size: 372.0pt x 193.60342pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/svil/homepage.png, id=785, 1927.2pt x 987.69pt>
+<immagini/svil/homepage.png, id=788, 1927.2pt x 987.69pt>
 File: immagini/svil/homepage.png Graphic file (type png)
 <use immagini/svil/homepage.png>
-Package pdftex.def Info: immagini/svil/homepage.png  used on input line 39.
+Package pdftex.def Info: immagini/svil/homepage.png  used on input line 54.
 (pdftex.def)             Requested size: 372.0pt x 190.6471pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/svil/lista.png, id=786, 1371.1225pt x 564.1075pt>
+[46 <./immagini/usecase/UML1.png>]
+<immagini/svil/lista.png, id=798, 1371.1225pt x 564.1075pt>
 File: immagini/svil/lista.png Graphic file (type png)
 <use immagini/svil/lista.png>
-Package pdftex.def Info: immagini/svil/lista.png  used on input line 49.
+Package pdftex.def Info: immagini/svil/lista.png  used on input line 67.
 (pdftex.def)             Requested size: 372.0pt x 153.0427pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/svil/filtri.png, id=787, 1927.2pt x 921.4425pt>
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 72.
+[47 <./immagini/usecase/UML2.png> <./immagini/svil/homepage.png>] [48 <./immagi
+ni/svil/lista.png>] [49]
+<immagini/svil/filtri.png, id=871, 1927.2pt x 921.4425pt>
 File: immagini/svil/filtri.png Graphic file (type png)
 <use immagini/svil/filtri.png>
-Package pdftex.def Info: immagini/svil/filtri.png  used on input line 58.
+Package pdftex.def Info: immagini/svil/filtri.png  used on input line 159.
 (pdftex.def)             Requested size: 372.0pt x 177.85979pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<immagini/svil/applicant.png, id=788, 1927.2pt x 994.71625pt>
+<immagini/svil/applicant.png, id=872, 1927.2pt x 994.71625pt>
 File: immagini/svil/applicant.png Graphic file (type png)
 <use immagini/svil/applicant.png>
-Package pdftex.def Info: immagini/svil/applicant.png  used on input line 67.
+Package pdftex.def Info: immagini/svil/applicant.png  used on input line 168.
 (pdftex.def)             Requested size: 372.0pt x 192.00331pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/svil/skillmatrix.png, id=789, 1927.2pt x 987.69pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+ []
+
+[50 <./immagini/svil/filtri.png>]
+<immagini/svil/skillmatrix.png, id=898, 1927.2pt x 987.69pt>
 File: immagini/svil/skillmatrix.png Graphic file (type png)
 <use immagini/svil/skillmatrix.png>
-Package pdftex.def Info: immagini/svil/skillmatrix.png  used on input line 75.
+Package pdftex.def Info: immagini/svil/skillmatrix.png  used on input line 198.
+
 (pdftex.def)             Requested size: 372.0pt x 190.6471pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./capitoli/capitolo-A.tex [45] [46 <./immagini/usecase/UML1.png> <./immagini
-/usecase/UML2.png>] [47 <./immagini/svil/homepage.png> <./immagini/svil/lista.p
-ng> <./immagini/svil/filtri.png>] [48 <./immagini/svil/applicant.png> <./immagi
+) (./capitoli/capitolo-A.tex [51 <./immagini/svil/applicant.png>] [52 <./immagi
 ni/svil/skillmatrix.png>]
 Appendice A.
-[49
+[53
 
-]) [50] (./tesi.gls [51
+] [54]) [55] [56
+
+] (./tesi.gls [57
 
 
-
-]) (./tesi.acr) [52]
+]) (./tesi.acr) [58]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
- (./tesi.aux)
+ (./tesi.aux
+
+Package mparhack Warning: Marginpars may have changed.
+(mparhack)                Rerun to get them right.
+
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 153.
  ) 
 Here is how much of TeX's memory you used:
- 21760 strings out of 492982
- 353904 string characters out of 6134895
- 664865 words of memory out of 5000000
- 24241 multiletter control sequences out of 15000+600000
- 27471 words of font info for 118 fonts, out of 8000000 for 9000
+ 23462 strings out of 492982
+ 376343 string characters out of 6134895
+ 665392 words of memory out of 5000000
+ 25839 multiletter control sequences out of 15000+600000
+ 28495 words of font info for 126 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 61i,8n,122p,1969b,652s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{glo:Inversion\040of\040Control} has been referenc
-ed but does not exist, replaced by a fixed one
+ 61i,8n,122p,1969b,2289s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{glo:Observer\040Pattern} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:ng-Model} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:Inversion\040of\040Control} has been referenced
+ but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:Internet\040delle\040Cose} has been referenced 
 but does not exist, replaced by a fixed one
@@ -1548,25 +1572,27 @@ pdfTeX warning (dest): name{glo:ISO} has been referenced but does not exist, re
 placed by a fixed one
 
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/ty
-pe1/public/cm-super/sfbi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-fbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sfcc1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-cc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/sha
-re/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfr
-m1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/shar
-e/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1/
-public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti
-1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on tesi.pdf (58 pages, 1687563 bytes).
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sfbi1000.pfb></usr/share/texmf/fonts/type1/public/cm-supe
+r/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/t
+ype1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super
+/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfcc1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+frm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+ti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on tesi.pdf (64 pages, 1747994 bytes).
 PDF statistics:
- 1231 PDF objects out of 1440 (max. 8388607)
- 1101 compressed objects within 12 object streams
- 450 named destinations out of 1000 (max. 500000)
- 29235 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1370 PDF objects out of 1440 (max. 8388607)
+ 1231 compressed objects within 13 object streams
+ 539 named destinations out of 1000 (max. 500000)
+ 29731 words of extra memory for PDF output out of 29859 (max. 10000000)
 

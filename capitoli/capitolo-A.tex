@@ -41,3 +41,20 @@ Il set di tuple risultanti da un'operazione SQL e puntato da un cursore è defin
 Per ogni operazione eseguita, Oracle instanzia un un cursore implicito, ed è inoltre possibile definire dei cursori \textit{custom} che processano le tuple una alla volta, applicando determinate trasformazioni definite dal programmatore.
 I cursori vengono definiti nei blocchi PL/SQL e restringono la \textit{context area} tramite delle classiche \textit{SELECT} in SQL.\\
 I cursori, in ultima analisi, sono uno strumento molto potente per manipolare i risultati delle operazioni SQL, tuttavia oggi risultano piuttosto datati se si considerano le potenzialità dei moderni \gls{framework} e la loro capacità di processare i dati contenuti nei database.
+
+\section{Archittetture a microservizi}
+Un’architettura basata su microservizi viene aplicata nella realizzazione di un’applicazione, essa è costituita da componenti indipendenti che eseguono ciascun processo applicativo come un \textbf{servizio}.\\
+Tali servizi comunicano attraverso un’interfaccia ben definita che utilizza API leggere. Ciò risulta vantaggioso poiché ciascun componente viene eseguito in modo indipendente, e ciascun servizio può essere aggiornato, distribuito e ridimensionato per rispondere alla richiesta di funzioni specifiche di un’applicazione.\\
+Ciascun servizio è progettato per una serie di capacità e si concentra sulla risoluzione di un problema specifico. Se, nel tempo, gli sviluppatori aggiungono del codice aggiuntivo a un servizio rendendolo più complesso, il servizio può essere scomposto in servizi più piccoli.
+
+Tra le principali qualità di un'architettura a microservizi troviamo:
+
+\begin{itemize}
+	\item \textbf{Agilità:}I microservizi promuovono le organizzazioni di team indipendenti di dimensioni ridotte che diventano proprietari del servizio che gestiscono. Ciò comporta tempi di sviluppo minori in contesti ridotti e ben delineati.
+	\item \textbf{Scalabilità e flessibilità}I microservizi consentono di scalare ciascun servizio in modo indipendente per rispondere alla richiesta delle funzionalità che l'applicazione supporta. Ciò permette ai team di adattare in modo corretto l’infrastruttura rispetto alle necessità, con la possibilità di monitorare accuratamente i servizi nel caso in cui essi rilevino un aumento del flusso di transazioni.
+	\item \textbf{Semplicità di distribuzione}I microservizi supportano l’integrazione continua e la distribuzione continua; l'apporto di modifiche errate non inficia sul corretto funzionamento generale dell'applicazione e gli errori influiscono di meno sul costo delle operazioni. 
+	\item \textbf{Libertà tecnologica} L'utilizzo di un'architettura a microservizi non è legata a un particolare \textit{stack} tecnologico: i team di sviluppo hanno piena libertà nella scelta e adozione delle tecnologie da utilizzare nel corso dello sviluppo di un progetto.
+	\item \textbf{Codice riutilizzabile} La suddivisione in moduli ben delineati ha il grande vantaggio di rendere il codice riutilizzabile; è possibile quindi utilizzare moduli e servizi pienamente funzionanti per lo sviluppo di componenti aggiuntivi.
+	\item \textbf{Resilienza} A differenza di quanto accade in un'architettura monolitica, un errore non è in grado in alcun modo di pregiudicare il corretto funzionamento di un'applicazione; ciò è dovuto alla natura indipendente dei servizi per come sono concepitis.
+	
+\end{itemize}

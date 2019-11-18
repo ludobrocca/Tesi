@@ -11,8 +11,8 @@ La seguente sezione ha lo scopo di illustrare la soluzione ideata dal laureando 
 
 
 \section{L'applicativo SyncRec}
-\subsection{Struttura del progetto}
-Come già accennato in precedenza, \textit{Angular} suggerisce di applicare una forte struttura modulare alle proprie \textit{web-application}, tale approccio è stato nella gran parte perseguito, con alcune eccezioni per determinati elementi condivisi fra più \textit{component}.
+\subsection{Struttura e sviluppo del progetto}
+Come già accennato in precedenza, \textit{Angular} suggerisce di applicare una forte struttura modulare alle proprie \textit{web-application}, tale approccio è stato nella gran parte perseguito, con alcune eccezioni per determinati elementi condivisi fra più \textit{component}; un'applicazione di tale struttura, inoltre, permette lo sviluppo delle proprie componenti senza dover necessariamente conoscere l'intera architettura nel dettaglio.
 
 \begin{figure}[!h] 
 	\centering 
@@ -22,8 +22,15 @@ Come già accennato in precedenza, \textit{Angular} suggerisce di applicare una 
 \end{figure}
 
 La figura \ref{figura:UML1} illustra la struttura dei component sviluppati per l'applicativo SyncRec, a scopo di sintesi sono state omesse alcune parti proprie del \textit{framework} di riferimento (come i moduli e gli \textit{asset}) o sviluppate da altri studenti nel corso del progetto.\\
-I moduli \textit{applicant-list}, \textit{applicant-detail} e \textit{viewskillmatrix} rappresentano i componenti grafici dell'applicazione, il modulo \textit{shared} rappresenta l'insieme di \textit{component} condivisi nel \textit{namespace} globale e il modulo \textit{core} contiene i \textit{service}, i quali hanno il duplice scopo di recuperare i dati dal \textit{Back-end} e di fornire alcuni metodi di utilità necessari a svolgere determinate operazioni (come l'ordinamento o l'emissione di eventi verso \textit{components} padri).\\
-La figura \ref{figura:UML2} illustra come il modulo \textit{service} si occupa di dialogare con il \textit{Back-end}scritto in \textit{Spring}.
+I moduli \textit{applicant-list}, \textit{applicant-detail} e \textit{viewskillmatrix} rappresentano i componenti grafici dell'applicazione, il modulo \textit{shared} rappresenta l'insieme di \textit{component} condivisi nel \textit{namespace} globale e il modulo \textit{core} contiene i \textit{service}; quest'ultimi hanno il duplice scopo di recuperare i dati dal \textit{Back-end} e di fornire alcuni metodi di utilità necessari a svolgere determinate operazioni (come l'ordinamento o l'emissione di eventi verso \textit{components} padri).\\
+La figura \ref{figura:UML2} illustra come il modulo \textit{service} si occupa di dialogare con il \textit{Back-end} scritto in \textit{Spring}.\\
+In ambito di progettazione, dialogando con gli altri laureandi che hanno preso parte alla realizzazion di SyncRec, sono definite alcune linee guida da perseguire nel corso della codifica.\\
+Tali linee guida sono:
+\begin{itemize}
+	\item Utilizzare il più possibile le direttive \textit{Angular} (come \gls{ng-Model}) all'interno del \textit{HTML} dei \textit{component}.
+	\item Definire per ciascun \textit{component} il relativo modulo di referimento, tale prassi è fortemente consigliata dalla documentazione di \textit{Angular}.
+	\item Per quanto riguarda il \textit{CSS}, favorire l'utilizzo della versione 3.0 piuttosto che della libreria esterna \textit{bootstrap}.
+\end{itemize}
 
 \begin{figure}[!h] 
 	\centering 
@@ -33,6 +40,14 @@ La figura \ref{figura:UML2} illustra come il modulo \textit{service} si occupa d
 \end{figure}
 
 \subsection{Homepage}
+La homepage dell'applicativo (v. figura \ref{figura:homepage}) si presenta come un semplice \textit{menù} con 4 voci.
+\begin{itemize}
+	\item \textbf{Aggiungi persone} reindirizza verso il \textit{component} adibito all'aggiunta degli \textit{applicant};
+	\item \textbf{Visualizza persone} reindirizza verso il \textit{component} adibito alla visualizzazione della lista degli \textit{applicant}, sviluppato dal laureando nel corso del progetto di stage;
+	\item \textbf{Ricerca Persone} reindirizza verso il component adibito alla ricerca delle persone;
+	\item \textbf{Gestione della configurazione} reindirizza verso il component adibito alla gestione della configurazione dell'applicativo.
+\end{itemize}
+In aggiunta, è possibile effettuare il \textit{logout} con un pulsante posto in alto, vicino al logo.
 \vspace{0.5em}
 \begin{figure}[!h] 
 	\centering 
@@ -41,7 +56,10 @@ La figura \ref{figura:UML2} illustra come il modulo \textit{service} si occupa d
 	\label{figura:homepage}
 \end{figure}
 
-\subsection{Maschera della visualizzazione degli\applicant}
+\subsection{Maschera della visualizzazione degli\applicant} \label{section: applicant-list}
+La fugura \ref{figura:lista}, mostra il \textit{component} sviluppato per la visualizzazione degli \textit{applicant}, per ciascun \textit{applicant} viene visualizzato il Cognome, Nome e l'email, insieme a un tasto per l'eliminazione e uno per la visualizzazione del dettaglio della persona, il quale reindirizza verso la maschera descritta nella sezione \ref{CRUD}.\\
+Per realizzare questa \textit{task}, è stato necessario reperire le informazione tramite un service definito appositamente, il quale effettua una semplice GET al relativo microservizio sviluppato nel Back-end (v. codice \ref{get-applicant}).
+Successivamente, i dati venivano memorizzati in un apposito array e visualizzati tramite una direttiva angular chiamata \textit{ng-for} (v.codice  \ref{ng-for}).
 
 \vspace{0.5em}
 \begin{figure}[!h] 
@@ -51,6 +69,89 @@ La figura \ref{figura:UML2} illustra come il modulo \textit{service} si occupa d
 	\label{figura:lista}
 \end{figure}
 
+\begin{lstlisting}[label=get-applicant,caption=Funzione del service che effettua la chiamata GET]
+getAllApplicants(): Observable<Applicant[]> {
+	return this.http.get<Applicant[]>(this.baseUrl).pipe(
+		catchError(this.handleError)
+	);
+}
+\end{lstlisting} 
+
+\begin{lstlisting}[label=ng-for,caption=Visualizzazione degli applicant nel codice HTML]
+<tr class="hover-tr" *ngFor="let appl of filteredApplicants;" >
+	<td>
+		{{ appl.surname }}
+	</td>
+	<td>
+		{{ appl.name }}
+	</td>
+	<td>
+		{{ appl.email }}
+	</td>
+	<td>
+	<button class="btn" id="btn-delete-applicant-list"
+		(click)="deleteApplicant(appl.id)">Elimina</button>
+	</td>
+	<td>
+	<span class="immagineEsterna" (click)="routerRedirect(appl.id)"><i class="fa fa-search fa-2x"></i></span>
+	</td>
+</tr>
+\end{lstlisting} 
+
+Posti sopra la tabella, inoltre, è possibile visualizzare un campo di testo, che permette di filtrare i risultati secondo il nome, cognome o email; il pulsante posto in alto a destra invece visualizza il component adibito all'applicazione di filtri aggiuntivi sul totale degli applicant, come si può vedere in figura \ref{figura:filtri}.\\
+Il box di testo non è altro che un \textit{component} condiviso in grado di emettere eventi al component padre, e filtrare i dati di conseguenza.\\
+Il filtro dinamico è stato ottenuto tramite l'azione congiunta di un service (v codice. \ref{event-e}) e di un \textit{component} costituito da un singolo campo di testo; il \textit{component} padre in questo modo può applicare il filtro sugli applicant ogni qualvolta il contenuto del campo di testo viene cambiato, in modo simile a quanto accade con l'\gls{Observer Pattern}.
+
+\begin{lstlisting} [label=event-e, caption= Event-Emitter service]
+export class EventEmitterService {
+
+	invokeFirstComponentFunction = new EventEmitter();
+	// variabile per la sottoscrizione di un component per la reazione // ad eventi lanciati
+	subsVar: Subscription;
+
+	constructor() { }
+
+	onComponentAction() {
+		this.invokeFirstComponentFunction.emit();
+	}
+}
+\end{lstlisting}
+
+\begin{lstlisting} [label=filter, caption= Funzione che filtra i dati degli applicant]
+filter(data: string) {
+	if (data) {
+		this.filteredApplicants = this._applicants.filter((applicant: Applicant) => {
+			return applicant.name.toLowerCase().indexOf(data.toLowerCase()) > -1 ||
+			applicant.surname.toLowerCase().indexOf(data.toLowerCase()) > -1 ||
+			applicant.email.toLowerCase().indexOf(data.toLowerCase()) > -1;
+		});
+		} else {
+		this.filteredApplicants = this._applicants;
+	}
+}
+
+\end{lstlisting}
+
+La visualizzazione del \textit{component} relativo all'aggiunta di filtri aggiuntivi viene gestita tramite una semplice direttiva \textit{angular} chiamata \textit{Ng-if}, la quale si lega a una variabile booleana e determina la visualizzazione o meno del \textit{component} a seconda del valore assegnato. La selezione dei valori, invece, viene gestita tramite i \textit{form} angular, i quali legano i valori contenuti nei vari \textit{widget} a delle strutture che gestiscono autonomamente valori di default, validazione, \textit{submit} dei risultati e quant'altro, rendendo la struttura molto solida, sicura e poco soggetta a errori.
+Nel codice è possibile vedere l'inizializzazione del \textit{FormBuilder}, la sopracitata struttura in grado di gestire i dati di un \textit{form}, notare che viene inserito un pattern per la validazione ove necessario.
+\newpage
+\begin{lstlisting}[label= form, caption= Inizializzazione di un FormBuilder]
+
+
+this.filterGroup = this.formBuilder.group({
+	sesso: [''],
+	name: ['',  Validators.pattern('^[a-zA-Z]*$')],
+	surname: ['',  Validators.pattern('^[a-zA-Z]*$')],
+	qualification: [''],
+	seniority: [''],
+	ambito: [''],
+	geodisp: this.formBuilder.array([]),
+	skill: [''],
+	skillLevel: [''],
+	scartato: [false],
+});
+
+\end{lstlisting}
 
 \vspace{0.5em}
 \begin{figure}[!h] 
@@ -60,7 +161,7 @@ La figura \ref{figura:UML2} illustra come il modulo \textit{service} si occupa d
 	\label{figura:filtri}
 \end{figure}
 
-\subsection{Maschera delle operazioni CRUD su un\applicant}
+\subsection{Maschera delle operazioni CRUD su un\applicant}\label{CRUD}
 \vspace{0.5em}
 \begin{figure}[!h] 
 	\centering 
@@ -68,15 +169,33 @@ La figura \ref{figura:UML2} illustra come il modulo \textit{service} si occupa d
 	\caption{Maschera CRUD del singolo applicant}
 	\label{figura:applicant}
 \end{figure}
+La gestione delle operazioni \gls{CRUD} di un \textit{applicant} avviene tramite la maschera visible nella figura \ref{figura:applicant}; l'approccio adottato è molto simile a quanto avviene con la gestione della maschera per la selezione dei filtri aggiuntivi descritta nella sezione \ref{section: applicant-list}: viene utilizzato un \textit{FormBuilder} per la gestione dei singoli valori di un \textit{applicant}, una volta modificati, un controllo su un parametro dei \textit{FormControl}, chiamato \texttt{touched}, permette la visualizzazione dei tasti di conferma o annullamento delle modifiche, in caso di conferma viene effettuata una chiamata \textit{PUT} tramite l'apposito servizio (descritta nel codice TODO), in caso contrario vengono ripristinati i valori antecedenti alle modifiche apportate dall'utente.\\
+\newpage
+\begin{lstlisting}[label=PUT-call, caption=chiamata PUT al microservizio del Back-end di SyncRec]
+putApplicant(applicant: Applicant): Observable<any> {
+	return this.http.patch(this.baseUrl + '/' + applicant.id, applicant).pipe(
+		catchError((err: HttpErrorResponse) => {
+			if (err.error instanceof Error) {
+				// A client-side or network error occurred.
+				const details = {detail: err.error, status: err.status};
+				return throwError(details);
+			} else {
+				// The backend returned an unsuccessful response code.
+				const details = {detail: err.error, status: err.status};
+				return throwError(details);
+			}
+		})
+	);
+	
+}
+\end{lstlisting}
+Con i pulsanti posti in basso è possibile tornare indietro, eliminare un \textit{applicant} (tramite una chiamata DELETE al microservizio di Back-end), o visualizzare l'insieme di competenze possedute tramite l'apposita maschera descritta nella sezione \ref{section:skillmatrix}
+\vspace{0.5em}.
 
-\vspace{0.5em}
+\subsubsection{Maschera di visualizzazione di uno skillmatrix}\label{section:skillmatrix}
 \begin{figure}[!h] 
 	\centering 
 	\includegraphics[width=1\columnwidth]{immagini/svil/skillmatrix} 
 	\caption{Maschera CRUD dello skillmatrix}
 	\label{figura:skillmatrix}
 \end{figure}
-
-
-\subsection{Sviluppo}
-%Diagramma delle classi da fare qui%
