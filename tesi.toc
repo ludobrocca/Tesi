@@ -122,10 +122,15 @@
 \contentsline {subsection}{\numberline {5.1.2}Homepage}{46}{subsection.5.1.2}
 \contentsline {subsection}{\numberline {5.1.3}Maschera della visualizzazione degli Applicant }{47}{subsection.5.1.3}
 \contentsline {subsection}{\numberline {5.1.4}Maschera delle operazioni CRUD su un Applicant }{50}{subsection.5.1.4}
-\contentsline {subsubsection}{Maschera di visualizzazione di uno skillmatrix}{51}{section*.96}
-\contentsline {chapter}{\numberline {A}Altre tecnologie}{53}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Oracle PL/SQL}{53}{section.Alph1.1}
-\contentsline {subsection}{\numberline {A.1.1}Struttura di uno script Oracle PL/SQL}{53}{subsection.Alph1.1.1}
-\contentsline {subsubsection}{Cursori}{54}{section*.98}
-\contentsline {section}{\numberline {A.2}Archittetture a microservizi}{54}{section.Alph1.2}
-\contentsline {chapter}{Glossary}{57}{section*.99}
+\contentsline {subsection}{\numberline {5.1.5}Maschera di visualizzazione di uno skillmatrix}{52}{subsection.5.1.5}
+\contentsline {section}{\numberline {5.2}Design Pattern e paradigmi di programmazione utilizzati}{54}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Observer Pattern}{54}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Dependency Injection}{54}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}REST programming}{54}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Reactive programming}{54}{subsection.5.2.4}
+\contentsline {chapter}{\numberline {A}Altre tecnologie}{55}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Oracle PL/SQL}{55}{section.Alph1.1}
+\contentsline {subsection}{\numberline {A.1.1}Struttura di uno script Oracle PL/SQL}{55}{subsection.Alph1.1.1}
+\contentsline {subsubsection}{Cursori}{56}{section*.97}
+\contentsline {section}{\numberline {A.2}Archittetture a microservizi}{56}{section.Alph1.2}
+\contentsline {chapter}{Glossary}{59}{section*.98}

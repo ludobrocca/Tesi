@@ -7,7 +7,7 @@
 \label{cap:progettazione-codifica}
 %**************************************************************
 
-La seguente sezione ha lo scopo di illustrare la soluzione ideata dal laureando per il soddisfacimento dei requisiti concordati con il tutor aziendale descritti nel capitolo \ref{cap:descrizione-stage}. Nella prima sezione viene presentato l'applicativo con il dovuto corredo di immagini, mentre nel secondo viene descritta accuratamente l'architettura implementata.
+La seguente sezione ha lo scopo di illustrare la soluzione ideata dal laureando per il soddisfacimento dei requisiti concordati con il tutor aziendale descritti nel capitolo \ref{cap:descrizione-stage}. Nella prima sezione viene presentato l'applicativo con il dovuto corredo di immagini e \textit{snippets} di codice,  mentre nel secondo vengono descritti accuratamente i design pattern e paradigmi di programmazione utilizzati.
 
 
 \section{L'applicativo SyncRec}
@@ -40,12 +40,11 @@ Tali linee guida sono:
 \end{figure}
 
 \subsection{Homepage}
-La homepage dell'applicativo (v. figura \ref{figura:homepage}) si presenta come un semplice \textit{menù} con 4 voci.
+La homepage dell'applicativo (v. figura \ref{figura:homepage}) si presenta come un semplice \textit{menù} con 3 voci.
 \begin{itemize}
 	\item \textbf{Aggiungi persone} reindirizza verso il \textit{component} adibito all'aggiunta degli \textit{applicant};
 	\item \textbf{Visualizza persone} reindirizza verso il \textit{component} adibito alla visualizzazione della lista degli \textit{applicant}, sviluppato dal laureando nel corso del progetto di stage;
 	\item \textbf{Ricerca Persone} reindirizza verso il component adibito alla ricerca delle persone;
-	\item \textbf{Gestione della configurazione} reindirizza verso il component adibito alla gestione della configurazione dell'applicativo.
 \end{itemize}
 In aggiunta, è possibile effettuare il \textit{logout} con un pulsante posto in alto, vicino al logo.
 \vspace{0.5em}
@@ -59,7 +58,7 @@ In aggiunta, è possibile effettuare il \textit{logout} con un pulsante posto in
 \subsection{Maschera della visualizzazione degli\applicant} \label{section: applicant-list}
 La fugura \ref{figura:lista}, mostra il \textit{component} sviluppato per la visualizzazione degli \textit{applicant}, per ciascun \textit{applicant} viene visualizzato il Cognome, Nome e l'email, insieme a un tasto per l'eliminazione e uno per la visualizzazione del dettaglio della persona, il quale reindirizza verso la maschera descritta nella sezione \ref{CRUD}.\\
 Per realizzare questa \textit{task}, è stato necessario reperire le informazione tramite un service definito appositamente, il quale effettua una semplice GET al relativo microservizio sviluppato nel Back-end (v. codice \ref{get-applicant}).
-Successivamente, i dati venivano memorizzati in un apposito array e visualizzati tramite una direttiva angular chiamata \textit{ng-for} (v.codice  \ref{ng-for}).
+Successivamente, i dati vengono memorizzati in un apposito \textit{array} e visualizzati tramite una direttiva angular chiamata \textit{ng-for} (v. \textit{listing}  \ref{ng-for}).
 
 \vspace{0.5em}
 \begin{figure}[!h] 
@@ -98,15 +97,14 @@ getAllApplicants(): Observable<Applicant[]> {
 </tr>
 \end{lstlisting} 
 
-Posti sopra la tabella, inoltre, è possibile visualizzare un campo di testo, che permette di filtrare i risultati secondo il nome, cognome o email; il pulsante posto in alto a destra invece visualizza il component adibito all'applicazione di filtri aggiuntivi sul totale degli applicant, come si può vedere in figura \ref{figura:filtri}.\\
-Il box di testo non è altro che un \textit{component} condiviso in grado di emettere eventi al component padre, e filtrare i dati di conseguenza.\\
-Il filtro dinamico è stato ottenuto tramite l'azione congiunta di un service (v codice. \ref{event-e}) e di un \textit{component} costituito da un singolo campo di testo; il \textit{component} padre in questo modo può applicare il filtro sugli applicant ogni qualvolta il contenuto del campo di testo viene cambiato, in modo simile a quanto accade con l'\gls{Observer Pattern}.
+Il pulsante posto in alto a destra visualizza il component adibito all'applicazione di filtri aggiuntivi sul totale degli applicant, come si può vedere in figura \ref{figura:filtri}.\\
+Posti sopra la tabella, inoltre, è possibile visualizzare un campo di testo, che permette di filtrare i risultati secondo il nome, cognome o email. Tale filtro dinamico è stato ottenuto tramite l'azione congiunta di un service (v \textit{listing}. \ref{event-e}) e di un \textit{component} costituito da un singolo campo di testo; il \textit{component} padre in questo modo può applicare il filtro sugli applicant ogni qualvolta il contenuto del campo di testo viene cambiato (v \textit{listing} \ref{filter}), in modo simile a quanto accade con l'\gls{Observer Pattern}.
 
 \begin{lstlisting} [label=event-e, caption= Event-Emitter service]
 export class EventEmitterService {
 
 	invokeFirstComponentFunction = new EventEmitter();
-	// variabile per la sottoscrizione di un component per la reazione // ad eventi lanciati
+	// variabile per la sottoscrizione di un component per la // reazione  ad eventi lanciati
 	subsVar: Subscription;
 
 	constructor() { }
@@ -133,7 +131,7 @@ filter(data: string) {
 \end{lstlisting}
 
 La visualizzazione del \textit{component} relativo all'aggiunta di filtri aggiuntivi viene gestita tramite una semplice direttiva \textit{angular} chiamata \textit{Ng-if}, la quale si lega a una variabile booleana e determina la visualizzazione o meno del \textit{component} a seconda del valore assegnato. La selezione dei valori, invece, viene gestita tramite i \textit{form} angular, i quali legano i valori contenuti nei vari \textit{widget} a delle strutture che gestiscono autonomamente valori di default, validazione, \textit{submit} dei risultati e quant'altro, rendendo la struttura molto solida, sicura e poco soggetta a errori.
-Nel codice è possibile vedere l'inizializzazione del \textit{FormBuilder}, la sopracitata struttura in grado di gestire i dati di un \textit{form}, notare che viene inserito un pattern per la validazione ove necessario.
+Nel \textit{listing} \ref{form} è possibile vedere l'inizializzazione del \textit{FormBuilder}, la sopracitata struttura in grado di gestire i dati di un \textit{form}, notare che viene inserito un pattern per la validazione ove necessario.
 \newpage
 \begin{lstlisting}[label= form, caption= Inizializzazione di un FormBuilder]
 
@@ -169,7 +167,7 @@ this.filterGroup = this.formBuilder.group({
 	\caption{Maschera CRUD del singolo applicant}
 	\label{figura:applicant}
 \end{figure}
-La gestione delle operazioni \gls{CRUD} di un \textit{applicant} avviene tramite la maschera visible nella figura \ref{figura:applicant}; l'approccio adottato è molto simile a quanto avviene con la gestione della maschera per la selezione dei filtri aggiuntivi descritta nella sezione \ref{section: applicant-list}: viene utilizzato un \textit{FormBuilder} per la gestione dei singoli valori di un \textit{applicant}, una volta modificati, un controllo su un parametro dei \textit{FormControl}, chiamato \texttt{touched}, permette la visualizzazione dei tasti di conferma o annullamento delle modifiche, in caso di conferma viene effettuata una chiamata \textit{PUT} tramite l'apposito servizio (descritta nel codice TODO), in caso contrario vengono ripristinati i valori antecedenti alle modifiche apportate dall'utente.\\
+La gestione delle operazioni \gls{CRUD} di un \textit{applicant} avviene tramite la maschera visible nella figura \ref{figura:applicant}; l'approccio adottato è molto simile a quanto avviene con la gestione della maschera per la selezione dei filtri aggiuntivi descritta nella sezione \ref{section: applicant-list}: viene utilizzato un \textit{FormBuilder} per la gestione dei singoli valori di un \textit{applicant}, una volta modificati, un controllo su un parametro dei \textit{FormControl}, chiamato \texttt{touched}, permette la visualizzazione dei tasti di conferma o annullamento delle modifiche, in caso di conferma viene effettuata una chiamata \textit{PUT} tramite l'apposito servizio (descritta nel \textit{listing} \ref{PUT-call}), in caso contrario vengono ripristinati i valori antecedenti alle modifiche apportate dall'utente.\\
 \newpage
 \begin{lstlisting}[label=PUT-call, caption=chiamata PUT al microservizio del Back-end di SyncRec]
 putApplicant(applicant: Applicant): Observable<any> {
@@ -192,10 +190,51 @@ putApplicant(applicant: Applicant): Observable<any> {
 Con i pulsanti posti in basso è possibile tornare indietro, eliminare un \textit{applicant} (tramite una chiamata DELETE al microservizio di Back-end), o visualizzare l'insieme di competenze possedute tramite l'apposita maschera descritta nella sezione \ref{section:skillmatrix}
 \vspace{0.5em}.
 
-\subsubsection{Maschera di visualizzazione di uno skillmatrix}\label{section:skillmatrix}
+\subsection{Maschera di visualizzazione di uno skillmatrix}\label{section:skillmatrix}
 \begin{figure}[!h] 
 	\centering 
 	\includegraphics[width=1\columnwidth]{immagini/svil/skillmatrix} 
 	\caption{Maschera CRUD dello skillmatrix}
 	\label{figura:skillmatrix}
 \end{figure}
+Uno \textit{skillmatrix} rappresenta l'insieme delle competenze possedute da un \textit{applicant} insieme al relativo livello, che può variare da 0 a 5; una competenza per essere considerata posseduta deve avere un livello $\geq  5$.\\
+\'E importante evidenziare come all'interno di SyncLab le competenze prese in considerazione siano molto numerose e tra le più disparate: nel contesto del progetto esse sono suddivise in categorie e il loro numero complessivo supera 130; ciò ha richiesto la formulazione di una soluzione che rendesse immediatamente visibile il distacco fra \textit{skill} possedute o meno e che al contempo  permettesse di modificare i valori in modo rapido.\\
+Come si può vedere nella figura \ref{figura:skillmatrix}, l'approccio adottato prevede la predisposizione di 2 tabelle, una immediatamente visibile contenente l'insieme di \textit{skill} possedute per ciascuna categoria e una visibile tramite la pressione di un tasto, contenente il totale delle \textit{skill} considerate. La visualizzazione delle skill è legata alla funzione \ref{categ}, che restiuisce un booleano a una direttiva \textit{Ng-If} all'interno del codice \textit{HTML}; la quale determina la visualizzazione o meno del codice afferente al \textit{tag} legato alla direttiva, come si può vedere nel \textit{listing} \ref{skVis}.\\
+\newpage
+\begin{lstlisting}[label=categ, caption=Funzione che determina la visualizzazione di una categoria avente \textit{skills} possedute ]
+
+hasThisCategorySkills(cat: string): boolean {
+	let result = false;
+	const category: Category = this.catalog.filter ((c: Category) => c.name === cat)[0];
+	category.skills.forEach((categoryskill) => {
+		this.skills.filter((sk: Skill) => {
+			if (categoryskill.name === sk.name && sk.level > 0) {
+				result = true;
+			}
+		});
+	});
+	return result;
+}
+
+\end{lstlisting}
+
+Per facilitare la navigazione fra le due tabelle, viene aggiunto il \textit{component} per il filtraggio dei dati, adottando lo stesso approccio della maschera di visualizzazione lista degli \textit{applicant} (v. sez. \ref{section: applicant-list}).\\
+La modifica avviene tramite un menù a tendina visibile tramite la pressione di un tasto "Modfica", la tabella di \textit{skill} possedute si aggiorna in conseguenza alla conferma del nuovo dato selezionato (aggiungendo o togliendo righe a seconda del livello della \textit{skill}).\\
+Allo scopo di rendere i dati consistenti fra le due tabelle (in modo da evitare che i livelli risultino discordanti),viene utilizzato un singolo \textit{FormBuilder} e una singola struttura dati che tenga traccia dei valori per il \textit{submit} delle modifiche.\\
+ 
+ 
+ \begin{lstlisting} [label=skVis, caption= HTML e direttiva Ng-If]
+ <ng-container *ngIf="hasThisCategorySkills(catalog[0].name)">
+ <!-- direttiva che lega al FormBuilder del component -->
+ <form [formGroup]="skillGroup">
+ <!-- visualizzazione HTML di una tabella -->
+ </form>
+ </ng-container>
+ \end{lstlisting}
+ 
+\section {Design Pattern e paradigmi di programmazione utilizzati}
+
+\subsection{Observer Pattern}
+\subsection{Dependency Injection}
+\subsection{REST programming}
+\subsection{Reactive programming}
