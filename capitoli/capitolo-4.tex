@@ -23,12 +23,12 @@ L'utilizzo di tale linguaggio si è reso necessario una volta scelto e adottato 
 	\caption{Logo di Agular}
 	\label{figura:angular-1}
 \end{figure}
-Angular è un framework sviluppato da Google utilizzato per lo sviluppo di applicazioni web responsive e compatibili con la gran parte dei dispositivi odierni, esso nasce come evoluzione di \textit{AngularJS}, abbandonando l'utilizzo di JavaScript in favore di TypeScript (v. sezione \ref{typescript}), ciò rende le due versioni non compatibili.
+Angular è un framework sviluppato da Google utilizzato per lo sviluppo di applicazioni web responsive e compatibili con la gran parte dei dispositivi odierni, esso nasce come evoluzione di \textit{AngularJS}, abbandonando l'utilizzo di \gls{JavaScript} in favore di TypeScript (v. sezione \ref{typescript}), ciò rende le due versioni non compatibili.
 I principali vantaggi offerti da Angular sono:
 \begin{itemize}
-	\item \textbf{Cross-platform:} Angular permette lo sviluppo di \textit{web application}, \textit{mobile web application}, applicazioni \textit{desktop} e applicazioni \textit{mobile};
+	\item \textbf{Cross-platform:} Angular permette lo sviluppo di \textit{web application}, \textit{mobile \gls{web application}}, applicazioni \textit{desktop} e applicazioni \textit{mobile};
 	\item \textbf{Velocità e performance:} la struttura del \textit{framework} permette di sviluppare applicazioni veloci e dinamiche, l'elaborazione, infatti, viene eseguita quasi interamente su lato client, una volta scaricata l'applicazione dal \gls{web server}; il peso delle applicazioni, inoltre, è stato sensibilmente ridotto;
-	\item \textbf{Compatibilità:} rispetto al suo predecessore, Angular semplifica l'interazione e la compatibilità con librerie esterne JavaScript, come \gls{RxJs} o \gls{immutable.js}.
+	\item \textbf{Compatibilità:} rispetto al suo predecessore, Angular semplifica l'interazione e la compatibilità con librerie esterne \gls{JavaScript}, come \gls{RxJs} o \gls{immutable.js}.
 \end{itemize}
 
 In un progetto Angular, l'elemento cardine risulta essere il \textit{component}, introdotto dalla seconda versione, esso rappresenta l'elemento base della struttura gerarchica, organizzata in moduli, che permette un'efficiente suddivisione del carico di lavoro tra più programmatori, i quali non hanno necessità di conoscere interamente la logica dell'applicazione per apportare un contributo allo sviluppo.\\
@@ -40,22 +40,22 @@ I moduli rappresentano contenitori di blocchi di codice coesi afferenti a una ce
 Essi possono contenere:
 \begin{itemize}
 	\item \textbf{Services:} classi addette alla gestione di transizioni con l'esterno o alla manipolazione dei dati (per maggiori dettagli  v. sez. \ref{service});
-	\item \textbf{Routing Modules:} moduli particolari che permettono di mappare richieste \textit{URL} alla visualizzazione di \textit{component} (v. sez. \ref{routing});
-	\item \textbf{Components:} elemento base di una web application sviluppata in \textit{Angular} (v. sezione \ref{component});
+	\item \textbf{Routing Modules:} moduli particolari che permettono di mappare richieste \gls{URL} alla visualizzazione di \textit{component} (v. sez. \ref{routing});
+	\item \textbf{Components:} elemento base di una \gls{web application} sviluppata in \textit{Angular} (v. sezione \ref{component});
 	\item Altri \textit{file} contenenti codice il cui \textit{scope} è definito dal modulo stesso.
 \end{itemize}
-Ogni applicazione sviluppata in \textit{Angular} contiene almeno un modulo, definito \textit{root module} e contenuto nel file \texttt{app.module.ts}, il quale deve illustrare i moduli e i component dichiarati.\\
+Ogni applicazione sviluppata in \textit{Angular} contiene almeno un modulo, definito \textit{root module} e contenuto nel file \texttt{app.module.ts}, il quale deve illustrare i moduli e i \textit{component} dichiarati.\\
 La \textit{Best practice} suggerita dalla documentazione afferma che è opportuno dichiarare per ogni \textit{component} un suo modulo di appartenenza, salvo rari casi dove ciò risulterebbe ridondante (si pensi alla dichiarazione di un \textit{component} contenente una logica basilare e un \textit{template HTML} di dimensioni ridotte), in questo modo, il \textit{root module} conterrà solamente le dichiarazioni dei moduli figli, e andrà aggiornato solo nel caso in cui si renda necessaria l'aggiunta di un nuovo \textit{component}.
 
 \subsubsection{Component}\label{component}
-I \textit{component} costituiscono elementi di una web application sviluppata in \textit{Angular}, i quali assumono controllo della visualizzazione dei dati e la gestione degli eventi in determinate circostanze definite dal programmatore.\\
+I \textit{component} costituiscono elementi di una \gls{web application} sviluppata in \textit{Angular}, i quali assumono controllo della visualizzazione dei dati e la gestione degli eventi in determinate circostanze definite dal programmatore.\\
 Ogni \textit{component} è costituito da 3 parti:
 \begin{itemize}
 	\item un \textit{file} \texttt{.ts} che definisce la logica sottostante per l'elaborazione dei dati;
 	\item un \textit{file} \texttt{.html} che costituisce il \textit{template} per la visualizzazione su schermo del \textit{component};
 	\item un \textit{file} \texttt{.css} che definisce posizione, dimensione e colore degli elementi definiti nel \textit{template}.
 \end{itemize} 
-Questo tipo di struttura permette una grande possibilità di riutilizzo del codice: ogni component, una volta definito, può essere visualizzato secondo quanto dichiarato nel suo modulo di appartenenza. In questo modo, nel caso in cui fosse necessario riutilizzare un \textit{component} precedentemente definito, sarà sufficiente importare il suo modulo di riferimento ove desiderato.
+Questo tipo di struttura permette una grande possibilità di riutilizzo del codice: ogni \textit{component}, una volta definito, può essere visualizzato secondo quanto dichiarato nel suo modulo di appartenenza. In questo modo, nel caso in cui fosse necessario riutilizzare un \textit{component} precedentemente definito, sarà sufficiente importare il suo modulo di riferimento ove desiderato.
 
 \subsubsection{Service}\label{service}
 \textit{Angular} ha predisposto una struttura facente uso della \gls{dependency injection}, la quale permette di iniettare dipendenze nei \textit{component} senza pregiudicare la manutenibilità del codice; applicando questo approccio è possibile dividere chiaramente la visualizzazione dei dati sullo schermo dal suo relativo recupero.\\
@@ -66,28 +66,28 @@ Un'approccio di questo tipo ha l'ulteriore vantaggio di rendere molto più pulit
 Il \textit{Routing} costituisce il meccanismo implementato da \textit{Angular} per la navigazione all'interno di una \gls{web application}.\\
 Normalmente un utente per navigare all'interno di un sito tramite \textit{browser} effettua una tra queste tre azioni:
 \begin{itemize}
-	\item Digita un URL nella barra degli indirizzi e naviga direttamente alla pagina desiderata;
+	\item Digita un \gls{URL} nella barra degli indirizzi e naviga direttamente alla pagina desiderata;
 	\item Clicca un \textit{link} all'interno della pagina e il browser effettua la navigazione;
 	\item Usa i pulsanti di \textit{back} e \textit{forward} per visualizzare pagine precedentemente visitate.
 \end{itemize}
-Il \textit{Router} di \textit{Angular}, utlizzando questo modello, è in grado di mappare le richieste \textit{URL} a delle \textit{view} generate dal client, con l'ulteriore possibilità di inserimento di parametri opzionali per la visualizzazione di determinati dati.\\
+Il \textit{Router} di \textit{Angular}, utlizzando questo modello, è in grado di mappare le richieste \gls{URL} a delle \textit{view} generate dal client, con l'ulteriore possibilità di inserimento di parametri opzionali per la visualizzazione di determinati dati.\\
 Nel caso del progetto SyncRec, il \textit{Routing} tramite parametri opzionali si è rivelato indispensabile per la visualizzazione del dettaglio di una persona.
 \paragraph*{Funzionamento e implementazione}
-Il meccanismo di implementazione del \textit{Routing} è molto simile a quello dei moduli: ogni \textit{component} deve essere corredato da un \textit{Routing Module} che definisca il \textit{path} e il corrispettivo \textit{component} collegato, successivamente, ogni \textit{Routing Module} deve essere importato e dichiarato nel corrispettivo modulo di appartenenza, in modo che il \textit{root module} possa essere a conoscenza della mappatura completa degli \gls{URL} con i component associati.
+Il meccanismo di implementazione del \textit{Routing} è molto simile a quello dei moduli: ogni \textit{component} deve essere corredato da un \textit{Routing Module} che definisca il \textit{path} e il corrispettivo \textit{component} collegato, successivamente, ogni \textit{Routing Module} deve essere importato e dichiarato nel corrispettivo modulo di appartenenza, in modo che il \textit{root module} possa essere a conoscenza della mappatura completa degli \gls{URL} con i \textit{component} associati.
 
 \subsection{Npm}
-\textit{Npm} (Node Package Manager) si configura come il gestore di pacchetti predefinito per l'ambiente \textit{runtime} di \textit{JavaScript} \gls{NodeJs}; il suo utlizzo si è rivelato necessario per l'inclusione di alcune dipendenze necessarie per il completamento del progetto (\gls{angular CLI} primo fra tutti).\\
+\textit{Npm} (Node Package Manager) si configura come il gestore di pacchetti predefinito per l'ambiente \textit{runtime} di \gls{JavaScript} \gls{NodeJs}; il suo utlizzo si è rivelato necessario per l'inclusione di alcune dipendenze necessarie per il completamento del progetto (\gls{angular CLI} primo fra tutti).\\
 I pacchetti sono memorizzati in un database remoto chiamato \textit{npm registry} e l'aggiunta, rimozione e aggiornamento degli stessi avviene tramite il \textit{client} a riga di comando messo a disposizione, chiamato anch'esso \textit{npm}.
 
 \subsection{Bootstrap}
-\textit{Bootstrap} è una raccolta di strumenti \gls{open-source} per lo sviluppo di siti e applicazioni web. Essa contiene moduli basati su \textit{HTML} e \textit{CSS} per la creazione dei componenti facenti parte di un'interfaccia (moduli, pulsanti e navigazione), insieme all'integrazione con alcune componenti opzionali di \textit{JavaScript}.\\
+\textit{Bootstrap} è una raccolta di strumenti \gls{open-source} per lo sviluppo di siti e applicazioni web. Essa contiene moduli basati su \textit{HTML} e \textit{CSS} per la creazione dei componenti facenti parte di un'interfaccia (moduli, pulsanti e navigazione), insieme all'integrazione con alcune componenti opzionali di \gls{JavaScript}.\\
 Si tratta di un \textit{toolkit} compatibile con tutti i browser moderni e facente ampio uso del \textit{responsive web design}, è stato integrato nel progetto allo scopo di applicare rapidamente uno stile comune agli elementi facenti parte dell'applicazione.S
 
 \subsection{HTML e CSS}
-L'utilizzo di HTML e CSS si è reso necessario una volta scelto \textit{Agular} come \gls{framework} di riferimento; essi sono linguaggi consolidati che permettono la definizione della struttura delle pagine web (nel caso di Angular essi permettono di definire la struttura dei singoli component).
+L'utilizzo di HTML e CSS si è reso necessario una volta scelto \textit{Agular} come \gls{framework} di riferimento; essi sono linguaggi consolidati che permettono la definizione della struttura delle pagine web (nel caso di Angular essi permettono di definire la struttura dei singoli \textit{component}).
 
 \subsection{Java} \label{java}
-Java è il linguaggio di programmazione utilizzato da \gls{Spring}, il \gls{framework} di riferimento per lo sviluppo del \textit{back-end} dell'applicativo \textit{SyncRec}.
+Java è il linguaggio di programmazione utilizzato da \gls{Spring}, il \gls{framework} di riferimento per lo sviluppo del \gls{Back-end} dell'applicativo \textit{SyncRec}.
 
 \subsection{Spring}\label{tech-spring}
 \begin{figure}[!h] 
@@ -96,12 +96,12 @@ Java è il linguaggio di programmazione utilizzato da \gls{Spring}, il \gls{fram
 	\caption{Logo di Spring}
 	\label{figura:spring-1}
 \end{figure}
-\gls{Spring} è un framework scritto in Java utilizzato per lo sviluppo di applicazioni \textit{enterprise}; esso è sudddiviso in moduli che rispondono a vari tipi di esigenze, in modo da poter includere nella propria applicazione solo le funzionalità desiderate.\\
+\gls{Spring} è un \gls{framework} scritto in Java utilizzato per lo sviluppo di applicazioni \textit{enterprise}; esso è sudddiviso in moduli che rispondono a vari tipi di esigenze, in modo da poter includere nella propria applicazione solo le funzionalità desiderate.\\
 \gls{Spring} è fortemente basato sul principio \gls{Inversion of Control}, che delega la maggior parte del controllo sul flusso di esecuzione al \textit{framework} stesso, in modo da ridurre il più possibile l'introduzione di errori.
 
 \subsubsection{Spring Core}
 Detto anche \textit{core container}, esso rappresenta la parte principale di Spring, e tutto il framework è costruito sopra di esso.
-Insieme al modulo Beans è responsabile della funzionalità di IoC (precedentemente descritta) e  di Dependency Injection, introdotta tramite \textit{getters, setters, factory methods} e costruttori.
+Insieme al modulo Beans è responsabile della funzionalità di IoC (precedentemente descritta) e  di \gls{dependency injection}, introdotta tramite \textit{getters, setters, factory methods} e costruttori.
 Ciò permette di concretizzare i due principi, delegando al \textit{framework} il compito di iniettare le dipendenze del \textit{container}.
 
 \subsubsection{Spring Boot}
@@ -132,8 +132,8 @@ I sistemi operativi adottati per ilcompletamento del progetto sono due:
 \end{itemize}
 
 \subsection{IDE}
-L'adozione di un corretto ambiente di sviluppo integrato (\textit{Integrated development environment}, spesso abbreviato con \textbf{IDE}), è di primaria importanza per il corretto sviluppo di un \textit{software}, la scelta è spesso soggettiva e determinata dai giusti personali del programmatore.
-In questo progetto, viene adottato \textit{Visual Studio Code}, una \textit{IDE} \gls{open-source} sviluppata da Microsoft.\\
+L'adozione di un corretto ambiente di sviluppo integrato (\textit{Integrated development environment}, spesso abbreviato con \gls{IDE}), è di primaria importanza per il corretto sviluppo di un \textit{software}, la scelta è spesso soggettiva e determinata dai giusti personali del programmatore.
+In questo progetto, viene adottato \textit{Visual Studio Code}, una \gls{IDE} \gls{open-source} sviluppata da Microsoft.\\
 Si tratta di un \textit{software} molto leggero e adattabile alle proprie esigenze tramite l'aggiunta di estensioni; queste due qualità rendono \textit{VsCode} il software ideale per lo sviluppo di un applicativo in \hyperref[angular]{Angular}.
 Alcuni dei principali vantaggi di \textit{VsCode sono}
 \begin{itemize}
@@ -147,9 +147,9 @@ Secondo un sodaggio effettuato da \textit{StckOverflow} nel 2019, \textit{VsCode
 
 \paragraph{Estensioni}
 \begin{itemize}
-	\item \textbf{Angular Snippets 8:} Permette l'aggiunta di \gls{snippets} per \hyperref[angular]{Angular} e \textit{HTML};
+	\item \textbf{Angular 1\gls{snippets} 8:} Permette l'aggiunta di \gls{snippets} per \hyperref[angular]{Angular} e \textit{HTML};
 	\item \textbf{angular2-inline:} Per l'autocompletamento e l'evidenziazione dei \textit{template inline} che possono essere utilizzati nei \textit{component};
-	\item \textbf{Debugger for Chrome:} Questa estensione, sviluppata anch'essa da Microsoft, permette di utilizzare un \gls{Debugger} per JavaScript/TypeScript;
+	\item \textbf{Debugger for Chrome:} Questa estensione, sviluppata anch'essa da Microsoft, permette di utilizzare un \gls{Debugger} per \gls{JavaScript}/\hyperref[typescript]{TypeScript};
 	\item \textbf{Material Icon Theme:} Permette di visualizzare immediatamente l'estensione di un \textit{file} tramite l'utilizzo di un'icona a fianco del nome;
 	\item \textbf{npm:} Permette l'esecuzione rapida di script tramite \gls{npm};
 	\item \textbf{TSLint:} Fornisce supporto per l'utilizzo di \textit{TSLint} all'interno di \textit{Visual Studio Code} (v. sezione \ref{tslint}) ;
@@ -158,11 +158,11 @@ Secondo un sodaggio effettuato da \textit{StckOverflow} nel 2019, \textit{VsCode
 \subsection{Versionamento}
 Lo strumento di versionamento utilizzato è \gls{Git} e il codice viene memorizzato in una \gls{repository} remota presso \textit{GitLab}. La repository è privata, e l'accesso è stato consentito dal tutor aziendale dr Fabio Pallaro.\\
 La necessità di lavorare in gruppo, inoltre, richiede un processo di \gls{continuos integration} rapido ed efficiente: a tal scopo, viene integrata l'estensione \textit{git-flow}  al normale strumento di versionamento. Essa permette la creazione immediata di \gls{branch} di \textit{feature} separate, il successivo \gls{merge} è altresì possibile mediante l'utilizzo di un singolo comando.\\
-La necessità di venire incontro a casistiche particolari che possono incorrere nella gestione della \textit{repository} ha richiesto la scelta di una \textit{IDE} che possa svolgere tale compito. Il \textit{software} adottato per questo progetto è \textit{GitKraken}, un applicativo \textit{open-source} che fornisce  supporto alla gestione di repository \gls{Git}, insieme all'integrazione dell'estensione \textit{git-flow}.
+La necessità di venire incontro a casistiche particolari che possono incorrere nella gestione della \textit{repository} ha richiesto la scelta di una \gls{IDE} che possa svolgere tale compito. Il \textit{software} adottato per questo progetto è \textit{GitKraken}, un applicativo \gls{open-source} che fornisce  supporto alla gestione di repository \gls{Git}, insieme all'integrazione dell'estensione \textit{git-flow}.
 
 
 \subsection{Back-end}
-I microservizi sono installati in una macchina di proprietà di SyncLab, e sono accedibili tramite un URL dalle persone autorizzate.\\
+I microservizi sono installati in una macchina di proprietà di SyncLab, e sono accedibili tramite un \gls{URL} dalle persone autorizzate.\\
 L'integrazione, quindi, è avvenuta presso l'azienda, in quanto non è possibile accedere al \gls{Back-end} da dispositivi esterni.
 
 \subsection{Analisi statica del codice} \label{tslint}

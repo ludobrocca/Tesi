@@ -7,7 +7,7 @@
 \label{cap:progettazione-codifica}
 %**************************************************************
 
-La seguente sezione ha lo scopo di illustrare la soluzione ideata dal laureando per il soddisfacimento dei requisiti concordati con il tutor aziendale descritti nel capitolo \ref{cap:descrizione-stage}. Nella prima sezione viene presentato l'applicativo con il dovuto corredo di immagini e \textit{snippets} di codice,  mentre nel secondo vengono descritti accuratamente i design pattern e paradigmi di programmazione utilizzati.
+La seguente sezione ha lo scopo di illustrare la soluzione ideata dal laureando per il soddisfacimento dei requisiti concordati con il tutor aziendale descritti nel capitolo \ref{cap:descrizione-stage}. In ciascuna sezione viene presentata una maschera dell'applicativo sviluppata, con il dovuto corredo di immagini e \gls{snippets} di codice.
 
 
 \section{L'applicativo SyncRec: Struttura e sviluppo del progetto}
@@ -15,16 +15,15 @@ La seguente sezione ha lo scopo di illustrare la soluzione ideata dal laureando 
 \begin{figure}[!h] 
 	\centering 
 	\includegraphics[width=1\columnwidth]{immagini/usecase/UML1} 
-	\caption{Struttura dei component sviluppati per l'applicativo SyncRec}
+	\caption{Struttura dei \textit{component} sviluppati per l'applicativo SyncRec}
 	\label{figura:UML1}
 \end{figure}
 
+Come già accennato in precedenza, \hyperref[angular]{Angular} suggerisce di applicare una forte struttura modulare alle proprie \gls{web application}, tale approccio è stato nella gran parte perseguito, con alcune eccezioni per determinati elementi condivisi fra più \textit{component}; un'applicazione di tale struttura, inoltre, permette lo sviluppo delle proprie componenti senza dover necessariamente conoscere l'intera architettura nel dettaglio.
 
-Come già accennato in precedenza, \hyperref[angular]{Angular} suggerisce di applicare una forte struttura modulare alle proprie \textit{web-application}, tale approccio è stato nella gran parte perseguito, con alcune eccezioni per determinati elementi condivisi fra più \textit{component}; un'applicazione di tale struttura, inoltre, permette lo sviluppo delle proprie componenti senza dover necessariamente conoscere l'intera architettura nel dettaglio.
-
-La figura \ref{figura:UML1} illustra la struttura dei component sviluppati per l'applicativo SyncRec, a scopo di sintesi sono state omesse alcune parti proprie del \textit{framework} di riferimento (come i moduli e gli \textit{asset}) o sviluppate da altri studenti nel corso del progetto.\\
-I moduli \textit{applicant-list}, \textit{applicant-detail} e \textit{viewskillmatrix} rappresentano i componenti grafici dell'applicazione, il modulo \textit{shared} rappresenta l'insieme di \textit{component} condivisi nel \textit{namespace} globale e il modulo \textit{core} contiene i \textit{service}; quest'ultimi hanno il duplice scopo di recuperare i dati dal \textit{Back-end} e di fornire alcuni metodi di utilità necessari a svolgere determinate operazioni (come l'ordinamento o l'emissione di eventi verso \textit{components} padri).\\
-La figura \ref{figura:UML2} illustra come il modulo \textit{service} si occupa di dialogare con il \textit{Back-end} scritto in \hyperref[tech-spring]{Spring}.\\
+La figura \ref{figura:UML1} illustra la struttura dei \textit{component} sviluppati per l'applicativo SyncRec, a scopo di sintesi sono state omesse alcune parti proprie del \gls{framework} di riferimento (come i moduli e gli \textit{asset}) o sviluppate da altri studenti nel corso del progetto.\\
+I moduli \textit{applicant-list}, \textit{applicant-detail} e \textit{viewskillmatrix} rappresentano i componenti grafici dell'applicazione, il modulo \textit{shared} rappresenta l'insieme di \textit{component} condivisi nel \textit{namespace} globale e il modulo \textit{core} contiene i \textit{service}; quest'ultimi hanno il duplice scopo di recuperare i dati dal \gls{Back-end} e di fornire alcuni metodi di utilità necessari a svolgere determinate operazioni (come l'ordinamento o l'emissione di eventi verso \textit{components} padri).\\
+La figura \ref{figura:UML2} illustra come il modulo \textit{service} si occupi di dialogare con il \gls{Back-end} scritto in \hyperref[tech-spring]{Spring}.\\
 In ambito di progettazione, dialogando con gli altri laureandi che hanno preso parte alla realizzazion di SyncRec, si sono definite alcune linee guida da perseguire nel corso della codifica.\\
 Tali linee guida sono:
 \begin{itemize}
@@ -41,11 +40,11 @@ Tali linee guida sono:
 \end{figure}
 
 \subsection{Homepage}
-La homepage dell'applicativo (v. figura \ref{figura:homepage}) si presenta come un semplice \textit{menù} con 3 voci.
+La homepage dell'applicativo (v. figura \ref{figura:homepage}) si presenta come un semplice menù con 3 voci.
 \begin{itemize}
 	\item \textbf{Aggiungi persone} reindirizza verso il \textit{component} adibito all'aggiunta degli \textit{applicant};
 	\item \textbf{Visualizza persone} reindirizza verso il \textit{component} adibito alla visualizzazione della lista degli \textit{applicant}, sviluppato dal laureando nel corso del progetto di stage;
-	\item \textbf{Ricerca Persone} reindirizza verso il component adibito alla ricerca delle persone;
+	\item \textbf{Ricerca Persone} reindirizza verso il \textit{component} adibito alla ricerca delle persone;
 \end{itemize}
 In aggiunta, è possibile effettuare il \textit{logout} con un pulsante posto in alto, vicino al logo.
 \vspace{0.5em}
@@ -57,15 +56,15 @@ In aggiunta, è possibile effettuare il \textit{logout} con un pulsante posto in
 \end{figure}
 
 \subsection{Maschera della visualizzazione degli\applicant} \label{section: applicant-list}
-La fugura \ref{figura:lista}, mostra il \textit{component} sviluppato per la visualizzazione degli \textit{applicant}, per ciascun \textit{applicant} viene visualizzato il Cognome, Nome e l'email, insieme a un tasto per l'eliminazione e uno per la visualizzazione del dettaglio della persona, il quale reindirizza verso la maschera descritta nella sezione \ref{m-CRUD}.\\
-Per realizzare questa \textit{task}, è stato necessario reperire le informazione tramite un service definito appositamente, il quale effettua una semplice GET al relativo microservizio sviluppato nel Back-end (v. codice \ref{get-applicant}).
+La fugura \ref{figura:lista}, mostra il \textit{component} sviluppato per la visualizzazione degli \textit{applicant}, per ciascun \textit{applicant} viene visualizzato il Cognome, il Nome e l'email, insieme a un tasto per l'eliminazione e uno per la visualizzazione del dettaglio della persona, il quale reindirizza verso la maschera descritta nella sezione \ref{m-CRUD}.\\
+Per realizzare questa \textit{task}, è stato necessario reperire le informazione tramite un \textit{service} definito appositamente, il quale effettua una semplice \textit{GET} al relativo microservizio sviluppato nel \gls{Back-end} (v. codice \ref{get-applicant}).
 Successivamente, i dati vengono memorizzati in un apposito \textit{array} e visualizzati tramite una direttiva \hyperref[angular]{Angular} chiamata \textit{ng-for} (v. \textit{listing}  \ref{ng-for}).
 
 \vspace{0.5em}
 \begin{figure}[!h] 
 	\centering 
 	\includegraphics[width=1\columnwidth]{immagini/svil/lista} 
-	\caption{Schermata della visualizzazione lista degli applicant}
+	\caption{Schermata della visualizzazione lista degli \textit{applicant}}
 	\label{figura:lista}
 \end{figure}
 
@@ -98,8 +97,8 @@ getAllApplicants(): Observable<Applicant[]> {
 </tr>
 \end{lstlisting} 
 
-Il pulsante posto in alto a destra visualizza il component adibito all'applicazione di filtri aggiuntivi sul totale degli applicant, come si può vedere in figura \ref{figura:filtri}.\\
-Posti sopra la tabella, inoltre, è possibile visualizzare un campo di testo, che permette di filtrare i risultati secondo il nome, cognome o email. Tale filtro dinamico è stato ottenuto tramite l'azione congiunta di un service (v \textit{listing}. \ref{event-e}) e di un \textit{component} costituito da un singolo campo di testo; il \textit{component} padre in questo modo può applicare il filtro sugli applicant ogni qualvolta il contenuto del campo di testo viene cambiato (v \textit{listing} \ref{filter}), in modo simile a quanto accade con l'\gls{Observer Pattern}.
+Il pulsante posto in alto a destra visualizza il \textit{component} adibito all'applicazione di filtri aggiuntivi sul totale degli \textit{applicant}, come si può vedere in figura \ref{figura:filtri}.\\
+Posti sopra la tabella, inoltre, è possibile visualizzare un campo di testo, che permette di filtrare i risultati secondo nome, cognome o email. Tale filtro dinamico è stato ottenuto tramite l'azione congiunta di un \textit{service} (v \textit{listing}. \ref{event-e}) e di un \textit{component} costituito da un singolo campo di testo; il \textit{component} padre in questo modo può applicare il filtro sugli \textit{applicant} ogni qualvolta il contenuto del campo di testo venga cambiato (v \textit{listing} \ref{filter}), in modo simile a quanto accade con l'\gls{Observer Pattern}.
 
 \begin{lstlisting} [label=event-e, caption= Event-Emitter service]
 export class EventEmitterService {
@@ -156,7 +155,7 @@ this.filterGroup = this.formBuilder.group({
 \begin{figure}[!h] 
 	\centering 
 	\includegraphics[width=1\columnwidth]{immagini/svil/filtri} 
-	\caption{Schermata della selezione dei filtri da applicare alla lista degli applicant}
+	\caption{Schermata della selezione dei filtri da applicare alla lista degli \textit{applicant}}
 	\label{figura:filtri}
 \end{figure}
 
@@ -165,10 +164,10 @@ this.filterGroup = this.formBuilder.group({
 \begin{figure}[!h] 
 	\centering 
 	\includegraphics[width=1\columnwidth]{immagini/svil/applicant}
-	\caption{Maschera CRUD del singolo applicant}
+	\caption{Maschera \gls{CRUD} del singolo \textit{applicant}}
 	\label{figura:applicant}
 \end{figure}
-La gestione delle operazioni \gls{CRUD} di un \textit{applicant} avviene tramite la maschera visible nella figura \ref{figura:applicant}; l'approccio adottato è molto simile a quanto avviene con la gestione della maschera per la selezione dei filtri aggiuntivi descritta nella sezione \ref{section: applicant-list}: viene utilizzato un \textit{FormBuilder} per la gestione dei singoli valori di un \textit{applicant}, una volta modificati, un controllo su un parametro dei \textit{FormControl}, chiamato \texttt{touched}, permette la visualizzazione dei tasti di conferma o annullamento delle modifiche, in caso di conferma viene effettuata una chiamata \textit{PUT} tramite l'apposito servizio (descritta nel \textit{listing} \ref{PUT-call}), in caso contrario vengono ripristinati i valori antecedenti alle modifiche apportate dall'utente.\\
+La gestione delle operazioni \gls{CRUD} di un \textit{applicant} avviene tramite la maschera visible nella figura \ref{figura:applicant}; l'approccio adottato è molto simile a quanto avviene con la gestione della maschera per la selezione dei filtri aggiuntivi descritta nella sezione \ref{section: applicant-list}. Viene utilizzato un \textit{FormBuilder} per la gestione dei singoli valori di un \textit{applicant}, una volta modificati, un controllo su un parametro dei \textit{FormControl}, chiamato \texttt{touched}, permette la visualizzazione dei tasti di conferma o annullamento delle modifiche, in caso di conferma viene effettuata una chiamata \textit{PUT} tramite l'apposito servizio (descritta nel \textit{listing} \ref{PUT-call}), in caso contrario vengono ripristinati i valori antecedenti alle modifiche apportate dall'utente.\\
 \newpage
 \begin{lstlisting}[label=PUT-call, caption=chiamata PUT al microservizio del Back-end di SyncRec]
 putApplicant(applicant: Applicant): Observable<any> {
@@ -188,7 +187,7 @@ putApplicant(applicant: Applicant): Observable<any> {
 	
 }
 \end{lstlisting}
-Con i pulsanti posti in basso è possibile tornare indietro, eliminare un \textit{applicant} (tramite una chiamata DELETE al microservizio di Back-end), o visualizzare l'insieme di competenze possedute tramite l'apposita maschera descritta nella sezione \ref{section:skillmatrix}
+Con i pulsanti posti in basso è possibile tornare indietro, eliminare un \textit{applicant} (tramite una chiamata DELETE al microservizio di \gls{Back-end}), o visualizzare l'insieme di competenze possedute tramite l'apposita maschera descritta nella sezione \ref{section:skillmatrix}
 \vspace{0.5em}.
 
 \subsection{Maschera di visualizzazione di uno skillmatrix}\label{section:skillmatrix}
@@ -200,7 +199,8 @@ Con i pulsanti posti in basso è possibile tornare indietro, eliminare un \texti
 \end{figure}
 Uno \textit{skillmatrix} rappresenta l'insieme delle competenze possedute da un \textit{applicant} insieme al relativo livello, che può variare da 0 a 5; una competenza per essere considerata posseduta deve avere un livello $\geq  5$.\\
 \'E importante evidenziare come all'interno di SyncLab le competenze prese in considerazione siano molto numerose e tra le più disparate: nel contesto del progetto esse sono suddivise in categorie e il loro numero complessivo supera 130; ciò ha richiesto la formulazione di una soluzione che rendesse immediatamente visibile il distacco fra \textit{skill} possedute o meno e che al contempo  permettesse di modificare i valori in modo rapido.\\
-Come si può vedere nella figura \ref{figura:skillmatrix}, l'approccio adottato prevede la predisposizione di 2 tabelle, una immediatamente visibile contenente l'insieme di \textit{skill} possedute per ciascuna categoria e una visibile tramite la pressione di un tasto, contenente il totale delle \textit{skill} considerate. La visualizzazione delle skill è legata alla funzione \ref{categ}, che restiuisce un booleano a una direttiva \textit{Ng-If} all'interno del codice \textit{HTML}; la quale determina la visualizzazione o meno del codice afferente al \textit{tag} legato alla direttiva, come si può vedere nel \textit{listing} \ref{skVis}.\\
+Come si può vedere nella figura \ref{figura:skillmatrix}, l'approccio adottato prevede la predisposizione di 2 tabelle, una immediatamente visibile contenente l'insieme di \textit{skill} possedute per ciascuna categoria e una visibile tramite la pressione di un tasto, contenente il totale delle \textit{skill} considerate.\\
+La visualizzazione delle skill è legata alla funzione \ref{categ}, che restiuisce un booleano a una direttiva \textit{Ng-If} all'interno del codice \textit{HTML}; la quale determina la visualizzazione o meno del codice afferente al \textit{tag} legato alla direttiva, come si può vedere nel \textit{listing} \ref{skVis}.\\
 \newpage
 \begin{lstlisting}[label=categ, caption=Funzione che determina la visualizzazione di una categoria avente \textit{skills} possedute ]
 
@@ -221,7 +221,7 @@ hasThisCategorySkills(cat: string): boolean {
 
 Per facilitare la navigazione fra le due tabelle, viene aggiunto il \textit{component} per il filtraggio dei dati, adottando lo stesso approccio della maschera di visualizzazione lista degli \textit{applicant} (v. sez. \ref{section: applicant-list}).\\
 La modifica avviene tramite un menù a tendina visibile tramite la pressione di un tasto "Modfica", la tabella di \textit{skill} possedute si aggiorna in conseguenza alla conferma del nuovo dato selezionato (aggiungendo o togliendo righe a seconda del livello della \textit{skill}).\\
-Allo scopo di rendere i dati consistenti fra le due tabelle (in modo da evitare che i livelli risultino discordanti),viene utilizzato un singolo \textit{FormBuilder} e una singola struttura dati che tenga traccia dei valori per il \textit{submit} delle modifiche.\\
+Allo scopo di rendere i dati consistenti fra le due tabelle (in modo da evitare che i livelli risultino discordanti), viene utilizzato un singolo \textit{FormBuilder} e una singola struttura dati che tenga traccia dei valori per il \textit{submit} delle modifiche.\\
  
  
  \begin{lstlisting} [label=skVis, caption= HTML e direttiva Ng-If]

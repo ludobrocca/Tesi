@@ -127,4 +127,5 @@
 \contentsline {subsection}{\numberline {A.1.1}Struttura di uno script Oracle PL/SQL}{55}{subsection.Alph1.1.1}
 \contentsline {subsubsection}{Cursori}{56}{section*.97}
 \contentsline {section}{\numberline {A.2}Archittetture a microservizi}{56}{section.Alph1.2}
+\contentsline {section}{\numberline {A.3}JavaServer Pages (JSP)}{57}{section.Alph1.3}
 \contentsline {chapter}{Glossary}{59}{section*.98}

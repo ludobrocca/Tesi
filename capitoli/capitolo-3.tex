@@ -13,7 +13,7 @@ Questa sezione ha lo scopo di dettagliare gli attori individuati; ciascun attore
 \begin{itemize}	
 	\item \textbf{\nonlogged:} utente che non ha eseguito il \textit{login} presso l'applicazione, nel corso del lavoro svolto dal laureando non sono stati modellati casi d'uso per questo attore.
 	\item \textbf{\loggedusr:} utente che ha effettuato l'accesso alla piattaforma SyncRec.
-	\item \textbf{\applicant:} utente a cui è stato inviato un link specifico per la compilazione dello skillmatrix prima dello svolgimento di un colloquio lavorativo. 
+	\item \textbf{\textit{applicant}:} utente a cui è stato inviato un link specifico per la compilazione dello skillmatrix prima dello svolgimento di un colloquio lavorativo. 
 \end{itemize}
 
 \section{Casi d'uso}
@@ -42,37 +42,37 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsection{UC-1: Visualizzazione lista degli\applicant}
 \begin{itemize}
 	\item \textbf{Attori:}\loggedusr
-	\item \textbf{Precondizione:} l'utente si trova nella vista di visualizzazione lista degli applicant.
+	\item \textbf{Precondizione:} l'utente si trova nella vista di visualizzazione lista degli \textit{applicant}.
 	\item \textbf{Scenario Principale:} 
 		\begin{enumerate}
-			\item l'utente visualizza il cognome dell'applicant; 
-			\item l'utente visualizza il nome dell'applicant;
-			\item l'utente visualizza l'email dell'applicant;
+			\item l'utente visualizza il cognome dell'\textit{applicant}; 
+			\item l'utente visualizza il nome dell'\textit{applicant};
+			\item l'utente visualizza l'email dell'\textit{applicant};
 		\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di visualizzazione lista degli applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di visualizzazione lista degli \textit{applicant}.
 \end{itemize}
 
 \subsubsection{\underline{UC-1.1: Visualizzazione dettaglio di un\applicant}}
 \begin{itemize}
 	\item \textbf{Attori:}\loggedusr
-	\item \textbf{Precondizione:} l'utente si trova nella vista di visualizzazione lista degli applicant. 
+	\item \textbf{Precondizione:} l'utente si trova nella vista di visualizzazione lista degli \textit{applicant}. 
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
-		\item l'utente clicca sul pulsante relativo a un applicant;
-		\item l'utente viene reindirizzato alla vista di dettaglio di un applicant;
-		\item l'utente visualizza tramite la vista il dettaglio degli applicant.
+		\item l'utente clicca sul pulsante relativo a un \textit{applicant};
+		\item l'utente viene reindirizzato alla vista di dettaglio di un \textit{applicant};
+		\item l'utente visualizza tramite la vista il dettaglio degli \textit{applicant}.
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant};
 \end{itemize}
 
 
 \subsection{UC-2: Modifica di un \applicant}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
-		\item l'utente clicca sul campo dati di un applicant che desidera modificare;
+		\item l'utente clicca sul campo dati di un \textit{applicant} che desidera modificare;
 		\item l'utente visualizza il  widget di modifica per il campo dati
 		relativo;
 		\item l'utente inserisce le modifiche desiderate.
@@ -80,7 +80,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 	\item \textbf{PostCondizione:} 
 	\begin{enumerate}
 		\item l'utente visualizza il campo dati modificato;
-		\item l'utente si trova nella vista di dettaglio di un applicant.
+		\item l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 	\end{enumerate}
 	
 \end{itemize}
@@ -96,7 +96,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsubsection{\underline{UC-2.1: Modifica del nome di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul box di testo relativo al nome;
@@ -106,7 +106,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 	\item \textbf{PostCondizione:} 
 	\begin{enumerate}
 		\item l'utente visualizza il campo dati modificato;
-		\item l'utente si trova nella vista di dettaglio di un applicant.
+		\item l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 	\end{enumerate}
 	
 \end{itemize}
@@ -114,7 +114,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsubsection{\underline{UC-2.2: Modifica del cognome di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul box di testo relativo al cognome;
@@ -124,7 +124,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 	\item \textbf{PostCondizione:} 
 	\begin{enumerate}
 		\item l'utente visualizza il campo dati modificato;
-		\item l'utente si trova nella vista di dettaglio di un applicant.
+		\item l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 	\end{enumerate}
 	
 \end{itemize}
@@ -132,7 +132,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsubsection{\underline{UC-2.3: Modifica del genere di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul box di testo relativo al nome;
@@ -142,7 +142,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 	\item \textbf{PostCondizione:} 
 	\begin{enumerate}
 		\item l'utente visualizza il campo dati modificato;
-		\item l'utente si trova nella vista di dettaglio di un applicant.
+		\item l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 	\end{enumerate}
 	
 \end{itemize}
@@ -150,7 +150,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsubsection{\underline{UC-2.4: Modifica dell'indirizzo di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul box di testo relativo all'indirizzo;
@@ -160,7 +160,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 	\item \textbf{PostCondizione:} 
 	\begin{enumerate}
 		\item l'utente visualizza il campo dati modificato;
-		\item l'utente si trova nella vista di dettaglio di un applicant.
+		\item l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 	\end{enumerate}
 	
 \end{itemize}
@@ -168,7 +168,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsubsection{\underline{UC-2.5: Modifica della data di nascita di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul box di testo relativo alla data di nascita;
@@ -178,7 +178,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 	\item \textbf{PostCondizione:} 
 	\begin{enumerate}
 		\item l'utente visualizza il campo dati modificato;
-		\item l'utente si trova nella vista di dettaglio di un applicant.
+		\item l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 	\end{enumerate}
 	
 \end{itemize}
@@ -187,7 +187,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsubsection{\underline{UC-2.6: Modifica della città di residenza di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul box di testo relativo alla città di residenza;
@@ -197,7 +197,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 	\item \textbf{PostCondizione:} 
 	\begin{enumerate}
 		\item l'utente visualizza il campo dati modificato;
-		\item l'utente si trova nella vista di dettaglio di un applicant.
+		\item l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 	\end{enumerate}
 	
 \end{itemize}
@@ -205,7 +205,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsubsection{\underline{UC-2.7: Modifica dell'email di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul box di testo relativo all'email;
@@ -215,7 +215,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 	\item \textbf{PostCondizione:} 
 	\begin{enumerate}
 		\item l'utente visualizza il campo dati modificato;
-		\item l'utente si trova nella vista di dettaglio di un applicant.
+		\item l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 	\end{enumerate}
 	
 \end{itemize}
@@ -223,7 +223,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsubsection{\underline{UC-2.8: Modifica dell'ambito lavorativo di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul box di testo relativo all'ambito lavorativo,
@@ -233,7 +233,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 	\item \textbf{PostCondizione:} 
 	\begin{enumerate}
 		\item l'utente visualizza il campo dati modificato;
-		\item l'utente si trova nella vista di dettaglio di un applicant.
+		\item l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 	\end{enumerate}
 	
 \end{itemize}
@@ -241,7 +241,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsubsection{\underline{UC-2.9: Modifica dell'anzianità di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul box di testo relativo all'anzianità;
@@ -251,7 +251,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 	\item \textbf{PostCondizione:} 
 	\begin{enumerate}
 		\item l'utente visualizza il campo dati modificato;
-		\item l'utente si trova nella vista di dettaglio di un applicant.
+		\item l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 	\end{enumerate}
 	
 \end{itemize}
@@ -259,7 +259,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsubsection{\underline{UC-2.10: Modifica del titolo di studio di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul box di testo relativo all'anzianità;
@@ -269,7 +269,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 	\item \textbf{PostCondizione:} 
 	\begin{enumerate}
 		\item l'utente visualizza il campo dati modificato;
-		\item l'utente si trova nella vista di dettaglio di un applicant.
+		\item l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 	\end{enumerate}
 	
 \end{itemize}
@@ -278,7 +278,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsubsection{\underline{UC-2.11: Modifica della disponibilità geografica di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul box di testo relativo alla disponibilità geografica;
@@ -288,7 +288,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 	\item \textbf{PostCondizione:} 
 	\begin{enumerate}
 		\item l'utente visualizza il campo dati modificato;
-		\item l'utente si trova nella vista di dettaglio di un applicant.
+		\item l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 	\end{enumerate}
 	
 \end{itemize}
@@ -296,7 +296,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsubsection{\underline{UC-2.12: Modifica del preavviso di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul box di testo relativo al preavviso;
@@ -306,7 +306,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 	\item \textbf{PostCondizione:} 
 	\begin{enumerate}
 		\item l'utente visualizza il campo dati modificato;
-		\item l'utente si trova nella vista di dettaglio di un applicant.
+		\item l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 	\end{enumerate}
 	
 \end{itemize}
@@ -314,7 +314,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsubsection{\underline{UC-2.13: Modifica del telefono di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul box di testo relativo al telefono;
@@ -324,7 +324,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 	\item \textbf{PostCondizione:} 
 	\begin{enumerate}
 		\item l'utente visualizza il campo dati modificato;
-		\item l'utente si trova nella vista di dettaglio di un applicant.
+		\item l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 	\end{enumerate}
 	
 \end{itemize}
@@ -333,14 +333,14 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsubsection{\underline{UC-2.14: Download del curriculum di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
-		\item l'utente clicca sul pulsante relativo al curriculum di un applicant.
+		\item l'utente clicca sul pulsante relativo al curriculum di un \textit{applicant}.
 	\end{enumerate}
 	\item \textbf{PostCondizione:} 
 	\begin{enumerate}
-		\item l'utente effettua il download del curriculum dell'applicant.
+		\item l'utente effettua il download del curriculum dell'\textit{applicant}.
 	\end{enumerate}
 	
 \end{itemize}
@@ -348,7 +348,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsubsection{\underline{UC-2.15: Salvataggio delle modifiche di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul pulsante di salvataggio delle modifiche
@@ -357,7 +357,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 	\begin{enumerate}
 		\item l'utente visualizza i campi dati modificati;
 		\item le modifiche vengono confermate;
-		\item l'utente si trova nella vista di dettaglio di un applicant;
+		\item l'utente si trova nella vista di dettaglio di un \textit{applicant};
 		\item viene visualizzato un messaggio di successo.
 	\end{enumerate}
 	
@@ -378,7 +378,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \begin{figure}[!h] 
 	\centering 
 	\includegraphics[width=1\columnwidth]{immagini/usecase/UC5} 
-	\caption{Diagramma Use Case sulla visualizzazione errori relativi al salvataggio dell'applicant}
+	\caption{Diagramma Use Case sulla visualizzazione errori relativi al salvataggio dell'\textit{applicant}}
 	\label{figura:uc-5}
 \end{figure}
 
@@ -386,74 +386,74 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \paragraph{\underline{UC-2.15.1: Visualizzazione errore nome obbligatorio}}
 \begin{itemize}	
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant e ha tentato di cancellare del tutto il campo del nome di un applicant.
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant} e ha tentato di cancellare del tutto il campo del nome di un \textit{applicant}.
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item Viene visualizzato un errore che previene il salvataggio dei dati inconsistenti.
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \paragraph{\underline{UC-2.15.2: Visualizzazione errore nome errato}}
 \begin{itemize}	
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant e ha tentato di inserire un nome con caratteri speciali.
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant} e ha tentato di inserire un nome con caratteri speciali.
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item Viene visualizzato un errore che previene il salvataggio dei dati inconsistenti.
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \paragraph{\underline{UC-2.15.3: Visualizzazione errore cognome obbligatorio}}
 \begin{itemize}	
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant e ha tentato di cancellare del tutto il campo del cognome di un applicant.
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant} e ha tentato di cancellare del tutto il campo del cognome di un \textit{applicant}.
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item Viene visualizzato un errore che previene il salvataggio dei dati inconsistenti.
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \paragraph{\underline{UC-2.15.4: Visualizzazione errore cognome errato}}
 \begin{itemize}	
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant e ha tentato di inserire un cognome con caratteri speciali.
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant} e ha tentato di inserire un cognome con caratteri speciali.
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item Viene visualizzato un errore che previene il salvataggio dei dati inconsistenti.
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \paragraph{\underline{UC-2.15.5: Visualizzazione errore email obbligatoria}}
 \begin{itemize}	
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant e ha tentato di cancellare del tutto il campo della email di un applicant.
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant} e ha tentato di cancellare del tutto il campo della email di un \textit{applicant}.
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item Viene visualizzato un errore che previene il salvataggio dei dati inconsistenti.
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \paragraph{\underline{UC-2.15.6: Visualizzazione errore email errata}}
 \begin{itemize}	
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant e ha tentato di inserire una email che non rispetta il formato comunemente accettato.
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant} e ha tentato di inserire una email che non rispetta il formato comunemente accettato.
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item Viene visualizzato un errore che previene il salvataggio dei dati inconsistenti.
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 
 \subsubsection{UC-2.16: Annullamento delle modifiche di un \applicant}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul pulsante di annullamento delle modifiche.
@@ -462,7 +462,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 	\begin{enumerate}
 		\item l'utente visualizza i campi dati nello stato antecedente alla modifica degli stessi;
 		\item le modifiche vengono annullate;
-		\item l'utente si trova nella vista di dettaglio di un applicant.
+		\item l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 	\end{enumerate}
 	
 \end{itemize}
@@ -471,7 +471,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsubsection{\underline{UC-2.17: Modifica delle note generiche di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul box di testo relativo alle note generiche;
@@ -481,7 +481,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 	\item \textbf{PostCondizione:} 
 	\begin{enumerate}
 		\item l'utente visualizza il campo dati modificato;
-		\item l'utente si trova nella vista di dettaglio di un applicant.
+		\item l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 	\end{enumerate}
 	
 \end{itemize}
@@ -489,7 +489,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsubsection{\underline{UC-2.18: Modifica delle note relative a un colloquio di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul box di testo relativo alle note del colloquio;
@@ -499,7 +499,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 	\item \textbf{PostCondizione:} 
 	\begin{enumerate}
 		\item l'utente visualizza il campo dati modificato;
-		\item l'utente si trova nella vista di dettaglio di un applicant.
+		\item l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 	\end{enumerate}
 	
 \end{itemize}
@@ -507,7 +507,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsubsection{\underline{UC-2.19: Modifica delle note riguardanti lo status lavorativo di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul box di testo relativo alle note generiche;
@@ -517,7 +517,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 	\item \textbf{PostCondizione:} 
 	\begin{enumerate}
 		\item l'utente visualizza il campo dati modificato;
-		\item l'utente si trova nella vista di dettaglio di un applicant.
+		\item l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 	\end{enumerate}
 	
 \end{itemize}
@@ -525,7 +525,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsubsection{\underline{UC-2.20: Modifica delle note riguardanti le considerazioni aggiuntive relative} a un \applicant}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul box di testo relativo alle note aggiuntive;
@@ -535,7 +535,7 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 	\item \textbf{PostCondizione:} 
 	\begin{enumerate}
 		\item l'utente visualizza il campo dati modificato;
-		\item l'utente si trova nella vista di dettaglio di un applicant.
+		\item l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 	\end{enumerate}
 	
 \end{itemize}
@@ -545,10 +545,10 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsection{UC-3: Eliminazione di un\applicant}
 \begin{itemize}
 \item \textbf{Attori:}\loggedusr
-\item \textbf{Precondizione:} l'utente si trova nella vista di visualizzazione lista degli applicant.
+\item \textbf{Precondizione:} l'utente si trova nella vista di visualizzazione lista degli \textit{applicant}.
 \item \textbf{Scenario Principale:}
 \begin{enumerate}
-	\item l'utente clicca il pulsante "Elimina" riferito a un certo applicant.
+	\item l'utente clicca il pulsante "Elimina" riferito a un certo \textit{applicant}.
 \end{enumerate}
 \item \textbf{PostCondizione:} Viene visualizzato un messaggio di richiesta di conferma.
 \end{itemize}
@@ -556,13 +556,13 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsubsection{\underline{UC-3.1: Conferma eliminazione di un\applicant}}
 \begin{itemize}
 	\item \textbf{Attori:}\loggedusr
-	\item \textbf{Precondizione:}l'utente si trova nella vista di visualizzazione lista degli applicant e ha richiesto l'eliminazione di un applicant.
+	\item \textbf{Precondizione:}l'utente si trova nella vista di visualizzazione lista degli \textit{applicant} e ha richiesto l'eliminazione di un \textit{applicant}.
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item L'utente visualizza il messaggio di richiesta di conferma;
 		\item L'utente preme il tasto "Ok".
 	\end{enumerate}
-	\item \textbf{PostCondizione:} si chiude il messaggio di conferma, avviene l'eliminazione dell'applicant e il \textit{refresh} della pagina.
+	\item \textbf{PostCondizione:} si chiude il messaggio di conferma, avviene l'eliminazione dell'\textit{applicant} e il \textit{refresh} della pagina.
 	\item \textbf{Estensioni:} 
 	\begin{enumerate}
 		\item l'utente preme il tasto "Annulla";
@@ -573,29 +573,29 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsection{UC-4: Visualizzazione dettaglio di un \applicant }
 \begin{itemize}
 	\item \textbf{Attori:} \loggedusr
-	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
-		\item l'utente visualizza il nome dell'applicant (UC-4.1); 
-		\item l'utente visualizza il cognome dell'applicant (UC-4.2);
-		\item l'utente visualizza il genere dell'applicant (UC-4.3);
-		\item l'utente visualizza la data di nascita dell'applicant (UC-4.4);
-		\item l'utente visualizza l'email dell'applicant (UC-4.5);
-		\item l'utente visualizza il numero di telefono dell'applicant (UC-4.6);	
-		\item l'utente visualizza l'indirizzo dell'applicant (UC-4.7);
-		\item l'utente visualizza la città residenza dell'applicant (UC-4.8);
-		\item l'utente visualizza il preavviso richiesto dall'applicant per una chiamata (UC-4.9);
-		\item l'utente visualizza il titolo di studio dell'applicant (UC-4.10);
-		\item l'utente visualizza il livello di anzianità dell'applicant (UC-4.11);
-		\item l'utente visualizza l'ambito di lavoro dell'applicant (UC-4.12);
-		\item l'utente visualizza se lo status dell'applicant è scartato o meno (UC-4.13);
-		\item l'utente visualizza le citta per cui l'applicant ha fornito disponibilità per il trasferimento (UC-4.14);
-		\item l'utente visualizza delle note generiche relative all'applicant (UC-4.15);
-		\item l'utente visualizza delle note relative al colloquio dell'applicant (UC-4.16);
-		\item l'utente visualizza delle note riguardanti lo status lavorativo dell'applicant (UC-4.17);
-		\item l'utente visualizza altre considerazioni aggiuntive relative all'applicant (UC-4.18).
+		\item l'utente visualizza il nome dell'\textit{applicant} (UC-4.1); 
+		\item l'utente visualizza il cognome dell'\textit{applicant} (UC-4.2);
+		\item l'utente visualizza il genere dell'\textit{applicant} (UC-4.3);
+		\item l'utente visualizza la data di nascita dell'\textit{applicant} (UC-4.4);
+		\item l'utente visualizza l'email dell'\textit{applicant} (UC-4.5);
+		\item l'utente visualizza il numero di telefono dell'\textit{applicant} (UC-4.6);	
+		\item l'utente visualizza l'indirizzo dell'\textit{applicant} (UC-4.7);
+		\item l'utente visualizza la città residenza dell'\textit{applicant} (UC-4.8);
+		\item l'utente visualizza il preavviso richiesto dall'\textit{applicant} per una chiamata (UC-4.9);
+		\item l'utente visualizza il titolo di studio dell'\textit{applicant} (UC-4.10);
+		\item l'utente visualizza il livello di anzianità dell'\textit{applicant} (UC-4.11);
+		\item l'utente visualizza l'ambito di lavoro dell'\textit{applicant} (UC-4.12);
+		\item l'utente visualizza se lo status dell'\textit{applicant} è scartato o meno (UC-4.13);
+		\item l'utente visualizza le citta per cui l'\textit{applicant} ha fornito disponibilità per il trasferimento (UC-4.14);
+		\item l'utente visualizza delle note generiche relative all'\textit{applicant} (UC-4.15);
+		\item l'utente visualizza delle note relative al colloquio dell'\textit{applicant} (UC-4.16);
+		\item l'utente visualizza delle note riguardanti lo status lavorativo dell'\textit{applicant} (UC-4.17);
+		\item l'utente visualizza altre considerazioni aggiuntive relative all'\textit{applicant} (UC-4.18).
 	\end{enumerate}
-	\item \textbf{PostCondizione:}  l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \begin{figure}[!h] 
@@ -608,201 +608,201 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsubsection{\underline{UC-4.1: Visualizzazione nome di un \applicant}}
 \begin{itemize}
 \item \textbf{Attori:} Utente riconosciuto
-\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un applicant;
+\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant};
 \item \textbf{Scenario Principale:}
 \begin{enumerate} 
-	\item l'utente visualizza il nome dell'applicant;
+	\item l'utente visualizza il nome dell'\textit{applicant};
 \end{enumerate}
-\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \subsubsection{\underline{UC-4.2: Visualizzazione cognome di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate} 
-		\item l'utente visualizza il cognome dell'applicant;
+		\item l'utente visualizza il cognome dell'\textit{applicant};
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \subsubsection{\underline{UC-4.3: Visualizzazione genere di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate} 
-		\item l'utente visualizza il genere dell'applicant;
+		\item l'utente visualizza il genere dell'\textit{applicant};
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \subsubsection{\underline{UC-4.4: Visualizzazione data di nascita di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate} 
-		\item l'utente visualizza il nome dell'applicant;
+		\item l'utente visualizza il nome dell'\textit{applicant};
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \subsubsection{\underline{UC-4.5: Visualizzazione email di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate} 
-		\item l'utente visualizza il nome dell'applicant;
+		\item l'utente visualizza il nome dell'\textit{applicant};
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \subsubsection{\underline{UC-4.6: Visualizzazione numero di telefono di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate} 
-		\item l'utente visualizza il numero di telefono dell'applicant;
+		\item l'utente visualizza il numero di telefono dell'\textit{applicant};
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \subsubsection{\underline{UC-4.7: Visualizzazione l'indirizzo di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate} 
-		\item l'utente visualizza l'indirizzo dell'applicant;
+		\item l'utente visualizza l'indirizzo dell'\textit{applicant};
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \subsubsection{\underline{UC-4.8: Visualizzazione città di residenza di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate} 
-		\item l'utente visualizza la città di residenza dell'applicant;
+		\item l'utente visualizza la città di residenza dell'\textit{applicant};
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \subsubsection{\underline{UC-4.9: Visualizzazione preavviso richiesto da un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate} 
-		\item l'utente visualizza il preavviso richiesto dall'applicant;
+		\item l'utente visualizza il preavviso richiesto dall'\textit{applicant};
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \subsubsection{\underline{UC-4.10: Visualizzazione titolo di studio di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate} 
-		\item l'utente visualizza il titolo di studio dell'applicant;
+		\item l'utente visualizza il titolo di studio dell'\textit{applicant};
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \subsubsection{\underline{UC-4.11: Visualizzazione livello di anzianità di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate} 
-		\item l'utente visualizza il livello di anzianità dell'applicant;
+		\item l'utente visualizza il livello di anzianità dell'\textit{applicant};
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \subsubsection{\underline{UC-4.12: Visualizzazione ambito lavorativo di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate} 
-		\item l'utente visualizza l'ambito lavorativo dell'applicant;
+		\item l'utente visualizza l'ambito lavorativo dell'\textit{applicant};
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \subsubsection{\underline{UC-4.13: Visualizzazione status (scartato o meno) di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate} 
-		\item l'utente visualizza se lo status dell'applicant è scartato o meno;
+		\item l'utente visualizza se lo status dell'\textit{applicant} è scartato o meno;
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \subsubsection{\underline{UC-4.14: Visualizzazione disponibilità geografica di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate} 
-		\item l'utente visualizza le città per cui l'applicant ha fornito disponibilità per il trasferimento;
+		\item l'utente visualizza le città per cui l'\textit{applicant} ha fornito disponibilità per il trasferimento;
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \subsubsection{\underline{UC-4.15: Visualizzazione note generiche di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate} 
-		\item l'utente visualizza le note generiche relative all'applicant;
+		\item l'utente visualizza le note generiche relative all'\textit{applicant};
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \subsubsection{\underline{UC-4.16: Visualizzazione note relative al colloquio di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate} 
-		\item l'utente visualizza le note relative al colloquio dell'applicant;
+		\item l'utente visualizza le note relative al colloquio dell'\textit{applicant};
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 
 \subsubsection{\underline{UC-4.17: Visualizzazione note sullo status lavorativo di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate} 
-		\item l'utente visualizza note riguardanti lo status lavorativo dell'applicant;
+		\item l'utente visualizza note riguardanti lo status lavorativo dell'\textit{applicant};
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 
 \subsubsection{\underline{UC-4.18: Visualizzazione note aggiuntive relative a un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un applicant;
+	\item \textbf{Precondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant};
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate} 
-		\item l'utente visualizza note riguardanti le considerazioni aggiunitve relative all'applicant;
+		\item l'utente visualizza note riguardanti le considerazioni aggiunitve relative all'\textit{applicant};
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un applicant.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista di dettaglio di un \textit{applicant}.
 \end{itemize}
 
 \vspace{0.5em}
@@ -816,12 +816,12 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsection{UC-5: Aggiunta filtro sulla lista degli\applicant}
 \begin{itemize}
 	\item \textbf{Attori:}\loggedusr
-	\item \textbf{Precondizione:} l'utente si trova nella vista di visualizzazione lista degli applicant.
+	\item \textbf{Precondizione:} l'utente si trova nella vista di visualizzazione lista degli \textit{applicant}.
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente inserisce nel campo di testo un carattere o un insieme di caratteri.
 	\end{enumerate}
-	\item \textbf{PostCondizione:} viene visualizzata la lista degli applicant dove nome e cognome contengono i caratteri inseriti.
+	\item \textbf{PostCondizione:} viene visualizzata la lista degli \textit{applicant} dove nome e cognome contengono i caratteri inseriti.
 \end{itemize}
 
 
@@ -829,45 +829,45 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \begin{figure}[!h]
 	\centering 
 	\includegraphics[width=1\columnwidth]{immagini/usecase/UC2} 
-	\caption{Diagramma di Use Case delle operazioni ausiliare sulla lista degli applicant}
+	\caption{Diagramma di Use Case delle operazioni ausiliare sulla lista degli \textit{applicant}}
 	\label{figura:uc-2}
 \end{figure}
 
 \subsection{UC-6: Ordinamento degli\applicant}
 \begin{itemize}
 	\item \textbf{Attori:}\loggedusr
-	\item \textbf{Precondizione:} l'utente si trova nella vista di visualizzazione lista degli applicant.
+	\item \textbf{Precondizione:} l'utente si trova nella vista di visualizzazione lista degli \textit{applicant}.
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul \textit{header} della lista riportante il campo desiderato;
-		\item gli applicant vengono posti in ordine crescente secondo il campo desiderato.
+		\item gli \textit{applicant} vengono posti in ordine crescente secondo il campo desiderato.
 	\end{enumerate}
-	\item \textbf{PostCondizione:}  l'utente si trova nella vista di visualizzazione lista degli applicant.
+	\item \textbf{PostCondizione:}  l'utente si trova nella vista di visualizzazione lista degli \textit{applicant}.
 \end{itemize}
 
 
 \subsubsection{\underline{UC-6.1: Ordinamento degli\applicant secondo il nome}}
 \begin{itemize}
 	\item \textbf{Attori:}\loggedusr
-	\item \textbf{Precondizione:} l'utente si trova nella vista di visualizzazione lista degli applicant.
+	\item \textbf{Precondizione:} l'utente si trova nella vista di visualizzazione lista degli \textit{applicant}.
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul \textit{header} della lista riportante il campo "Nome";
-		\item gli applicant vengono posti in ordine crescente secondo il nome.
+		\item gli \textit{applicant} vengono posti in ordine crescente secondo il nome.
 	\end{enumerate}
-	\item \textbf{PostCondizione:}  l'utente si trova nella vista di visualizzazione lista degli applicant.
+	\item \textbf{PostCondizione:}  l'utente si trova nella vista di visualizzazione lista degli \textit{applicant}.
 \end{itemize}
 
 \subsubsection{\underline{UC-6.2: Ordinamento degli\applicant secondo il cognome}}
 \begin{itemize}
 	\item \textbf{Attori:}\loggedusr
-	\item \textbf{Precondizione:} l'utente si trova nella vista di visualizzazione lista degli applicant.
+	\item \textbf{Precondizione:} l'utente si trova nella vista di visualizzazione lista degli \textit{applicant}.
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul \textit{header} della lista riportante il campo "Cognome";
-		\item gli applicant vengono posti in ordine crescente secondo il cognome.
+		\item gli \textit{applicant} vengono posti in ordine crescente secondo il cognome.
 	\end{enumerate}
-	\item \textbf{PostCondizione:}  l'utente si trova nella vista di visualizzazione lista degli applicant.
+	\item \textbf{PostCondizione:}  l'utente si trova nella vista di visualizzazione lista degli \textit{applicant}.
 \end{itemize}
 
 \subsection{UC-7: Aggiunta dei filtri}
@@ -987,9 +987,9 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \item \textbf{Scenario Principale:}
 \begin{enumerate}
 	\item l'utente clicca sul tasto "Applica filtri selezionati";
-	\item l'utente viene reindirizzato alla vista di visualizzazione lista degli applicant.
+	\item l'utente viene reindirizzato alla vista di visualizzazione lista degli \textit{applicant}.
 \end{enumerate}
-\item \textbf{PostCondizione:} l'utente si trova nella vista relativa alla visualizzazione degli applicant e visualizza li visualizza secondo i filtri selezionati;
+\item \textbf{PostCondizione:} l'utente si trova nella vista relativa alla visualizzazione degli \textit{applicant} e visualizza li visualizza secondo i filtri selezionati;
 \item \textbf{Estensioni:} l'utente visualizza un messaggio di errore relativo all'inserimento dei filtri (UC-7.11.1);
 \end{itemize}
 
@@ -1020,34 +1020,34 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsection{UC-9: Visualizzazione skillmatrix di un \applicant}
 \begin{itemize}
 \item \textbf{Attori:} Utente riconosciuto
-\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un applicant
+\item \textbf{Precondizione:}  l'utente si trova nella vista di dettaglio di un \textit{applicant}
 \item \textbf{Scenario Principale:}
 \begin{enumerate}
-	\item l'utente clicca sul pulsante relativo alla visualizzazione skillmatrix di un applicant
+	\item l'utente clicca sul pulsante relativo alla visualizzazione skillmatrix di un \textit{applicant}
 \end{enumerate}
-\item \textbf{PostCondizione:} l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un applicant.
+\item \textbf{PostCondizione:} l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un \textit{applicant}.
 \end{itemize}
 
 \subsubsection{UC-9.1: Visualizzazione nome della skill}
 \begin{itemize}
 \item \textbf{Attori:} Utente riconosciuto
-\item \textbf{Precondizione:}  l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un applicant.
+\item \textbf{Precondizione:}  l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un \textit{applicant}.
 \item \textbf{Scenario Principale:}
 \begin{enumerate}
-	\item l'utente visualizza il nome della skill posseduta dall'applicant
+	\item l'utente visualizza il nome della skill posseduta dall'\textit{applicant}
 \end{enumerate}
-\item \textbf{PostCondizione:}  l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un applicant.
+\item \textbf{PostCondizione:}  l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un \textit{applicant}.
 \end{itemize}
 
 \subsubsection{UC-9.2: Visualizzazione livello della skill}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:}  l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un applicant.
+	\item \textbf{Precondizione:}  l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un \textit{applicant}.
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
-		\item l'utente visualizza il livello della skill posseduta dall'applicant
+		\item l'utente visualizza il livello della skill posseduta dall'\textit{applicant}
 	\end{enumerate}
-	\item \textbf{PostCondizione:}  l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un applicant.
+	\item \textbf{PostCondizione:}  l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un \textit{applicant}.
 \end{itemize}
 
 
@@ -1055,35 +1055,35 @@ La sezione presenta i casi d'uso individuati per l'intero progetto SyncRec.
 \subsection{UC-10: Modifica skill di un \applicant}
 \begin{itemize}
 \item \textbf{Attori:} Utente riconosciuto
-\item \textbf{Precondizione:} l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un applicant.
+\item \textbf{Precondizione:} l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un \textit{applicant}.
 \item \textbf{Scenario Principale:}
 \begin{enumerate}
 	\item l'utente seleziona una skill da modificare;
 	\item l'utente seleziona il livello desiderato da un menù a tendina.
 \end{enumerate}
-\item \textbf{PostCondizione:} l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un applicant e viene visualizzato un pulsante di conferma.
+\item \textbf{PostCondizione:} l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un \textit{applicant} e viene visualizzato un pulsante di conferma.
 \end{itemize}
 
 \subsubsection{\underline{UC-10.1: Conferma della modifica skill di un \applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:} l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un applicant e ha effettuato una modifica su uno o più livelli di una skill.
+	\item \textbf{Precondizione:} l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un \textit{applicant} e ha effettuato una modifica su uno o più livelli di una skill.
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul pulsante di conferma.
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un applicant e le modifiche precedentemente apportate risultano salvate.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un \textit{applicant} e le modifiche precedentemente apportate risultano salvate.
 \end{itemize}
 
 \subsubsection{\underline{UC-10.2: Annullamento della modifica skill di un\applicant}}
 \begin{itemize}
 	\item \textbf{Attori:} Utente riconosciuto
-	\item \textbf{Precondizione:} l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un applicant e ha effettuato una modifica su uno o più livelli di una skill.
+	\item \textbf{Precondizione:} l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un \textit{applicant} e ha effettuato una modifica su uno o più livelli di una skill.
 	\item \textbf{Scenario Principale:}
 	\begin{enumerate}
 		\item l'utente clicca sul pulsante di annullamento.
 	\end{enumerate}
-	\item \textbf{PostCondizione:} l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un applicant e le modifiche precedentemente apportate vengono eliminate, ripristinando lo stato originale dello skillmatrix.
+	\item \textbf{PostCondizione:} l'utente si trova nella vista relativa alla visualizzazione skillmatrix di un \textit{applicant} e le modifiche precedentemente apportate vengono eliminate, ripristinando lo stato originale dello skillmatrix.
 \end{itemize}
 
 \section{Tracciamento dei requisiti}
@@ -1122,41 +1122,41 @@ Dove per ciascun parametro possono essere assegnate le seguenti opzioni:
 		\textbf{Codice} & \textbf{Descrizione} & \textbf{Use Case} \\
 		\hline
 		\endhead
-		ROF01 & L'utente riconosciuto deve poter visualizzare la lista degli applicant registrati presso SyncRec & UC-1 \\
+		ROF01 & L'utente riconosciuto deve poter visualizzare la lista degli \textit{applicant} registrati presso SyncRec & UC-1 \\
 		\hline
-		ROF02 & L'utente deve poter accedere alla vista di dettaglio di un applicant a partire dalla lista del totale delle persone richiedenti registrate & UC-1.1 \\
+		ROF02 & L'utente deve poter accedere alla vista di dettaglio di un \textit{applicant} a partire dalla lista del totale delle persone richiedenti registrate & UC-1.1 \\
 		\hline
-		ROF03 & L'utente deve poter modificare i dati registrati di un applicant & UC-2 \\
+		ROF03 & L'utente deve poter modificare i dati registrati di un \textit{applicant} & UC-2 \\
 		\hline
-		ROF04 & L'utente deve poter modificare il nome di un applicant & UC-2.1 \\
+		ROF04 & L'utente deve poter modificare il nome di un \textit{applicant} & UC-2.1 \\
 		\hline
-		ROF05 & L'utente deve poter modificare il nome di un applicant & UC-2.2 \\
+		ROF05 & L'utente deve poter modificare il nome di un \textit{applicant} & UC-2.2 \\
 		\hline
-		ROF06 & L'utente deve poter modificare il genere di un applicant & UC-2.3\\
+		ROF06 & L'utente deve poter modificare il genere di un \textit{applicant} & UC-2.3\\
 		\hline
-		ROF07 & L'utente deve poter modificare l'indirizzo di un applicant & UC-2.4 \\
+		ROF07 & L'utente deve poter modificare l'indirizzo di un \textit{applicant} & UC-2.4 \\
 		\hline
-		ROF08 &  L'utente deve poter modificare la data di nascita di un applicant & UC-2.5 \\
+		ROF08 &  L'utente deve poter modificare la data di nascita di un \textit{applicant} & UC-2.5 \\
 		\hline
-		ROF09 & L'utente deve poter modificare la città di residenza di un applicant & UC 2.6 \\
+		ROF09 & L'utente deve poter modificare la città di residenza di un \textit{applicant} & UC 2.6 \\
 		\hline
-		ROF10 & L'utente deve poter modificare l'email di un applicant & UC-2.7\\
+		ROF10 & L'utente deve poter modificare l'email di un \textit{applicant} & UC-2.7\\
 		\hline
-		ROF11 & L'utente deve poter modificare l'ambito lavorativo di un applicant &  UC-2.8\\
+		ROF11 & L'utente deve poter modificare l'ambito lavorativo di un \textit{applicant} &  UC-2.8\\
 		\hline
-		ROF12 & L'utente deve poter modificare il titolo di studio di un applicant & UC-2.10 \\
+		ROF12 & L'utente deve poter modificare il titolo di studio di un \textit{applicant} & UC-2.10 \\
 		\hline
-		ROF13 & L'utente deve poter modificare la disponibilità geografica di un applicant & UC-2.11\\
+		ROF13 & L'utente deve poter modificare la disponibilità geografica di un \textit{applicant} & UC-2.11\\
 		\hline
-		ROF14 & L'utente deve poter modificare il tempo di preavviso di un applicant & UC-2.12\\
+		ROF14 & L'utente deve poter modificare il tempo di preavviso di un \textit{applicant} & UC-2.12\\
 		\hline
-		ROF15 & L'utente deve poter modificare il telefono di un applicant & UC-2.13 \\
+		ROF15 & L'utente deve poter modificare il telefono di un \textit{applicant} & UC-2.13 \\
 		\hline
-		ROF16 & L'utente deve poter scaricare il curriculum di un applicant & UC-2.14\\
+		ROF16 & L'utente deve poter scaricare il curriculum di un \textit{applicant} & UC-2.14\\
 		\hline
-		ROF17 & L'utente deve poter confermare le modifiche apportate a un applicant & UC-2.15 \\
+		ROF17 & L'utente deve poter confermare le modifiche apportate a un \textit{applicant} & UC-2.15 \\
 		\hline
-		ROF18 & L'utente deve poter annullare le modifiche apportate a un applicant &  UC-2.16\\
+		ROF18 & L'utente deve poter annullare le modifiche apportate a un \textit{applicant} &  UC-2.16\\
 		\hline
 		ROF19 & L'utente deve poter visualizzare un messaggio di errore se il nome non è presente & UC-2.15.1 \\
 		\hline
@@ -1170,81 +1170,81 @@ Dove per ciascun parametro possono essere assegnate le seguenti opzioni:
 		\hline
 		ROF24 & L'utente deve poter visualizzare un messaggio di errore se l'email presenta una struttura non corretta & UC-2.15.6\\
 		\hline
-		ROF24 & L'utente deve poter modificare le note generiche di un applicant & UC-2.17 \\
+		ROF24 & L'utente deve poter modificare le note generiche di un \textit{applicant} & UC-2.17 \\
 		\hline
-		ROF25 & L'utente deve poter modificare le note relative al colloquio di un applicant & UC-2.18 \\
+		ROF25 & L'utente deve poter modificare le note relative al colloquio di un \textit{applicant} & UC-2.18 \\
 		\hline
-		ROF26 & L'utente deve poter le note riguardanti lo status lavorativo di un applicant & UC-2.19\\
+		ROF26 & L'utente deve poter le note riguardanti lo status lavorativo di un \textit{applicant} & UC-2.19\\
 		\hline
-		ROF27 & L'utente deve poter mopdificare le note riguardanti le considerazioni aggiuntive relative a un applicant &  UC-2.20\\
+		ROF27 & L'utente deve poter mopdificare le note riguardanti le considerazioni aggiuntive relative a un \textit{applicant} &  UC-2.20\\
 		\hline
-		ROF28 & L'utente deve poter eliminare definitivamente un applicant & UC-3 \\
+		ROF28 & L'utente deve poter eliminare definitivamente un \textit{applicant} & UC-3 \\
 		\hline
-		ROF29 & L'utente deve poter confermare l'eliminazione di un applicant & UC-3.1 \\
+		ROF29 & L'utente deve poter confermare l'eliminazione di un \textit{applicant} & UC-3.1 \\
 		\hline
-		ROF30 & L'utente deve poter visualizzare il dettaglio di un applicant & UC-4 \\
+		ROF30 & L'utente deve poter visualizzare il dettaglio di un \textit{applicant} & UC-4 \\
 		\hline
-		ROF31 & L'utente deve poter visualizzare il nome di un applicant & UC-4.1\\
+		ROF31 & L'utente deve poter visualizzare il nome di un \textit{applicant} & UC-4.1\\
 		\hline
-		ROF32 & L'utente deve poter visualizzare il cognome di un applicant  & UC-4.2 \\
+		ROF32 & L'utente deve poter visualizzare il cognome di un \textit{applicant}  & UC-4.2 \\
 		\hline
-		ROF33 & L'utente deve poter visualizzare il genere di un applicant & UC-4.3\\
+		ROF33 & L'utente deve poter visualizzare il genere di un \textit{applicant} & UC-4.3\\
 		\hline
-		ROF34 & L'utente deve poter visualizzare la data di nascita di un applicant& UC-4.4 \\
+		ROF34 & L'utente deve poter visualizzare la data di nascita di un \textit{applicant}& UC-4.4 \\
 		\hline
-		ROF35 & L'utente deve poter visualizzare l'email di un applicant& UC-4.5\\
+		ROF35 & L'utente deve poter visualizzare l'email di un \textit{applicant}& UC-4.5\\
 		\hline
-		ROF36 & L'utente deve poter visualizzare il numero di telefono di un applicant& UC-4.6\\
+		ROF36 & L'utente deve poter visualizzare il numero di telefono di un \textit{applicant}& UC-4.6\\
 		\hline
-		ROF37 & L'utente deve poter visualizzare l'indirizzo di un applicant& UC-4.7\\
+		ROF37 & L'utente deve poter visualizzare l'indirizzo di un \textit{applicant}& UC-4.7\\
 		\hline
-		ROF38 & L'utente deve poter visualizzare la città di residenza di un applicant&  UC-4.8\\
+		ROF38 & L'utente deve poter visualizzare la città di residenza di un \textit{applicant}&  UC-4.8\\
 		\hline
-		ROF39 & L'utente deve poter visualizzare il preavviso richiesto da un applicant & UC-4.9 \\
+		ROF39 & L'utente deve poter visualizzare il preavviso richiesto da un \textit{applicant} & UC-4.9 \\
 		\hline
-		ROF40 &  L'utente deve poter visualizzare il titolo di studio di un applicant & UC-4.10\\
+		ROF40 &  L'utente deve poter visualizzare il titolo di studio di un \textit{applicant} & UC-4.10\\
 		\hline 
-		ROF41 &  L'utente deve poter visualizzare il livello di anzianità di un applicant& UC-4.11\\
+		ROF41 &  L'utente deve poter visualizzare il livello di anzianità di un \textit{applicant}& UC-4.11\\
 		\hline
-		ROF42 &  L'utente deve poter visualizzare l'ambito di lavoro di un applicant& UC-4.12\\
+		ROF42 &  L'utente deve poter visualizzare l'ambito di lavoro di un \textit{applicant}& UC-4.12\\
 		\hline
-		ROF43 &  L'utente deve poter visualizzare se l'applicant è scartato o meno & UC-4.13\\
+		ROF43 &  L'utente deve poter visualizzare se l'\textit{applicant} è scartato o meno & UC-4.13\\
 		\hline
-		ROF44 &  L'utente deve poter visualizzare le note generiche relative a un applicant & UC-4.15\\
+		ROF44 &  L'utente deve poter visualizzare le note generiche relative a un \textit{applicant} & UC-4.15\\
 		\hline
-		ROF45 &  L'utente deve poter visualizzare le note relative al colloquio dell'applicant & UC-4.16\\
+		ROF45 &  L'utente deve poter visualizzare le note relative al colloquio dell'\textit{applicant} & UC-4.16\\
 		\hline
-		ROF46 &  L'utente deve poter visualizzare le note relative allo status lavorativo dell'applicant& UC-4.17\\
+		ROF46 &  L'utente deve poter visualizzare le note relative allo status lavorativo dell'\textit{applicant}& UC-4.17\\
 		\hline
-		ROF47 & L'utente deve poter visualizzare altre considerazioni aggiuntive relative all'applicant & UC-4.18\\
+		ROF47 & L'utente deve poter visualizzare altre considerazioni aggiuntive relative all'\textit{applicant} & UC-4.18\\
 		\hline
-		ROF48 & L'utente deve poter filtrare la lista degli applicant secondo il nome e cognome & UC-5\\
+		ROF48 & L'utente deve poter filtrare la lista degli \textit{applicant} secondo il nome e cognome & UC-5\\
 		\hline
-		ROF49 & L'utente deve poter ordinare la lista degli applicant secondo determinati criteri & UC-6 \\
+		ROF49 & L'utente deve poter ordinare la lista degli \textit{applicant} secondo determinati criteri & UC-6 \\
 		\hline
-		ROF50 & L'utente deve poter ordinare la lista degli applicant secondo il nome & UC-6.1\\
+		ROF50 & L'utente deve poter ordinare la lista degli \textit{applicant} secondo il nome & UC-6.1\\
 		\hline
-		ROF51 & L'utente deve poter ordinare la lista degli applicant secondo il cognome & UC-6.2\\
+		ROF51 & L'utente deve poter ordinare la lista degli \textit{applicant} secondo il cognome & UC-6.2\\
 		\hline
-		ROF52 & L'utente deve poter aggiungere filtri alla lista degli applicant secondo determinati criteri &  UC-7\\
+		ROF52 & L'utente deve poter aggiungere filtri alla lista degli \textit{applicant} secondo determinati criteri &  UC-7\\
 		\hline
-		ROF53 & L'utente deve aggiungere un filtro per il nome sulla lista degli applicant & UC-7.1 \\
+		ROF53 & L'utente deve aggiungere un filtro per il nome sulla lista degli \textit{applicant} & UC-7.1 \\
 		\hline
-		ROF54 & L'utente deve aggiungere un filtro per il cognome sulla lista degli applicant & UC-7.2\\
+		ROF54 & L'utente deve aggiungere un filtro per il cognome sulla lista degli \textit{applicant} & UC-7.2\\
 		\hline
-		ROF55 & L'utente deve aggiungere un filtro per il genere sulla lista degli applicant & UC-7.3\\
+		ROF55 & L'utente deve aggiungere un filtro per il genere sulla lista degli \textit{applicant} & UC-7.3\\
 		\hline
-		ROF56 & L'utente deve aggiungere un filtro per il titolo di studio sulla lista degli applicant & UC-7.4 \\
+		ROF56 & L'utente deve aggiungere un filtro per il titolo di studio sulla lista degli \textit{applicant} & UC-7.4 \\
 		\hline
-		ROF57 & L'utente deve aggiungere un filtro per l'ambito lavorativo sulla lista degli applicant & UC-7.5\\
+		ROF57 & L'utente deve aggiungere un filtro per l'ambito lavorativo sulla lista degli \textit{applicant} & UC-7.5\\
 		\hline
-		ROF58 & L'utente deve aggiungere un filtro per il nome di una skill sulla lista degli applicant &  UC-7.6 \\
+		ROF58 & L'utente deve aggiungere un filtro per il nome di una skill sulla lista degli \textit{applicant} &  UC-7.6 \\
 		\hline
-		ROF59 & L'utente deve aggiungere un filtro per il livello di una skill sulla lista degli applicant & UC-7.7 \\
+		ROF59 & L'utente deve aggiungere un filtro per il livello di una skill sulla lista degli \textit{applicant} & UC-7.7 \\
 		\hline
-		ROF60 & L'utente deve aggiungere un filtro per la disponibilità geografica di un applicant& UC-7.8\\
+		ROF60 & L'utente deve aggiungere un filtro per la disponibilità geografica di un \textit{applicant}& UC-7.8\\
 		\hline
-		ROF61 & L'utente deve aggiungere un filtro per l'anzianità di un applicant& UC-7.9\\
+		ROF61 & L'utente deve aggiungere un filtro per l'anzianità di un \textit{applicant}& UC-7.9\\
 		\hline
 		ROF62 & L'utente deve poter confermare l'aggiunta dei filtri selezionati& UC-7.10\\
 		\hline
@@ -1254,17 +1254,17 @@ Dove per ciascun parametro possono essere assegnate le seguenti opzioni:
 		\hline
 		ROF65 & L'utente deve poter rimuovere i filtri precedentemente selezionati & UC-8\\
 		\hline
-		ROF66 & L'utente deve poter visualizzare lo skillmatrix di un applicant & UC-9\\
+		ROF66 & L'utente deve poter visualizzare lo skillmatrix di un \textit{applicant} & UC-9\\
 		\hline
-		ROF67 & L'utente deve poter visualizzare il nome di una skill posseduta da un applicant & UC-9.1 \\
+		ROF67 & L'utente deve poter visualizzare il nome di una skill posseduta da un \textit{applicant} & UC-9.1 \\
 		\hline
-		ROF68 & L'utente deve poter visualizzare il livello di una skill posseduta da un applicant & UC-9.2\\
+		ROF68 & L'utente deve poter visualizzare il livello di una skill posseduta da un \textit{applicant} & UC-9.2\\
 		\hline
-		ROF69 &L'utente deve poter modificare il livello di una skill posseduta da un applicant &  UC-10\\
+		ROF69 &L'utente deve poter modificare il livello di una skill posseduta da un \textit{applicant} &  UC-10\\
 		\hline
-		ROF70 &  L'utente deve poter confermare le modifiche apportate allo skillmatrix di un applicant& UC-10.1\\
+		ROF70 &  L'utente deve poter confermare le modifiche apportate allo skillmatrix di un \textit{applicant}& UC-10.1\\
 		\hline
-		ROF71 & L'utente deve poter annullare le modifiche apportate allo skillmatrix di un applicant & UC-10.2 \\
+		ROF71 & L'utente deve poter annullare le modifiche apportate allo skillmatrix di un \textit{applicant} & UC-10.2 \\
 		\hline
 	\end{tabularx}
 \end{center}
@@ -1276,11 +1276,11 @@ Dove per ciascun parametro possono essere assegnate le seguenti opzioni:
 		\hline
 		\textbf{Codice} & \textbf{Descrizione} \\
 		\hline
-		ROV01 & Utilizzo del framework \hyperref[angular]{Angular} per lo sviluppo dell'applicazione\\
+		ROV01 & Utilizzo del \gls{framework} \hyperref[angular]{Angular} per lo sviluppo dell'applicazione\\
 		\hline
 		ROV02 & Utilizzo di MongoDb per la gestione dei dati\\
 		\hline
-		ROV03 & Utilizzo di \hyperref[tech-spring]{Spring} per il back-end dell'applicazione\\
+		ROV03 & Utilizzo di \hyperref[tech-spring]{Spring} per il \gls{Back-end} dell'applicazione\\
 		\hline
 		ROV04 & Utilizzo di Visual Studio Code come \gls{IDE}\\
 		\hline
