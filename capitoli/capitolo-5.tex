@@ -10,9 +10,7 @@
 La seguente sezione ha lo scopo di illustrare la soluzione ideata dal laureando per il soddisfacimento dei requisiti concordati con il tutor aziendale descritti nel capitolo \ref{cap:descrizione-stage}. Nella prima sezione viene presentato l'applicativo con il dovuto corredo di immagini e \textit{snippets} di codice,  mentre nel secondo vengono descritti accuratamente i design pattern e paradigmi di programmazione utilizzati.
 
 
-\section{L'applicativo SyncRec}
-\subsection{Struttura e sviluppo del progetto}
-Come già accennato in precedenza, \textit{Angular} suggerisce di applicare una forte struttura modulare alle proprie \textit{web-application}, tale approccio è stato nella gran parte perseguito, con alcune eccezioni per determinati elementi condivisi fra più \textit{component}; un'applicazione di tale struttura, inoltre, permette lo sviluppo delle proprie componenti senza dover necessariamente conoscere l'intera architettura nel dettaglio.
+\section{L'applicativo SyncRec: Struttura e sviluppo del progetto}
 
 \begin{figure}[!h] 
 	\centering 
@@ -21,14 +19,17 @@ Come già accennato in precedenza, \textit{Angular} suggerisce di applicare una 
 	\label{figura:UML1}
 \end{figure}
 
+
+Come già accennato in precedenza, \hyperref[angular]{Angular} suggerisce di applicare una forte struttura modulare alle proprie \textit{web-application}, tale approccio è stato nella gran parte perseguito, con alcune eccezioni per determinati elementi condivisi fra più \textit{component}; un'applicazione di tale struttura, inoltre, permette lo sviluppo delle proprie componenti senza dover necessariamente conoscere l'intera architettura nel dettaglio.
+
 La figura \ref{figura:UML1} illustra la struttura dei component sviluppati per l'applicativo SyncRec, a scopo di sintesi sono state omesse alcune parti proprie del \textit{framework} di riferimento (come i moduli e gli \textit{asset}) o sviluppate da altri studenti nel corso del progetto.\\
 I moduli \textit{applicant-list}, \textit{applicant-detail} e \textit{viewskillmatrix} rappresentano i componenti grafici dell'applicazione, il modulo \textit{shared} rappresenta l'insieme di \textit{component} condivisi nel \textit{namespace} globale e il modulo \textit{core} contiene i \textit{service}; quest'ultimi hanno il duplice scopo di recuperare i dati dal \textit{Back-end} e di fornire alcuni metodi di utilità necessari a svolgere determinate operazioni (come l'ordinamento o l'emissione di eventi verso \textit{components} padri).\\
-La figura \ref{figura:UML2} illustra come il modulo \textit{service} si occupa di dialogare con il \textit{Back-end} scritto in \textit{Spring}.\\
-In ambito di progettazione, dialogando con gli altri laureandi che hanno preso parte alla realizzazion di SyncRec, sono definite alcune linee guida da perseguire nel corso della codifica.\\
+La figura \ref{figura:UML2} illustra come il modulo \textit{service} si occupa di dialogare con il \textit{Back-end} scritto in \hyperref[tech-spring]{Spring}.\\
+In ambito di progettazione, dialogando con gli altri laureandi che hanno preso parte alla realizzazion di SyncRec, si sono definite alcune linee guida da perseguire nel corso della codifica.\\
 Tali linee guida sono:
 \begin{itemize}
-	\item Utilizzare il più possibile le direttive \textit{Angular} (come \gls{ng-Model}) all'interno del \textit{HTML} dei \textit{component}.
-	\item Definire per ciascun \textit{component} il relativo modulo di referimento, tale prassi è fortemente consigliata dalla documentazione di \textit{Angular}.
+	\item Utilizzare il più possibile le direttive \hyperref[angular]{Angular} (come \gls{ng-Model}) all'interno del \textit{HTML} dei \textit{component}.
+	\item Definire per ciascun \textit{component} il relativo modulo di referimento, tale prassi è fortemente consigliata dalla documentazione di \hyperref[angular]{Angular}.
 	\item Per quanto riguarda il \textit{CSS}, favorire l'utilizzo della versione 3.0 piuttosto che della libreria esterna \textit{bootstrap}.
 \end{itemize}
 
@@ -56,9 +57,9 @@ In aggiunta, è possibile effettuare il \textit{logout} con un pulsante posto in
 \end{figure}
 
 \subsection{Maschera della visualizzazione degli\applicant} \label{section: applicant-list}
-La fugura \ref{figura:lista}, mostra il \textit{component} sviluppato per la visualizzazione degli \textit{applicant}, per ciascun \textit{applicant} viene visualizzato il Cognome, Nome e l'email, insieme a un tasto per l'eliminazione e uno per la visualizzazione del dettaglio della persona, il quale reindirizza verso la maschera descritta nella sezione \ref{CRUD}.\\
+La fugura \ref{figura:lista}, mostra il \textit{component} sviluppato per la visualizzazione degli \textit{applicant}, per ciascun \textit{applicant} viene visualizzato il Cognome, Nome e l'email, insieme a un tasto per l'eliminazione e uno per la visualizzazione del dettaglio della persona, il quale reindirizza verso la maschera descritta nella sezione \ref{m-CRUD}.\\
 Per realizzare questa \textit{task}, è stato necessario reperire le informazione tramite un service definito appositamente, il quale effettua una semplice GET al relativo microservizio sviluppato nel Back-end (v. codice \ref{get-applicant}).
-Successivamente, i dati vengono memorizzati in un apposito \textit{array} e visualizzati tramite una direttiva angular chiamata \textit{ng-for} (v. \textit{listing}  \ref{ng-for}).
+Successivamente, i dati vengono memorizzati in un apposito \textit{array} e visualizzati tramite una direttiva \hyperref[angular]{Angular} chiamata \textit{ng-for} (v. \textit{listing}  \ref{ng-for}).
 
 \vspace{0.5em}
 \begin{figure}[!h] 
@@ -130,7 +131,7 @@ filter(data: string) {
 
 \end{lstlisting}
 
-La visualizzazione del \textit{component} relativo all'aggiunta di filtri aggiuntivi viene gestita tramite una semplice direttiva \textit{angular} chiamata \textit{Ng-if}, la quale si lega a una variabile booleana e determina la visualizzazione o meno del \textit{component} a seconda del valore assegnato. La selezione dei valori, invece, viene gestita tramite i \textit{form} angular, i quali legano i valori contenuti nei vari \textit{widget} a delle strutture che gestiscono autonomamente valori di default, validazione, \textit{submit} dei risultati e quant'altro, rendendo la struttura molto solida, sicura e poco soggetta a errori.
+La visualizzazione del \textit{component} relativo all'aggiunta di filtri aggiuntivi viene gestita tramite una semplice direttiva \hyperref[angular]{Angular} chiamata \textit{Ng-if}, la quale si lega a una variabile booleana e determina la visualizzazione o meno del \textit{component} a seconda del valore assegnato. La selezione dei valori, invece, viene gestita tramite i \textit{form} \hyperref[angular]{Angular}, i quali legano i valori contenuti nei vari \textit{widget} a delle strutture che gestiscono autonomamente valori di default, validazione, \textit{submit} dei risultati e quant'altro, rendendo la struttura molto solida, sicura e poco soggetta a errori.
 Nel \textit{listing} \ref{form} è possibile vedere l'inizializzazione del \textit{FormBuilder}, la sopracitata struttura in grado di gestire i dati di un \textit{form}, notare che viene inserito un pattern per la validazione ove necessario.
 \newpage
 \begin{lstlisting}[label= form, caption= Inizializzazione di un FormBuilder]
@@ -159,7 +160,7 @@ this.filterGroup = this.formBuilder.group({
 	\label{figura:filtri}
 \end{figure}
 
-\subsection{Maschera delle operazioni CRUD su un\applicant}\label{CRUD}
+\subsection{Maschera delle operazioni CRUD su un\applicant}\label{m-CRUD}
 \vspace{0.5em}
 \begin{figure}[!h] 
 	\centering 
@@ -231,10 +232,4 @@ Allo scopo di rendere i dati consistenti fra le due tabelle (in modo da evitare 
  </form>
  </ng-container>
  \end{lstlisting}
- 
-\section {Design Pattern e paradigmi di programmazione utilizzati}
-
-\subsection{Observer Pattern}
-\subsection{Dependency Injection}
-\subsection{REST programming}
-\subsection{Reactive programming}
+   

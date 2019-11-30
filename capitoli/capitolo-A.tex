@@ -11,7 +11,7 @@
 Lo scopo di questa sezione è fornire una panoramica delle tecnologie studiate durante il periodo di stage e previste nel piano di lavoro e che non hanno trovato un'applicazione concreta nel contesto del progetto SyncRec.\\
 Tali tecnologie sono state incluse con il duplice scopo di ampliare il bagaglio di conoscenze del laureando e comprendere meglio l'architettura del progetto sul quale andavano fatti gli interventi concordati.
 
-\section{Oracle PL/SQL}
+\section{Oracle PL/SQL} \label{plsql}
 \textit{Oracle PL/SQL} è un linguaggio sviluppato da Oracle negli anni '80, si tratta di un linguaggio procedurale in grado di eseguire \textit{query SQL} insieme ad alcune strutture molto simili a quanto si può trovare in altri linguaggi procedurali (come \gls{Python} o \gls{ADA}).
 PL/SQL fornisce le seguenti strutture:
 \begin{itemize}
@@ -42,7 +42,7 @@ Per ogni operazione eseguita, Oracle instanzia un un cursore implicito, ed è in
 I cursori vengono definiti nei blocchi PL/SQL e restringono la \textit{context area} tramite delle classiche \textit{SELECT} in SQL.\\
 I cursori, in ultima analisi, sono uno strumento molto potente per manipolare i risultati delle operazioni SQL, tuttavia oggi risultano piuttosto datati se si considerano le potenzialità dei moderni \gls{framework} e la loro capacità di processare i dati contenuti nei database.
 
-\section{Archittetture a microservizi}
+\section{Archittetture a microservizi}\label{micro}
 Un’architettura basata su microservizi viene aplicata nella realizzazione di un’applicazione, essa è costituita da componenti indipendenti che eseguono ciascun processo applicativo come un \textbf{servizio}.\\
 Tali servizi comunicano attraverso un’interfaccia ben definita che utilizza API leggere. Ciò risulta vantaggioso poiché ciascun componente viene eseguito in modo indipendente, e ciascun servizio può essere aggiornato, distribuito e ridimensionato per rispondere alla richiesta di funzioni specifiche di un’applicazione.\\
 Ciascun servizio è progettato per una serie di capacità e si concentra sulla risoluzione di un problema specifico. Se, nel tempo, gli sviluppatori aggiungono del codice aggiuntivo a un servizio rendendolo più complesso, il servizio può essere scomposto in servizi più piccoli.
